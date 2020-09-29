@@ -1,0 +1,490 @@
+{
+    "code": "200",
+    "msg": "ok",
+    "data": {
+        "theatre_list": [
+            {
+                "name": "南山文体中心",
+                "id": 2,
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/01\/D2\/rAoKmVwknq2AQjJ3AABZC2s-o9o803.jpg",
+                "count": 38,
+                "vid": "1078,1079,1795",
+                "showList": [
+                    {
+                        "id": 116312,
+                        "schedular_name": "（档期调整）【小橙堡】经典成长童话《匹诺曹》-深圳站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/63\/rAoKmV3y6wCAIXZIAAChpncncD0689.jpg",
+                        "show_time": "10月18日",
+                        "show_id": 41688
+                    },
+                    {
+                        "id": 116054,
+                        "schedular_name": "第十八届中外艺术精品演出季——中国最经典结构喜剧《阳台》-深圳站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/04\/33\/rAoKNV4epLeAD5LAAAD-muPbaEM061.jpg",
+                        "show_time": "11月13日",
+                        "show_id": 42497
+                    },
+                    {
+                        "id": 116369,
+                        "schedular_name": "【小橙堡】魔幻亲子儿童剧《阿拉丁神灯》-深圳站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/B4\/rAoKmV8jvvSAb6eBAAMW15z_Bp4992.jpg",
+                        "show_time": "11月22日",
+                        "show_id": 43389
+                    },
+                    {
+                        "id": 116257,
+                        "schedular_name": "聚橙制作 | 宫崎骏经典·暖心成长音乐剧《魔女宅急便》-深圳",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/00\/01\/rBAAI19W6WeAQ5EtAANNlbD6FdU622.png",
+                        "show_time": "12月05日",
+                        "show_id": 43335
+                    },
+                    {
+                        "id": 110775,
+                        "schedular_name": "【档期调整】聚橙制作|百老汇爱情音乐轻喜剧《第一次约会》中文版-深圳站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/04\/04\/rAoKNV3o3tCAbCKNAAB3v6NC4vs503.jpg",
+                        "show_time": "12月18日",
+                        "show_id": 41520
+                    },
+                    {
+                        "id": 116373,
+                        "schedular_name": "【小橙堡】经典成长童话《三只小猪》-深圳站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/2A\/rAoKmV2lZg2AQ6n2AACcamyKID0576.jpg",
+                        "show_time": "12月20日",
+                        "show_id": 43390
+                    },
+                    {
+                        "id": 110886,
+                        "schedular_name": "【演出延期】聚橙制作 | 法语音乐剧《摇滚红与黑》-深圳站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/04\/05\/rAoKNV3p9MGAL4-fAABlWN_fCvM587.jpg",
+                        "show_time": "12月31日",
+                        "show_id": 41573
+                    },
+                    {
+                        "id": 110511,
+                        "schedular_name": "【演出延期】2020第七届城市戏剧节 NT-Live艾美奖得主菲比主演《伦敦生活》高清影像-深圳站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/53\/rAoKmV3ggq-AGJvkAAB2ev4KuJg353.jpg",
+                        "show_time": "12月31日",
+                        "show_id": 41386
+                    },
+                    {
+                        "id": 113334,
+                        "schedular_name": "【演出延期】2020第七届城市戏剧节 豆瓣高分 正宗英式独角戏《一个人的莎士比亚》-深圳站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/04\/2E\/rAoKNV4b2fmADtjTAACfhe3xGlU048.jpg",
+                        "show_time": "12月31日",
+                        "show_id": 42392
+                    },
+                    {
+                        "id": 110101,
+                        "schedular_name": "（演出延期）【万有音乐系】《最后的莫西干人——亚历桑德罗印第安音乐品鉴会》-深圳站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/E5\/rAoKNV3DzAGAAg8KAABs-X44akw723.jpg",
+                        "show_time": "12月31日",
+                        "show_id": 41202
+                    }
+                ],
+                "show_list_url": "https:\/\/m.juooo.com\/search\/index?venue_id=1078,1079,1795",
+                "theatre_url": "https:\/\/m.juooo.com\/theater\/detail\/2"
+            },
+            {
+                "name": "石家庄大剧院",
+                "id": 3,
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/01\/D3\/rAoKmVwlyY6AHU-XAABZsyVCtbY679.jpg",
+                "count": 17,
+                "vid": "2400,2419",
+                "showList": [
+                    {
+                        "id": 116254,
+                        "schedular_name": "聚橙制作 | 宫崎骏经典·暖心成长音乐剧《魔女宅急便》-石家庄",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/00\/01\/rBAAI19W6TaAJCkvAACX3iQYe5s473.jpg",
+                        "show_time": "10月02日",
+                        "show_id": 43339
+                    },
+                    {
+                        "id": 116325,
+                        "schedular_name": "【小橙堡】魔幻亲子儿童剧《阿拉丁神灯》-石家庄站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/B4\/rAoKmV8jvvSAb6eBAAMW15z_Bp4992.jpg",
+                        "show_time": "10月11日",
+                        "show_id": 43370
+                    },
+                    {
+                        "id": 116327,
+                        "schedular_name": "【小橙堡】经典成长童话《三只小猪》-石家庄站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/2A\/rAoKmV2lZg2AQ6n2AACcamyKID0576.jpg",
+                        "show_time": "11月07日",
+                        "show_id": 43371
+                    },
+                    {
+                        "id": 116397,
+                        "schedular_name": "音乐剧《第一次约会》-石家庄站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/00\/05\/rBAAI19xl-yAZpN0AAB1YM478bo499.jpg",
+                        "show_time": "11月22日",
+                        "show_id": 43401
+                    },
+                    {
+                        "id": 116329,
+                        "schedular_name": "【小橙堡】浪漫经典童话剧《灰姑娘》-石家庄站",
+                        "pic": "https:\/\/image.juooo.com\/\/uploads\/show\/20150923095102358.jpg",
+                        "show_time": "12月05日",
+                        "show_id": 43366
+                    },
+                    {
+                        "id": 113447,
+                        "schedular_name": "【演出延期】聚橙出品 |世界经典原版音乐剧《猫》CATS-石家庄站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/04\/31\/rAoKNV4dN0WAfV85AABDepBGh0o831.jpg",
+                        "show_time": "12月31日",
+                        "show_id": 42426
+                    },
+                    {
+                        "id": 111609,
+                        "schedular_name": "【演出延期】2020第七届城市戏剧节 《涂红》-石家庄站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/6C\/rAoKmV4AZ3GAK-xpAABsQm0qZyQ219.jpg",
+                        "show_time": "08月22日",
+                        "show_id": 41821
+                    },
+                    {
+                        "id": 109024,
+                        "schedular_name": "【演出延期】四川人民艺术剧院-话剧《苏东坡》-石家庄",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/34\/rAoKmV22uICAQ2WLAAFPaGvA5rE897.jpg",
+                        "show_time": "08月23日",
+                        "show_id": 40781
+                    }
+                ],
+                "show_list_url": "https:\/\/m.juooo.com\/search\/index?venue_id=2400,2419",
+                "theatre_url": "https:\/\/m.juooo.com\/theater\/detail\/3"
+            },
+            {
+                "name": "郑州大剧院",
+                "id": 16,
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/00\/04\/rBAAI19sPGuAb1wmAABMLOYOzmQ804.jpg",
+                "count": 0,
+                "vid": "3608,3609,3610,3611",
+                "showList": [],
+                "show_list_url": "https:\/\/m.juooo.com\/search\/index?venue_id=3608,3609,3610,3611",
+                "theatre_url": "https:\/\/m.juooo.com\/theater\/detail\/16"
+            },
+            {
+                "name": "安康汉江大剧院",
+                "id": 15,
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/A9\/rAoKmV7sYdeARxO7AAIlUxEaH_I987.png",
+                "count": 10,
+                "vid": "3536,3554",
+                "showList": [
+                    {
+                        "id": 116285,
+                        "schedular_name": "聚橙制作 | 宫崎骏经典·暖心成长音乐剧《魔女宅急便》-安康",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/00\/01\/rBAAI19W6VSAWwCAAANNlbD6FdU548.png",
+                        "show_time": "10月14日",
+                        "show_id": 43337
+                    },
+                    {
+                        "id": 116122,
+                        "schedular_name": "五周年纪念版 话剧《黑洞先生2020》",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/04\/61\/rAoKNV8_mtGAI6KOAACOHxL9LB8041.jpg",
+                        "show_time": "10月17日",
+                        "show_id": 43302
+                    },
+                    {
+                        "id": 116339,
+                        "schedular_name": "【小橙堡】经典成长童话《三只小猪》-安康站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/2A\/rAoKmV2lZg2AQ6n2AACcamyKID0576.jpg",
+                        "show_time": "10月24日",
+                        "show_id": 43376
+                    },
+                    {
+                        "id": 116120,
+                        "schedular_name": "女性独角戏《亿万次的孤独和每个身边的你》",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/B7\/rAoKmV8_nLyAHtT2AAIbb346UY0860.jpg",
+                        "show_time": "11月14日",
+                        "show_id": 43303
+                    },
+                    {
+                        "id": 116401,
+                        "schedular_name": "音乐剧《第一次约会》-安康站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/00\/05\/rBAAI19xl-yAZpN0AAB1YM478bo499.jpg",
+                        "show_time": "11月29日",
+                        "show_id": 43403
+                    }
+                ],
+                "show_list_url": "https:\/\/m.juooo.com\/search\/index?venue_id=3536,3554",
+                "theatre_url": "https:\/\/m.juooo.com\/theater\/detail\/15"
+            },
+            {
+                "name": "石家庄市青少年活动中心礼堂(正定新区场馆)",
+                "id": 14,
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/59\/rAoKmV3nlWWAMOPEAAGuyNwgxik420.png",
+                "count": 7,
+                "vid": "3131",
+                "showList": [
+                    {
+                        "id": 116314,
+                        "schedular_name": "【小橙堡】魔幻亲子儿童剧《阿拉丁神灯》-石家庄正定站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/B4\/rAoKmV8jvvSAb6eBAAMW15z_Bp4992.jpg",
+                        "show_time": "10月04日",
+                        "show_id": 43363
+                    },
+                    {
+                        "id": 108379,
+                        "schedular_name": "（演出取消）【小橙堡】格林童话经典人偶剧《睡美人》-石家庄",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/E0\/rAoKNV27xQyAWjKBAACgqkWuVI8461.jpg",
+                        "show_time": "10月18日",
+                        "show_id": 40557
+                    },
+                    {
+                        "id": 116316,
+                        "schedular_name": "【小橙堡】经典成长童话《三只小猪》-石家庄正定站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/2A\/rAoKmV2lZg2AQ6n2AACcamyKID0576.jpg",
+                        "show_time": "11月08日",
+                        "show_id": 40555
+                    },
+                    {
+                        "id": 116318,
+                        "schedular_name": "【小橙堡】浪漫经典童话剧《灰姑娘》-石家庄正定站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/00\/66\/rAoKOVgW5WGAZOf4AA1pxdCwBbM024.jpg",
+                        "show_time": "12月06日",
+                        "show_id": 43365
+                    }
+                ],
+                "show_list_url": "https:\/\/m.juooo.com\/search\/index?venue_id=3131",
+                "theatre_url": "https:\/\/m.juooo.com\/theater\/detail\/14"
+            },
+            {
+                "name": "雅居乐海上艺术中心",
+                "id": 12,
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/01\/D3\/rAoKmVwl5iWAP9JkAABAG6HxMG0672.jpg",
+                "count": 4,
+                "vid": "2824",
+                "showList": [
+                    {
+                        "id": 116377,
+                        "schedular_name": "漫步中的乐与画--沙画钢琴音乐会",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/00\/05\/rBAAFF9xO0KAFBBRAACVlkC-obY423.jpg",
+                        "show_time": "10月05日",
+                        "show_id": 43391
+                    },
+                    {
+                        "id": 116304,
+                        "schedular_name": "爆笑互动·亲子魔术喜剧秀《百变魔逗秀》",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/00\/03\/rBAAI19Yd1aAVPvjAAIDp5tST2w161.jpg",
+                        "show_time": "10月18日",
+                        "show_id": 43359
+                    },
+                    {
+                        "id": 116390,
+                        "schedular_name": "“魔指少年”武暄翔钢琴独奏音乐会-陵水站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/00\/05\/rBAAFF9v6RaAE011AAB5iirW9fM933.jpg",
+                        "show_time": "11月07日",
+                        "show_id": 43397
+                    }
+                ],
+                "show_list_url": "https:\/\/m.juooo.com\/search\/index?venue_id=2824",
+                "theatre_url": "https:\/\/m.juooo.com\/theater\/detail\/12"
+            },
+            {
+                "name": "泉州木偶剧院",
+                "id": 11,
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/01\/D3\/rAoKmVwl5GGAaieTAABIiR2PnBI494.jpg",
+                "count": 0,
+                "vid": "2436",
+                "showList": [],
+                "show_list_url": "https:\/\/m.juooo.com\/search\/index?venue_id=2436",
+                "theatre_url": "https:\/\/m.juooo.com\/theater\/detail\/11"
+            },
+            {
+                "name": "固安大剧院",
+                "id": 9,
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/01\/D3\/rAoKmVwl4IiASgaYAABZ72Vxl00142.jpg",
+                "count": 12,
+                "vid": "2639",
+                "showList": [
+                    {
+                        "id": 116379,
+                        "schedular_name": "【小橙堡】魔幻亲子儿童剧《阿拉丁神灯》-固安站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/B4\/rAoKmV8jvvSAb6eBAAMW15z_Bp4992.jpg",
+                        "show_time": "10月03日",
+                        "show_id": 43392
+                    },
+                    {
+                        "id": 116298,
+                        "schedular_name": "聚橙制作 | 宫崎骏经典·暖心成长音乐剧《魔女宅急便》-固安",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/00\/01\/rBAAFF9W6NOAX76qAANNlbD6FdU026.png",
+                        "show_time": "10月06日",
+                        "show_id": 43340
+                    },
+                    {
+                        "id": 111600,
+                        "schedular_name": "河北梆子《王宝钏》",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/6B\/rAoKmV4AXkSAdphzAAGp6nceocQ895.jpg",
+                        "show_time": "10月15日",
+                        "show_id": 41819
+                    },
+                    {
+                        "id": 111599,
+                        "schedular_name": "【演出延期】河北梆子《龙凤呈祥》",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/04\/15\/rAoKNV4AXSKAeumIAAIlO07ksKU771.jpg",
+                        "show_time": "10月16日",
+                        "show_id": 41818
+                    },
+                    {
+                        "id": 116381,
+                        "schedular_name": "【小橙堡】经典成长童话《三只小猪》-固安站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/D5\/rAoKNV2nwraAQfEkAACcamyKID0202.jpg",
+                        "show_time": "11月14日",
+                        "show_id": 41120
+                    },
+                    {
+                        "id": 116403,
+                        "schedular_name": "音乐剧《第一次约会》-固安站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/00\/05\/rBAAI19xl-yAZpN0AAB1YM478bo499.jpg",
+                        "show_time": "11月18日",
+                        "show_id": 43404
+                    },
+                    {
+                        "id": 116383,
+                        "schedular_name": "【小橙堡】浪漫经典童话剧《灰姑娘》-固安站",
+                        "pic": "https:\/\/image.juooo.com\/\/uploads\/show\/20150923095102358.jpg",
+                        "show_time": "12月12日",
+                        "show_id": 43393
+                    },
+                    {
+                        "id": 109030,
+                        "schedular_name": "【演出延期】国家艺术基金2018年度传播交流推广资助项目-话剧《祖传秘方》-固安",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/34\/rAoKmV22u7KAEANeAACFZkMT2yM793.jpg",
+                        "show_time": "12月31日",
+                        "show_id": 40784
+                    },
+                    {
+                        "id": 109032,
+                        "schedular_name": "【演出延期】四川人民艺术剧院-话剧《苏东坡》-固安",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/DD\/rAoKNV22vFeADmufAAFPaGvA5rE168.jpg",
+                        "show_time": "09月05日",
+                        "show_id": 40786
+                    }
+                ],
+                "show_list_url": "https:\/\/m.juooo.com\/search\/index?venue_id=2639",
+                "theatre_url": "https:\/\/m.juooo.com\/theater\/detail\/9"
+            },
+            {
+                "name": "合肥瑶海大剧院",
+                "id": 8,
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/01\/D3\/rAoKmVwl27iAR1uuAABW36uG7rc089.jpg",
+                "count": 10,
+                "vid": "2508",
+                "showList": [
+                    {
+                        "id": 116331,
+                        "schedular_name": "“我心中的钢琴英雄-李斯特”张家瑞钢琴独奏音乐会",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/00\/04\/rBAAI19fJV2ANTdsAADQwUNF6AE082.jpg",
+                        "show_time": "10月07日",
+                        "show_id": 43372
+                    },
+                    {
+                        "id": 116310,
+                        "schedular_name": "【小橙堡】魔幻亲子儿童剧《阿拉丁神灯》",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/B4\/rAoKmV8jvvSAb6eBAAMW15z_Bp4992.jpg",
+                        "show_time": "10月17日",
+                        "show_id": 43362
+                    },
+                    {
+                        "id": 116358,
+                        "schedular_name": "“问题不大”朱根琪脱口秀专场",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/00\/04\/rBAAI19oVcSAPdu5AACE8Cc-tw4494.jpg",
+                        "show_time": "10月18日",
+                        "show_id": 43386
+                    },
+                    {
+                        "id": 116357,
+                        "schedular_name": "“魔指少年”武暄翔钢琴独奏音乐会",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/00\/04\/rBAAI19klq2ACYjqAAB6nYl2ud4876.jpg",
+                        "show_time": "10月25日",
+                        "show_id": 43385
+                    },
+                    {
+                        "id": 116349,
+                        "schedular_name": "【小橙堡】经典成长童话《三只小猪》-合肥站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/D5\/rAoKNV2nwraAQfEkAACcamyKID0202.jpg",
+                        "show_time": "11月21日",
+                        "show_id": 41695
+                    },
+                    {
+                        "id": 116351,
+                        "schedular_name": "【小橙堡】梦幻互动亲子剧《人鱼公主》-合肥站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/EF\/rAoKNV3OeyyAIjqYAAC4wIaKILc700.jpg",
+                        "show_time": "12月05日",
+                        "show_id": 43382
+                    },
+                    {
+                        "id": 111217,
+                        "schedular_name": "【演出延期】四川人民艺术剧院-话剧《苏东坡》-合肥站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/FA\/rAoKNV3fPESAX4kRAACEePd5un0237.jpg",
+                        "show_time": "08月16日",
+                        "show_id": 41694
+                    }
+                ],
+                "show_list_url": "https:\/\/m.juooo.com\/search\/index?venue_id=2508",
+                "theatre_url": "https:\/\/m.juooo.com\/theater\/detail\/8"
+            },
+            {
+                "name": "苏州昆剧院",
+                "id": 7,
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/02\/7D\/rAoKNVwl2jeAUlRIAABT0_rbirU440.jpg",
+                "count": 0,
+                "vid": "1872",
+                "showList": [],
+                "show_list_url": "https:\/\/m.juooo.com\/search\/index?venue_id=1872",
+                "theatre_url": "https:\/\/m.juooo.com\/theater\/detail\/7"
+            },
+            {
+                "name": "重庆文化宫大剧院",
+                "id": 6,
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/02\/7D\/rAoKNVwl2RqADO9EAABQCo11Djk732.jpg",
+                "count": 3,
+                "vid": "214",
+                "showList": [
+                    {
+                        "id": 115470,
+                        "schedular_name": "大型儿童音乐剧《冰雪奇缘之阿伦戴尔情缘》 重庆站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/AA\/rAoKmV7xvjWAUajIAACN9ud34sU406.jpg",
+                        "show_time": "11月21日",
+                        "show_id": 43080
+                    },
+                    {
+                        "id": 109010,
+                        "schedular_name": "（演出延期）【万有音乐系】《最后的莫西干人——亚历桑德罗印第安音乐品鉴会》-重庆站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/DE\/rAoKNV24BW-AD4OfAABs-X44akw801.jpg",
+                        "show_time": "12月31日",
+                        "show_id": 40771
+                    }
+                ],
+                "show_list_url": "https:\/\/m.juooo.com\/search\/index?venue_id=214",
+                "theatre_url": "https:\/\/m.juooo.com\/theater\/detail\/6"
+            },
+            {
+                "name": "宜昌剧院",
+                "id": 5,
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/01\/D3\/rAoKmVwl15WAAQqkAABYzNXiUJw484.jpg",
+                "count": 1,
+                "vid": "1988",
+                "showList": [
+                    {
+                        "id": 106348,
+                        "schedular_name": "（演出取消）【小橙堡】奇思妙想童话剧《白雪公主》-宜昌站",
+                        "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/06\/rAoKmV1sgyKAHK0rAACkqd0OnLY797.jpg",
+                        "show_time": "11月08日",
+                        "show_id": 39920
+                    }
+                ],
+                "show_list_url": "https:\/\/m.juooo.com\/search\/index?venue_id=1988",
+                "theatre_url": "https:\/\/m.juooo.com\/theater\/detail\/5"
+            },
+            {
+                "name": "乌兰牧骑宫大剧院",
+                "id": 4,
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/01\/D3\/rAoKmVwl01-AMyWtAABOFPUJ6I0728.jpg",
+                "count": 0,
+                "vid": "2532",
+                "showList": [],
+                "show_list_url": "https:\/\/m.juooo.com\/search\/index?venue_id=2532",
+                "theatre_url": "https:\/\/m.juooo.com\/theater\/detail\/4"
+            }
+        ]
+    }
+}

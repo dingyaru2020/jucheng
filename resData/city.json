@@ -1,0 +1,22 @@
+{
+    "code": "200",
+    "msg": "ok",
+    "data": {
+        "city_list": [
+            {
+                "id": 1,
+                "name": "深圳",
+                "enname": "shenzhen",
+                "Abbreviation": "SZ",
+                "is_city": 0
+            },
+            {
+                "id": 3,
+                "name": "广州",
+                "enname": "guangzhou",
+                "Abbreviation": "GZ",
+                "is_city": 0
+            }
+        ]
+    }
+}

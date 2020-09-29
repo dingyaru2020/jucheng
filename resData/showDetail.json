@@ -1,0 +1,141 @@
+{
+    "code": "200",
+    "msg": "ok",
+    "data": {
+        "static_data": {
+            "show_id": 41170,
+            "schedular_id": 111475,
+            "show_name": "【演出延期】3D科幻舞台剧《三体Ⅱ黑暗森林》-深圳站",
+            "price_range": 0,
+            "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/40\/rAoKmV3LdBWAImHFAACB1n-G-Nk921.jpg",
+            "touch_pic": "",
+            "is_package": 0,
+            "show_time_data": {
+                "show_time_start": 1602331200,
+                "show_time_start_display": "2020.10.10 20:00",
+                "show_time_end": 1633953600,
+                "show_time_end_display": "2021.10.11 20:00"
+            },
+            "show_time": 1633953600,
+            "custom_show_time": "2020.10.11 20:00(延期，时间待定)",
+            "is_through_ticket": 1,
+            "is_eticket": 1,
+            "is_online_seat": 1,
+            "city": {
+                "city_id": 1,
+                "city_name": "深圳"
+            },
+            "venue": {
+                "venue_id": 1078,
+                "venue_name": "南山文体中心剧院大剧院",
+                "venue_address": "南山区南山大道南头街62号",
+                "venue_coordinate": "113.9234644349,22.536028418473",
+                "distance": ""
+            },
+            "show_intro": {
+                "desc": "根据刘慈欣同名科幻小说改编 3D科幻舞台剧《三体II 黑暗森林》"
+            },
+            "show_desc": {
+                "desc": "<p style=\"text-align: left;\"><strong>根据刘慈欣同名科幻小说改编<br style=\"text-align: left;\"\/> 3D科幻舞台剧《三体II 黑暗森林》<\/strong><\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: left;\"><strong>出 品 方：<\/strong> Lotus Lee 未来戏剧  （上海莲李文化传播有限公司）<\/p><p style=\"text-align: left;\"><strong>总制作人：<\/strong>李童 （Lotus Lee）中国<\/p><p style=\"text-align: left;\"><strong>导     演：<\/strong>菲立普 · 德库弗列（Philippe Decouflé ）法国<\/p><p style=\"text-align: left;\"><strong>美方编剧：<\/strong>肯尼·芬克（ Kenny Finkle）美国<br\/><\/p><p style=\"text-align: left;\"><strong>中方编剧：<\/strong>顾   奕（Yi Gu） 中国<\/p><p style=\"text-align: left;\"><strong>舞美设计师：<\/strong>乔治·西平（ George Tsypin）美国<\/p><p style=\"text-align: left;\"><strong>服装设计师：<\/strong>凯姆·巴雷特（ Kym Barrett）美国<\/p><p style=\"text-align: left;\"><strong>视觉特效团队：<\/strong>Platige Image Studio 波兰<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: left;\"><strong>剧情简介<\/strong><\/p><p style=\"text-align: left;\">三体人在利用科技锁死了地球人的科学之后，出动庞大的宇宙舰队直扑太阳系，面对地球文明前所未有的危局，人类组建起同样庞大的太空舰队，同时行星防御理事会（PDC）利用三体人思维透明的致命缺陷，制订了“面壁计划”。出乎意料地，社会学教授罗辑被选出作为四位“面壁者”之一，展开对三体人的秘密反击。虽然三体人自身无法识破人类的计谋，却依靠由地球人中的背叛者挑选出的“破壁人”与“面壁者”进行智慧博弈。<\/p><p style=\"text-align: left;\">    在这场你死我活的文明生存竞争中，罗辑由一开始的逃避和享乐主义逐渐意识到自己的责任心，想到了一个对抗三体文明入侵的办法。罗辑证实了宇宙文明间的黑暗森林法则，任何暴露自己位置的文明都将很快被消灭。<\/p><p style=\"text-align: left;\"> 借助于这一发现，他以向全宇宙公布三体世界的位置坐标相威胁，暂时制止了三体对太阳系的入侵，使地球与三体建立起脆弱的战略平衡。<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: center;\">                                    <img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/E9\/rAoKNV3LdKCARu-VAARp1_jpBIE886.png\" \/><\/p><p style=\"text-align: left;\"> <\/p><p style=\"text-align: left;\"><strong>关于舞台剧《三体II 黑暗森林》<\/strong><\/p><p style=\"text-align: left;\"><span style=\"color: rgb(255, 0, 0);\"><strong>历时两年  精心筹备<\/strong><\/span><\/p><p style=\"text-align: left;\">2016年6月，随着舞台剧《三体I》在上汽·上海文化广场首演大获成功，《三体II 黑暗森林》舞台剧的前期筹备工作也悄然开始。<\/p><p style=\"text-align: left;\">当年11月，Lotus Lee 未来戏剧（上海莲李文化传播有限公司）在美国纽约成立了分部，启动了全球遴选《三体II》舞台剧主创的工作。总制作人李童女士先后多次飞赴美国纽约、法国巴黎以及波兰华沙等地，和多位国际一流艺术家交流，并请对方前来国内观看《三体I》演出。经过反复沟通交流，最终于2017年10月确定了最终的主创阵容，舞台剧《三体II 黑暗森林》正式启动。<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: left;\"><span style=\"color: rgb(255, 0, 0);\"><strong>国际一线主创全面加盟<\/strong><\/span><\/p><p style=\"text-align: left;\">与《三体I》相比，《三体II黑暗森林》的主创团队全部来自海外，可以称得上当今活跃在世界艺术舞台上一线幕后制作团队：凭借音乐剧《情人》蜚声美国百老汇的法国著名舞台剧导演菲立普 · 德库弗列（Philippe Decouflé）；担任过百老汇版经典歌剧《尼伯龙根的指环》、《图兰朵》、《战争和平》等剧目舞美设计的乔治·西平(George Tsypin)；《黑客帝国》、《超凡蜘蛛侠》、《木星上行》、《海王》等片的服装设计师凯姆·巴雷特（Kym Barrett）；曾凭《大教堂》和《堕落的艺术》获得奥斯卡最佳动画短片提名波兰Platige Image Studio视效制作团队，先后成为《三体II》的主创团队。所有这些都将使《三体II黑暗森林》成为一部国际化的舞台钜制。<\/p><p style=\"text-align: left;\"><br\/><\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/40\/rAoKmV3LdKWASpxdAAUcoheQx_8703.png\" \/><\/p><p style=\"text-align: center;\"><strong>震撼现场 沉浸体验<\/strong><\/p><p><strong><br\/><\/strong><\/p><p style=\"text-align: left;\">在刘慈欣的小说原著中，《黑暗森林》的背景不仅涵盖我们生活的地球，更延伸到广袤的宇宙，而时间轴也延续到了未来二百年后。经过主创团队的共同努力下，原小说中“水滴大战”“地下城追杀”等精彩情节一一呈现。<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: center;\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/E9\/rAoKNV3LdKmAV3QgAAHXvVDOn1A554.png\" \/><\/p><p style=\"text-align: center;\"><strong>地下城机器人女服务员造型<\/strong><br\/><\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: left;\">舞台上看似简单的3个锅形卫星天线道具，实则他们的焦点处都被绑定了一只小型摄像机，在锅面上进行投影，让这些天线在一些场景中成为了简易的影像展现装置，能够灵活地配合前台的表演。3个面壁者不同的人物性格塑造，也正是靠着这“三口锅”。<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/EA\/rAoKNV3LdKyALtAHAAS7Lrwfh4Q644.png\" \/><\/p><p style=\"text-align: center;\"><strong>破壁人登场亮相<\/strong><br\/><\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: left;\">三体游戏世界中加入了极具中国特色的京剧元素，将国粹与中国顶级科幻IP的相结合，唱、念、做、打与传统舞台技巧碰撞，破壁人的亮相给观众意外惊喜。<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/40\/rAoKmV3LdLCAWQGcAAMGGizcLMU437.png\" \/><\/p><p style=\"text-align: center;\"><strong>罗辑掉入冰湖，悟出宇宙生存法则<\/strong><\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: left;\">     本剧的最大亮点当属3D眼镜，下半场，观众需戴上3D眼镜观看，凭《大教堂》和《堕落的艺术》获得奥斯卡最佳动画短片提名的波兰Platige Image Studio视效制作团队制作的“水滴大战”、“太空舰队”、“大低谷纪念碑”、“地下城世界”等场景，让观众仿佛置身现场，一起感受到了未来末日之战的震撼。这也开创了在中国大陆剧场观剧的一种全新形式。<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: left;\"><strong>媒体评论<\/strong><\/p><p style=\"text-align: left;\">“《三体II》舞台剧比第一部更忠实原著，无论是作为观众还是原作者，我都认为这次改编十分成功。”<\/p><p style=\"text-align: left;\">——《刘慈欣》<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: left;\">“我们终于有了世界水准的科幻舞台剧。”<\/p><p style=\"text-align: left;\">——《大麦戏剧》<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: left;\">“沉浸式”的的科幻视觉盛宴。<\/p><p style=\"text-align: left;\">——《CCTV》<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: left;\">“一个充满想象力、奇幻的宇宙空间，一部包罗万象且充满中国特色的舞台剧。”<\/p><p style=\"text-align: left;\">——《新民晚报》<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: left;\">“惊艳的舞台呈现让观众眼睛一亮。舞台剧《三体》已经为科幻作品的改编提供了一个范本。”<\/p><p style=\"text-align: left;\">——《青年报》<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: left;\">“整个舞台奇幻与现实交织，抽象而唯美。”<\/p><p style=\"text-align: left;\">——《北京头条》<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: left;\"><strong>观众评论<\/strong><\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/EA\/rAoKNV3LdLqAU3mjAAEIYnB9LoY433.png\" \/><\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/40\/rAoKmV3LdL6ATZAqAADgHrqqVjs885.png\" \/><\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/EA\/rAoKNV3LdMGAcw0XAADkmasXNxo354.png\" \/><\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/40\/rAoKmV3LdMSAFMavAABWDGElE_4813.png\" \/><\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/EA\/rAoKNV3LdMiAM7hgAACHb7qYnL8007.png\" \/><\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: left;\"><strong>主创团队介绍<\/strong><\/p><p style=\"text-align: left;\"><strong>主创资料<\/strong><\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: center;\"><strong>总制作\/出品人：  李 童（Lotus Lee）中国<\/strong><\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/40\/rAoKmV3LdM-AScb5AADDWN9V6O4714.png\" \/><\/p><p style=\"text-align: left;\">本科毕业于上海同济大学，后赴英国进修，获得英国诺丁汉特伦特大学（Nottingham Trent University）传媒学硕士学位。<\/p><p style=\"text-align: left;\">·       2017 福布斯中国“30 Under  30”上榜者。<\/p><p style=\"text-align: left;\">·       中欧国际商学院AMP37期毕业校友<\/p><p style=\"text-align: left;\">·       长江商学院文创+第四期学员<\/p><p style=\"text-align: left;\">·       2015年 创立上海莲李文化传播有限公司（LOTUS LEE 未来戏剧），并取得《三体》舞台剧改编权。<\/p><p style=\"text-align: left;\">·       2016年末，LOTUS LEE 未来戏剧在纽约成立海外分部，成为百老汇地区最早成立的华人制作公司<\/p><p style=\"text-align: left;\">·       2017年，未来戏剧文化基金会在纽约曼哈顿岛成立，简历深入美国演出行业各个领域的关系网络，为莲李制作积累原创IP和创意资源库。<\/p><p style=\"text-align: left;\">·       2018年5月10日  首次作为公司品牌形象大使亮相纳斯达克大屏，这是中国舞台剧新兴力量在纽约时代广场的首次亮相。<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: center;\"><strong>原著：刘慈欣（Cixin Liu）中国<\/strong><\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/EA\/rAoKNV3LdNaAToaNAAEVuLul4dk798.png\" \/><\/p><p style=\"text-align: left;\">l  中国当代科幻作家，自1980年代中期开始创作，1999年6月起在《科幻世界》杂志上发表多篇科幻小说和科幻随笔，并出版了多部长篇科幻小说，现为中国科普作家协会会员，<\/p><p style=\"text-align: left;\">l  山西省作家协会会员，阳泉市作协副主席。<\/p><p style=\"text-align: left;\">l  其代表作有长篇小说《超新星纪元》、《球状闪电》、《三体》、《三体II：黑暗森林》、《三体III：死神永生》，中短篇小说《流浪地球》、《乡村教师》、《朝闻道》等。刘慈欣目前是中国最有影响力的本土科幻作家之一。<\/p><p style=\"text-align: left;\">l  2018年11月8日，刘慈欣被授予2018年克拉克想象力服务社会奖（Clarke Award for Imagination in Service to Society），以表彰其在科幻小说创作领域做出的贡献。<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: center;\"><strong>美方编剧：肯尼·芬克( Kenny Finkle)美国<\/strong><\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/40\/rAoKmV3LdNuATShlAADfgzvfPNI881.png\" \/><\/p><p style=\"text-align: left;\">l  美国NYFA奖学金、纽约艺术委员会奖学金的获得者；<\/p><p style=\"text-align: left;\">l  曾被授予伊利诺伊大学的内部声音奖，并得到福特剧院、弗吉尼亚州舞台公司、Matt Murphy制作公司、锐利公司和机库剧院等支持的奖学金。<\/p><p style=\"text-align: left;\">l  先后获得哥伦比亚大学的剧本创作项目奖学金、纽约大学蒂什艺术学院的BFA；<\/p><p style=\"text-align: left;\">l  美国玛丽芒曼哈顿学院戏剧系兼职教授。自1999以来，一直是梦幻家园项目的教学艺术家。<\/p><p style=\"text-align: left;\">l   致力于开发一系列非传统戏剧作品。他的剧本创作包括《室内\/室外》，《一千年》，《好好活着》，《赛德.亚瑟》等，其中《室内\/室外》被收录在由斯密斯和克劳斯著作的《2006最佳剧本集》中。<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: center;\"><strong>中方编剧：顾   奕（Yi Gu）中国<\/strong><\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/EA\/rAoKNV3LdOGAIje5AAGtF2zuITQ294.png\" \/><\/p><p style=\"text-align: left;\">毕业于上海戏剧学院戏文系。入行师从香港著名导演黄泰来&李惠民，先后在李惠民工作室、TVB、华谊兄弟、伊能静工作室等知名影视团队\/公司担任编剧。<\/p><p style=\"text-align: left;\">编剧舞台剧作品有《三体I》、《牛虻》、《在彼岸歌唱》等；电视剧作品有《一生为奴》（TVB）、《单身公主相亲记》（湖南卫视）、《川西剿匪记》（四川卫视&重庆卫视）等；院线电影作品有《疯狂的GPS》、《我是女王》等。<\/p><p style=\"text-align: left;\">其中，话剧《牛虻》入围新浪首届文学大赛最佳剧本；音乐剧《在彼岸歌唱》获第17届东方风云榜最佳风格突破奖；；2015年，创作《三体》舞台剧版并得到刘慈电视剧《单身公主相亲记》2010年9-10月全国收视第一、全网点击第一，入选2010年度优酷十大影视剧，2011年3月，《单身公主相亲记》登陆 Hulu，成为首部进入美国主流视频网站的内地剧欣高度肯定。<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: center;\"><strong>导演：菲立普 · 德库弗列(Philippe Decouflé)法国<\/strong><\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/40\/rAoKmV3LdOWAc0tHAAKtlO_10p0547.png\" \/><\/p><p style=\"text-align: left;\">l  法国著名的舞台剧导演，编剧，制作人；<\/p><p style=\"text-align: left;\">l  从1983年第一部作品《Vague café》面世至今，菲立普·德库弗列在国际舞台剧领域拥有超过35年的工作经验。他因成功执导了1992年冬季奥林匹克运动会开闭幕式的舞蹈而广为人知；<\/p><p style=\"text-align: left;\">l  2011年，菲立普·德库弗列受太阳马戏团邀约导演了美国戏剧《Iris》，该戏为国际合作作品，由日本、中国和法国艺术家共同参与；<\/p><p style=\"text-align: left;\">l  2012年，法国巴黎的演艺剧场为菲立普·德库弗列举办了一个大型的专题多媒体互动视频装置展，这个展览是当代和未来艺术的结合体，为之后创作多媒体舞台剧奠定了基础；<\/p><p style=\"text-align: left;\">l  2016年凭借代表作品百老汇音乐剧《情人》，成为首位有作品在42街区演出的法国导演。《情人》将音乐剧与马戏表演完美融合，并运用多媒体，无人机等高科技装置，成为太阳马戏团在百老汇舞台的创意首秀；<\/p><p style=\"text-align: left;\">l  主要作品：《情人》、《疯马歌舞秀》、《脸》（荣获2009年第46届台湾电影金马奖最佳美术设计和造型设计）、《Iris》、舞剧表演《WieBo》、《游泳的母鸡和飞翔的公鸡》等。<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: center;\"><strong>舞美设计师：乔治·西平（George Tsypin）美国<\/strong><\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/EA\/rAoKNV3LdOmAI-MuAAFGQETBrQo300.png\" \/><\/p><p style=\"text-align: left;\">l  当今世界上最具影响力的舞台美术设计家之一；<\/p><p style=\"text-align: left;\">l  曾在莫斯科学习建筑学，美国学习剧场设计，获得无数的奖；。<\/p><p style=\"text-align: left;\">l  曾经为许多著名导演工作多年，如Julie Taymor, Peter Sellars, Francesca Zambello, Jurgen Flimm and Andrey Konchalovsky，并始终与指挥家Valery Gergiev保持着紧密联系；<\/p><p style=\"text-align: left;\">l  他的著作《乔治·西平歌剧工厂：空白领域的建筑》（GEORGE TSYPIN OPERA FACTORY: Building in the Black Void），2005年10月普林斯顿建筑出版社出版发行；<\/p><p style=\"text-align: left;\">l  他的雕塑和装置艺术作品比较多，创作风格独特、大气磅礴的舞台设计作品出现于世界各地的歌剧、话剧和音乐会的舞台上；<\/p><p style=\"text-align: left;\">l  舞美设计代表作品有：《蜘蛛侠：消灭黑暗》(托尼奖提名)、百老汇经典歌剧《西区故事》、经典歌剧《尼伯龙根的指环》、普契尼最伟大的歌剧作品《图兰朵》、歌剧《战争与和平》、《在夏日房间里》（纽约戏剧委员会奖提名）、《小美人鱼》（纽约戏剧委员会奖提名）。<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: center;\"><strong>执行导演：滕晓鹏（Simone Teng）中国<\/strong><\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/40\/rAoKmV3LdO2AXqRDAAIIY1P1WLE518.png\" \/><\/p><p style=\"text-align: left;\">博士、演员、导演，毕业于上海戏剧学院<\/p><p style=\"text-align: left;\">代表作品：《像风一样离去》、《长大》、《裂合边缘》、《我爱女导演》、《新月饭店》、《藏海花》、《枕头人》、《青春的足迹》、《国民大生活》、《三体I 地球往事》<\/p><p style=\"text-align: justify;\"> <\/p><p style=\"text-align: center;\"><strong>服装设计师：凯姆·巴雷特（Kym·Barrett ）美国<\/strong><\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/EA\/rAoKNV3LdPKAYiDwAAE3DgPwOvs604.png\" \/><\/p><p style=\"text-align: left;\">l  参与了2014年索契冬奥会开闭幕式服装的设计工作，设计作品曾被5次提名，1次获奖；<\/p><p style=\"text-align: left;\">l  《云图》（Cloud Atlas）(2012) 获得了第63届德国电影奖最佳服装设计奖，并提名第17届金卫星奖和第18届评论家选择电影奖的最佳服装设计；<\/p><p style=\"text-align: left;\">l  服装设计电影代表作品有： 《罗密欧与朱丽叶》（1996）、《黑客帝国》、《木星上行》、《黄石的孩子》(2008)、 《来自地狱》（2001）、《龙骑士》(2006)、《青蜂侠》(2011)、《超凡蜘蛛侠》(2012)、《鬼影人》（Gothika）、《夺金三王》（Three Kings）、《零办法》（Zero Effect）和《流言蜚语》（Rumor Has It）；<\/p><p style=\"text-align: left;\">l  服装设计舞台剧代表作品有：《炼金术士》（The Alchemist）、《亨利五世》（Henry V）、《禁闭》（Confinement）、《唐山大地震》（Aftershock）等。<\/p><p style=\"text-align: center;\"><strong> <\/strong><\/p><p style=\"text-align: center;\"><strong>特效制作：PLATIGE IMAGE（波兰）<\/strong><\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/40\/rAoKmV3LdPiADo7oAAAgzSQp5Mg991.png\" \/><\/p><p style=\"text-align: left;\">l  波兰最大的3D动画、视觉特效和后期制作公司，有15年视效经验，主要为一些大客户比如乐高，金霸王，特斯科等制作电视广告；<\/p><p style=\"text-align: left;\">l  e已经获得200多个奖项和荣誉，其作品已被业界认可为最高水平，并以其非凡的创造力和卓越的工作质量成为全球闻名的团队；<\/p><p style=\"text-align: left;\">l  代表作品：《大教堂》（奥斯卡最佳动画短片奖提名）、《罗密欧与朱丽叶》、《彼得潘》、《堕落的艺术》（英国影视艺术学院奖BAFTA）、3D音乐剧《波拉·尼格丽》、《天空》。<\/p><p style=\"text-align: left;\"><br\/><\/p><p style=\"text-align: left;\"><strong>出品方<\/strong><\/p><p style=\"text-align: left;\"><strong>Lotus Lee未来戏剧<br style=\"text-align: left;\"\/> （上海莲李文化传播有限公司）<\/strong><\/p><p style=\"text-align:center\"><img       src=\"https:\/\/image.juooo.com\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/group1\/M00\/03\/EA\/rAoKNV3LdPuAYgATAABictkyoVc006.png\" \/><\/p><p style=\"text-align: left;\">Lotus Lee未来戏剧(上海莲李文化传播有限公司)成立于2015年, 是国内首个以多 媒体舞台剧为主要业务方向的制作公司。公司致力于将全球前沿科技应用于舞台 演出，实现优质内容的高端视觉转化，为观众创造非凡的现场舞台体验。<\/p><p style=\"text-align: left;\">公司熟悉国际戏剧市场运作规律，秉持“亚洲内容、 国际表述”的原则，通过整 合海内外优势资源，实现中外团队强强联合，打造“IP蓄水池-国际创作包装-优 势巡演运营-经典剧目”的一体化商业运作模式，构建完整的、可持续生产经典 作品的自孵化机制。<\/p><p style=\"text-align: left;\">公司目前旗下拥有 Lotus Lee未来戏剧 与 Misshow 两大品牌，专注于舞台剧市场优质头部内容，是超级科幻IP《三体》全系列作品舞台剧唯一制作方。<\/p><p><br style=\"text-align: left;\"\/><\/p>"
+            },
+            "real_name": {
+                "is_real_name_certification": 0,
+                "student_certification_limit_ticket_num": 0,
+                "desc": "本项目需要实名制购票，请先进行实名制认证"
+            },
+            "tips": {
+                "desc": "1.1米以上凭票入场，1.1米以下儿童谢绝入场，凭票入场，对号入座"
+            },
+            "cate_parent_id": 37,
+            "cate_child_id": 67,
+            "method": 1,
+            "state": 1,
+            "is_auth": 1,
+            "auth_password": "0",
+            "is_abolish": 0,
+            "show_time_start": 1602417600,
+            "show_time_end": 1633953600,
+            "low_price": "0.00",
+            "high_price": "0.00",
+            "important_note": "<p style=\"text-align: center;\"><img       src=\"https:\/\/image.juooo.com\/group1\/M00\/00\/04\/rBAAI19gM8yAPN4WAANRrkAK-ro805.png\" \/><\/p>",
+            "short_name": "《三体Ⅱ黑暗森林》-深圳",
+            "channel_id": 0,
+            "tour_id": 0,
+            "is_pending": 1,
+            "icon": "<i class=\"logo_i\"><\/i>",
+            "button_status": 3,
+            "is_refund_insurance": 0,
+            "discount_max_price": 0,
+            "support": {
+                "list": [
+                    "可选座",
+                    "电子票"
+                ]
+            },
+            "show_notice": {
+                "list": [
+                    {
+                        "title": "配送说明",
+                        "desc": "本演出不支持修改配送方式及配送信息服务，请务必于下单前检查并确认好收货信息。为避免快递不能及时送达，距本演出开场时间少于3天，不提供快递配送服务，您可以选择电子票或者演出现场取票（电子票不提供纸质票品，电子票与现场取票均不支持变更收货人信息）"
+                    },
+                    {
+                        "title": "订票说明",
+                        "desc": "网上订购请提前选择您意欲购买的演出和票品价位，根据流程提示完成订票"
+                    }
+                ]
+            }
+        },
+        "item_list": [
+            {
+                "id": 110035,
+                "project_time": "2020.10.10 20:00(延期，时间待定)",
+                "session_time": "",
+                "is_through_ticket": 1,
+                "show_time": 1633867200,
+                "project_id": 8755,
+                "session_id": 17789,
+                "pre_sell_start_time": 0,
+                "sell_start_time": 1574393400,
+                "pre_sell_count_time": 0,
+                "sell_count_time": 0,
+                "is_sche_off_shelf": 0,
+                "is_pre": 1,
+                "pre_time": 1574389800,
+                "pre_end_time": 1574393400,
+                "pre_time_hot": 1574060813,
+                "sale_status": 4,
+                "is_abolish": 0,
+                "is_vip": 1,
+                "vip_limit_num": 0,
+                "ticket_url": "https:\/\/m.juooo.com\/seatticket\/area\/110035",
+                "is_online_seat": 1,
+                "is_real_name_certification": 0,
+                "certification_limit_ticket_num": 0,
+                "e_ticket": 1,
+                "card_ticket_url": "https:\/\/m.juooo.com\/seatticket\/area\/110035?isFamilyCard=1&rid=%s",
+                "pre_shop_limit_quantity": 4,
+                "pre_add_status": 0,
+                "channel_id": 0,
+                "alias": ""
+            }
+        ],
+        "vip": {
+            "pre": [],
+            "discount": [],
+            "ticket_vip_list": []
+        },
+        "now_time": 1601361595,
+        "url_data": {
+            "certification_url": "https:\/\/m.juooo.com\/myjuooo\/myRealNameCertification",
+            "more_show_list_url": "https:\/\/m.juooo.com\/show\/showsLibrary?cid=1&caid=37",
+            "plus_card_url": "https:\/\/m.juooo.com\/Cardproduct\/showCardInfo\/card_group_id\/253",
+            "venue_url": "https:\/\/apis.map.qq.com\/uri\/v1\/marker?marker=coord:22.530154177053,113.9169599502;title:南山文体中心剧院大剧院;addr:南山区南山大道南头街62号&referer=UZKBZ-IAOCU-BPCVT-BRP65-OMCE5-GZBZJ",
+            "vip_url": "https:\/\/m.juooo.com\/vip\/index\/1"
+        },
+        "share_data": {
+            "share_title": "【演出延期】3D科幻舞台剧《三体Ⅱ黑暗森林》-深圳站",
+            "share_desc": "根据刘慈欣同名科幻小说改编 3D科幻舞台剧《三体II 黑暗森林》",
+            "share_pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/40\/rAoKmV3LdBWAImHFAACB1n-G-Nk921.jpg"
+        }
+    }
+}

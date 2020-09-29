@@ -1,0 +1,120 @@
+{
+    "code": "200",
+    "msg": "ok",
+    "data": {
+        "id": 3,
+        "name": "聚橙制作 | 宫崎骏经典·暖心成长音乐剧《魔女宅急便》",
+        "mobile_col_img": "https:\/\/image.juooo.com\/group1\/M00\/00\/02\/rBAAI19XUwCAMM2fAACX3iQYe5s860.jpg",
+        "start_time": 1590751800,
+        "end_time": 1607254200,
+        "sch_num": 24,
+        "show_num": 24,
+        "list": [
+            {
+                "show_id": 42814,
+                "venue_id": 184,
+                "start_time": 1590751800,
+                "end_time": 1591097400,
+                "min_price": 100,
+                "sch_id": 114634,
+                "sch_name": " 聚橙制作 | 宫崎骏经典·暖心成长音乐剧《魔女宅急便》-上海站",
+                "city_id": 4,
+                "city_name": "上海",
+                "venue_name": "人民大舞台",
+                "is_end": 1
+            },
+            {
+                "show_id": 43338,
+                "venue_id": 2532,
+                "start_time": 1601188200,
+                "end_time": 1601292600,
+                "min_price": 30,
+                "sch_id": 116297,
+                "sch_name": "华蒙庄园特约|宫崎骏经典·暖心成长音乐剧《魔女宅急便》-兴安盟",
+                "city_id": 10149,
+                "city_name": "兴安盟",
+                "venue_name": "乌兰牧骑宫大剧院",
+                "is_end": 1
+            },
+            {
+                "show_id": 43339,
+                "venue_id": 2400,
+                "start_time": 1601638200,
+                "end_time": 1601724600,
+                "min_price": 99,
+                "sch_id": 116254,
+                "sch_name": "聚橙制作 | 宫崎骏经典·暖心成长音乐剧《魔女宅急便》-石家庄",
+                "city_id": 36,
+                "city_name": "石家庄",
+                "venue_name": "石家庄大剧院-大剧场",
+                "is_end": 0
+            },
+            {
+                "show_id": 43340,
+                "venue_id": 2639,
+                "start_time": 1601964000,
+                "end_time": 1601964000,
+                "min_price": 80,
+                "sch_id": 116298,
+                "sch_name": "聚橙制作 | 宫崎骏经典·暖心成长音乐剧《魔女宅急便》-固安",
+                "city_id": 10078,
+                "city_name": "廊坊",
+                "venue_name": "固安大剧院",
+                "is_end": 0
+            },
+            {
+                "show_id": 43337,
+                "venue_id": 3536,
+                "start_time": 1602675000,
+                "end_time": 1602761400,
+                "min_price": 80,
+                "sch_id": 116285,
+                "sch_name": "聚橙制作 | 宫崎骏经典·暖心成长音乐剧《魔女宅急便》-安康",
+                "city_id": 10201,
+                "city_name": "安康",
+                "venue_name": "安康汉江大剧院(大剧场)",
+                "is_end": 0
+            },
+            {
+                "show_id": 43336,
+                "venue_id": 3237,
+                "start_time": 1605007800,
+                "end_time": 1605094200,
+                "min_price": 80,
+                "sch_id": 116293,
+                "sch_name": "聚橙制作 | 宫崎骏经典·暖心成长音乐剧《魔女宅急便》-舟山",
+                "city_id": 10024,
+                "city_name": "舟山",
+                "venue_name": "舟山普陀大剧院（大剧场）\t\t\t",
+                "is_end": 0
+            },
+            {
+                "show_id": 43343,
+                "venue_id": 2543,
+                "start_time": 1605335400,
+                "end_time": 1605353400,
+                "min_price": 126,
+                "sch_id": 116387,
+                "sch_name": "南京市文化消费政府补贴剧目|宫崎骏经典 暖心成长音乐剧《魔女宅急便》-南京站",
+                "city_id": 54,
+                "city_name": "南京",
+                "venue_name": "江苏荔枝大剧院",
+                "is_end": 0
+            },
+            {
+                "show_id": 43335,
+                "venue_id": 1078,
+                "start_time": 1607148000,
+                "end_time": 1607254200,
+                "min_price": 180,
+                "sch_id": 116257,
+                "sch_name": "聚橙制作 | 宫崎骏经典·暖心成长音乐剧《魔女宅急便》-深圳",
+                "city_id": 1,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院大剧院",
+                "is_end": 0
+            }
+        ],
+        "city_num": 8
+    }
+}

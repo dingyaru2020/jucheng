@@ -1,0 +1,265 @@
+{
+    "code": "200",
+    "msg": "ok",
+    "data": {
+        "list": [
+            {
+                "id": 8,
+                "name": "“绽放”2020福田区第七届主题文化馆艺术节",
+                "mobile_col_img": "https:\/\/image.juooo.com\/group1\/M00\/00\/05\/rBAAFF9tck6AeGJjAACJ3jTuTQE407.jpg",
+                "start_time": 1600428600,
+                "end_time": 1602329400,
+                "citys": [
+                    {
+                        "id": 1,
+                        "name": "深圳",
+                        "sch_id": 116322,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/116322",
+                        "start_time": 1600428600,
+                        "end_time": 1600428600
+                    },
+                    {
+                        "id": 1,
+                        "name": "深圳",
+                        "sch_id": 116332,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/116332",
+                        "start_time": 1600774200,
+                        "end_time": 1600774200
+                    },
+                    {
+                        "id": 1,
+                        "name": "深圳",
+                        "sch_id": 116347,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/116347",
+                        "start_time": 1601033400,
+                        "end_time": 1601119800
+                    },
+                    {
+                        "id": 1,
+                        "name": "深圳",
+                        "sch_id": 116385,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/116385",
+                        "start_time": 1601379000,
+                        "end_time": 1601379000
+                    },
+                    {
+                        "id": 1,
+                        "name": "深圳",
+                        "sch_id": 116386,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/116386",
+                        "start_time": 1601465400,
+                        "end_time": 1601465400
+                    },
+                    {
+                        "id": 1,
+                        "name": "深圳",
+                        "sch_id": 116394,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/116394",
+                        "start_time": 1602329400,
+                        "end_time": 1602329400
+                    }
+                ],
+                "sch_num": 7,
+                "min_price": 30,
+                "detail_url": "https:\/\/m.juooo.com\/tour\/tourshowinfo?sid=8"
+            },
+            {
+                "id": 7,
+                "name": "聚橙制作|百老汇爱情音乐轻喜剧《第一次约会》中文版",
+                "mobile_col_img": "https:\/\/image.juooo.com\/group1\/M00\/00\/03\/rBAAI19a9JeAb4p7AACPgzyIlwU819.jpg",
+                "start_time": 1604748600,
+                "end_time": 1608982200,
+                "citys": [
+                    {
+                        "id": 10024,
+                        "name": "舟山",
+                        "sch_id": 116400,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/116400",
+                        "start_time": 1604748600,
+                        "end_time": 1604835000
+                    },
+                    {
+                        "id": 36,
+                        "name": "石家庄",
+                        "sch_id": 116398,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/116398",
+                        "start_time": 1605958200,
+                        "end_time": 1606028400
+                    },
+                    {
+                        "id": 10201,
+                        "name": "安康",
+                        "sch_id": 116401,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/116401",
+                        "start_time": 1606649400,
+                        "end_time": 1606735800
+                    },
+                    {
+                        "id": 4,
+                        "name": "上海",
+                        "sch_id": 111998,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/111998",
+                        "start_time": 1607513400,
+                        "end_time": 1607859000
+                    },
+                    {
+                        "id": 1,
+                        "name": "深圳",
+                        "sch_id": 110775,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/110775",
+                        "start_time": 1608291000,
+                        "end_time": 1608444000
+                    },
+                    {
+                        "id": 3,
+                        "name": "广州",
+                        "sch_id": 111759,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/111759",
+                        "start_time": 1608723000,
+                        "end_time": 1608982200
+                    }
+                ],
+                "sch_num": 21,
+                "min_price": 80,
+                "detail_url": "https:\/\/m.juooo.com\/tour\/tourshowinfo?sid=7"
+            },
+            {
+                "id": 3,
+                "name": "聚橙制作 | 宫崎骏经典·暖心成长音乐剧《魔女宅急便》",
+                "mobile_col_img": "https:\/\/image.juooo.com\/group1\/M00\/00\/02\/rBAAI19XUwCAMM2fAACX3iQYe5s860.jpg",
+                "start_time": 1590751800,
+                "end_time": 1607254200,
+                "citys": [
+                    {
+                        "id": 4,
+                        "name": "上海",
+                        "sch_id": 114634,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/114634",
+                        "start_time": 1590751800,
+                        "end_time": 1591097400
+                    },
+                    {
+                        "id": 10149,
+                        "name": "兴安盟",
+                        "sch_id": 116297,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/116297",
+                        "start_time": 1601188200,
+                        "end_time": 1601292600
+                    },
+                    {
+                        "id": 36,
+                        "name": "石家庄",
+                        "sch_id": 116254,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/116254",
+                        "start_time": 1601638200,
+                        "end_time": 1601724600
+                    },
+                    {
+                        "id": 10078,
+                        "name": "廊坊",
+                        "sch_id": 116298,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/116298",
+                        "start_time": 1601964000,
+                        "end_time": 1601964000
+                    },
+                    {
+                        "id": 10201,
+                        "name": "安康",
+                        "sch_id": 116285,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/116285",
+                        "start_time": 1602675000,
+                        "end_time": 1602761400
+                    },
+                    {
+                        "id": 10024,
+                        "name": "舟山",
+                        "sch_id": 116293,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/116293",
+                        "start_time": 1605007800,
+                        "end_time": 1605094200
+                    },
+                    {
+                        "id": 54,
+                        "name": "南京",
+                        "sch_id": 116387,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/116387",
+                        "start_time": 1605335400,
+                        "end_time": 1605353400
+                    },
+                    {
+                        "id": 1,
+                        "name": "深圳",
+                        "sch_id": 116257,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/116257",
+                        "start_time": 1607148000,
+                        "end_time": 1607254200
+                    }
+                ],
+                "sch_num": 24,
+                "min_price": 30,
+                "detail_url": "https:\/\/m.juooo.com\/tour\/tourshowinfo?sid=3"
+            },
+            {
+                "id": 2,
+                "name": "聚橙制作 | 法语音乐剧《摇滚红与黑》",
+                "mobile_col_img": "https:\/\/image.juooo.com\/group1\/M00\/04\/3E\/rAoKNV59rlWAUODrAABlWN_fCvM347.jpg",
+                "start_time": 1597318200,
+                "end_time": 1640880000,
+                "citys": [
+                    {
+                        "id": 4,
+                        "name": "上海",
+                        "sch_id": 110896,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/110896",
+                        "start_time": 1597318200,
+                        "end_time": 1609414200
+                    },
+                    {
+                        "id": 3,
+                        "name": "广州",
+                        "sch_id": 110884,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/110884",
+                        "start_time": 1598614200,
+                        "end_time": 1609414200
+                    },
+                    {
+                        "id": 1,
+                        "name": "深圳",
+                        "sch_id": 110886,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/110886",
+                        "start_time": 1599132600,
+                        "end_time": 1609414200
+                    },
+                    {
+                        "id": 6,
+                        "name": "成都",
+                        "sch_id": 110830,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/110830",
+                        "start_time": 1599823800,
+                        "end_time": 1609414200
+                    },
+                    {
+                        "id": 51,
+                        "name": "西安",
+                        "sch_id": 110879,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/110879",
+                        "start_time": 1600429500,
+                        "end_time": 1609415100
+                    },
+                    {
+                        "id": 11,
+                        "name": "杭州",
+                        "sch_id": 110902,
+                        "sch_url": "https:\/\/m.juooo.com\/ticket\/110902",
+                        "start_time": 1601638200,
+                        "end_time": 1640880000
+                    }
+                ],
+                "sch_num": 32,
+                "min_price": 80,
+                "detail_url": "https:\/\/m.juooo.com\/tour\/tourshowinfo?sid=2"
+            }
+        ],
+        "more_url": "https:\/\/m.juooo.com\/touring"
+    }
+}

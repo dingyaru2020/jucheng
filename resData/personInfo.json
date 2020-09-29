@@ -1,0 +1,29 @@
+{
+    "code": "200",
+    "msg": "ok",
+    "data": {
+        "vip_info": [
+            {
+                "vip_state": 0
+            }
+        ],
+        "coupon_info": {
+            "total": "0"
+        },
+        "plus_info": {
+            "group_id": 253,
+            "is_plus": 0
+        },
+        "basic_info": {
+            "scores": 0,
+            "user_money": "0",
+            "photo": "https:\/\/image.juooo.com\/group1\/M00\/03\/6F\/rAoKNV0XF2uABEtSAAANUrP00o0602.png",
+            "nick_name": "橙子",
+            "mobile": "17301625965",
+            "email": "",
+            "uid": 6919904
+        },
+        "now_time": 1601361982,
+        "is_login": 1
+    }
+}

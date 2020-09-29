@@ -1,0 +1,34 @@
+{
+    "code": "200",
+    "msg": "ok",
+    "data": {
+        "hots_show_list": [
+            {
+                "show_name": "聚橙制作|百老汇爱情音乐轻喜剧《第一次约会》中文版-广州站",
+                "schedular_url": "https:\/\/m.juooo.com\/ticket\/111759",
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/73\/rAoKmV4Fwz2AYGibAABBH49ix9g062.jpg"
+            },
+            {
+                "show_name": "2020第七届城市戏剧节 《涂红》-石家庄站",
+                "schedular_url": "https:\/\/m.juooo.com\/ticket\/111609",
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/6C\/rAoKmV4AZ3GAK-xpAABsQm0qZyQ219.jpg"
+            },
+            {
+                "show_name": "聚橙制作|百老汇爱情音乐轻喜剧《第一次约会》中文版-深圳站",
+                "schedular_url": "https:\/\/m.juooo.com\/ticket\/110775",
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/5B\/rAoKmV3o3tCAPwNVAABC0NFh6-0905.jpg"
+            },
+            {
+                "show_name": "2020年世界经典原版音乐剧《猫》CATS ",
+                "schedular_url": "https:\/\/m.juooo.com\/ticket\/107709",
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/1F\/rAoKmV2QbtKAPgkwAAArui1D-98696.jpg"
+            },
+            {
+                "show_name": "四川人民艺术剧院-话剧《苏东坡》-石家庄",
+                "schedular_url": "https:\/\/m.juooo.com\/ticket\/109024",
+                "pic": "https:\/\/image.juooo.com\/\/group1\/M00\/03\/34\/rAoKmV22uICAQ2WLAAFPaGvA5rE897.jpg"
+            }
+        ],
+        "more_url": "https:\/\/m.juooo.com\/show\/showsLibrary"
+    }
+}

@@ -1,0 +1,99 @@
+{
+    "code": "200",
+    "msg": "ok",
+    "data": {
+        "priorList": [],
+        "exclusiveList": {
+            "list": [],
+            "time": -1,
+            "timeType": 1
+        },
+        "discountList": [
+            {
+                "schedular_id": 116399,
+                "schedular_name": "音乐剧《第一次约会》-舟山站",
+                "city_name": "舟山",
+                "venue_name": "舟山普陀大剧院（大剧场）",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/00\/05\/rBAAI19xl-yAZpN0AAB1YM478bo499.jpg",
+                "end_time": "10\/10 23:59",
+                "min_discount": 5,
+                "date": "11\/07 - 11\/08",
+                "week": "",
+                "max_price": 480,
+                "min_price": 280
+            },
+            {
+                "schedular_id": 116381,
+                "schedular_name": "【小橙堡】经典成长童话《三只小猪》-固安站",
+                "city_name": "廊坊",
+                "venue_name": "固安大剧院",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/D5\/rAoKNV2nwraAQfEkAACcamyKID0202.jpg",
+                "end_time": "11\/14 15:00",
+                "min_discount": 5,
+                "date": "11\/14",
+                "week": "周六",
+                "max_price": 80,
+                "min_price": 30
+            },
+            {
+                "schedular_id": 116383,
+                "schedular_name": "【小橙堡】浪漫经典童话剧《灰姑娘》-固安站",
+                "city_name": "廊坊",
+                "venue_name": "固安大剧院",
+                "pic": "https:\/\/image.juooo.com\/uploads\/show\/20150923095102358.jpg",
+                "end_time": "12\/12 15:00",
+                "min_discount": 5,
+                "date": "12\/12",
+                "week": "周六",
+                "max_price": 80,
+                "min_price": 30
+            }
+        ],
+        "allList": [
+            {
+                "schedular_id": 116399,
+                "schedular_name": "音乐剧《第一次约会》-舟山站",
+                "city_name": "舟山",
+                "venue_name": "舟山普陀大剧院（大剧场）",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/00\/05\/rBAAI19xl-yAZpN0AAB1YM478bo499.jpg",
+                "end_time": "10\/10 23:59",
+                "min_discount": 5,
+                "date": "11\/07 - 11\/08",
+                "week": "",
+                "max_price": 480,
+                "min_price": 280,
+                "type": 2
+            },
+            {
+                "schedular_id": 116381,
+                "schedular_name": "【小橙堡】经典成长童话《三只小猪》-固安站",
+                "city_name": "廊坊",
+                "venue_name": "固安大剧院",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/D5\/rAoKNV2nwraAQfEkAACcamyKID0202.jpg",
+                "end_time": "11\/14 15:00",
+                "min_discount": 5,
+                "date": "11\/14",
+                "week": "周六",
+                "max_price": 80,
+                "min_price": 30,
+                "type": 2
+            },
+            {
+                "schedular_id": 116383,
+                "schedular_name": "【小橙堡】浪漫经典童话剧《灰姑娘》-固安站",
+                "city_name": "廊坊",
+                "venue_name": "固安大剧院",
+                "pic": "https:\/\/image.juooo.com\/uploads\/show\/20150923095102358.jpg",
+                "end_time": "12\/12 15:00",
+                "min_discount": 5,
+                "date": "12\/12",
+                "week": "周六",
+                "max_price": 80,
+                "min_price": 30,
+                "type": 2
+            }
+        ],
+        "time": -1,
+        "timeType": 1
+    }
+}

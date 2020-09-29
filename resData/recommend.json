@@ -1,0 +1,1004 @@
+{
+    "code": "200",
+    "msg": "ok",
+    "data": {
+        "list": [
+            {
+                "schedular_id": 114256,
+                "city_name": "广州",
+                "venue_name": "广东艺术剧院（原广东演艺中心大剧院）",
+                "name": "【档期调整】聚橙制作|百老汇爱情音乐轻喜剧《第一次约会》中文版-广州站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/73\/rAoKmV4Fwz2AKrc-AAB1ZkYSsmw114.jpg",
+                "min_price": "100",
+                "max_price": "580",
+                "show_time_top": "12\/23 - 12\/26",
+                "show_time_bottom": "",
+                "start_show_time": "2020.12.23 19:30",
+                "end_show_time": "2020.12.26 19:30",
+                "start_show_timestamp": 1608723000,
+                "end_show_timestamp": 1608982200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/114256",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "套票"
+                ],
+                "cate_parent_id": 79,
+                "show_time_data": [
+                    20201223,
+                    20201224,
+                    20201225,
+                    20201226
+                ],
+                "show_id": 41855,
+                "intro": "百老汇人气爱情音乐喜剧《FIRSTDATE》改编作品，中文版全新升级制作"
+            },
+            {
+                "schedular_id": 111475,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院大剧院",
+                "name": "【演出延期】3D科幻舞台剧《三体Ⅱ黑暗森林》-深圳站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/40\/rAoKmV3LdBWAImHFAACB1n-G-Nk921.jpg",
+                "min_price": "0",
+                "max_price": "0",
+                "show_time_top": "10\/10 - 10\/11",
+                "show_time_bottom": "",
+                "start_show_time": "2020.10.10 20:00",
+                "end_show_time": "2021.10.11 20:00",
+                "start_show_timestamp": 1602331200,
+                "end_show_timestamp": 1633953600,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/111475",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座"
+                ],
+                "cate_parent_id": 37,
+                "show_time_data": [
+                    20211010,
+                    20201010,
+                    20211011,
+                    20201011
+                ],
+                "show_id": 41170,
+                "intro": "根据刘慈欣同名科幻小说改编 3D科幻舞台剧《三体II 黑暗森林》"
+            },
+            {
+                "schedular_id": 115342,
+                "city_name": "上海",
+                "venue_name": "上海当代艺术馆 ",
+                "name": "MoCA动漫美学双年展：史努比七十周年 上海当代艺术馆",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/A8\/rAoKmV7nRciAO2aSAAJqSqBtXA8825.jpg",
+                "min_price": "40",
+                "max_price": "80",
+                "show_time_top": "09\/30",
+                "show_time_bottom": "",
+                "start_show_time": "2020.07.04 10:00",
+                "end_show_time": "2020.09.30 18:00",
+                "start_show_timestamp": 1593828000,
+                "end_show_timestamp": 1601460000,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/115342",
+                "method": 0,
+                "method_icon": "",
+                "tag_icon": "",
+                "support_desc": [
+                    "电子票"
+                ],
+                "cate_parent_id": 99,
+                "show_time_data": [
+                    20200930,
+                    20200704
+                ],
+                "show_id": 43031,
+                "intro": null
+            },
+            {
+                "schedular_id": 114460,
+                "city_name": "成都",
+                "venue_name": "成都国际剧院",
+                "name": "阿加莎悬疑推理名剧展演-话剧《谋杀启事》成都站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/99\/rAoKmV64pmuAdCHtAAH45lri6ck840.jpg",
+                "min_price": "120",
+                "max_price": "480",
+                "show_time_top": "11\/07 - 11\/08",
+                "show_time_bottom": "",
+                "start_show_time": "2020.11.07 19:30",
+                "end_show_time": "2020.11.08 19:30",
+                "start_show_timestamp": 1604748600,
+                "end_show_timestamp": 1604835000,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/114460",
+                "method": 0,
+                "method_icon": "",
+                "tag_icon": "",
+                "support_desc": [],
+                "cate_parent_id": 37,
+                "show_time_data": [
+                    20201107,
+                    20201108
+                ],
+                "show_id": 42747,
+                "intro": null
+            },
+            {
+                "schedular_id": 116258,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院大剧院",
+                "name": "聚橙制作 | 宫崎骏经典·暖心成长音乐剧《魔女宅急便》-深圳",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/00\/01\/rBAAI19W6WeAQ5EtAANNlbD6FdU622.png",
+                "min_price": "180",
+                "max_price": "580",
+                "show_time_top": "12\/05 - 12\/06",
+                "show_time_bottom": "",
+                "start_show_time": "2020.12.05 14:00",
+                "end_show_time": "2020.12.06 19:30",
+                "start_show_timestamp": 1607148000,
+                "end_show_timestamp": 1607254200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/116258",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "限时9折起"
+                ],
+                "cate_parent_id": 79,
+                "show_time_data": [
+                    20201205,
+                    20201206
+                ],
+                "show_id": 43335,
+                "intro": "音乐剧《魔女宅急便》是根据国际安徒生奖得主、日本著名作家角野荣子的同名童话小说改编。国际安徒生评委会评价原作《魔女宅急便》童话小说拥有着“饱含无法言喻的温暖与热忱，充满了令人惊奇的魅力”。这部世界经典"
+            },
+            {
+                "schedular_id": 110379,
+                "city_name": "西安",
+                "venue_name": "陕西大剧院-歌剧厅",
+                "name": "【演出延期】聚橙出品 | 世界经典原版音乐剧《猫》CATS-西安站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/4F\/rAoKmV3coBSACvRgAAA_JxjLZt0032.jpg",
+                "min_price": "180",
+                "max_price": "1280",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.07.24 19:45",
+                "end_show_time": "2020.12.31 19:45",
+                "start_show_timestamp": 1595591100,
+                "end_show_timestamp": 1609415100,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/110379",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "可选座",
+                    "套票"
+                ],
+                "cate_parent_id": 79,
+                "show_time_data": [
+                    20201231,
+                    20200725,
+                    20200726,
+                    20200724,
+                    20200728
+                ],
+                "show_id": 41299,
+                "intro": "2020年，感动不说再见！"
+            },
+            {
+                "schedular_id": 109486,
+                "city_name": "杭州",
+                "venue_name": "杭州大剧院",
+                "name": "【演出延期】 2020年杨丽萍大型舞剧《平潭映象》--杭州站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/3C\/rAoKmV3FIN6AELP5AACbybZ2kUw814.jpg",
+                "min_price": "280",
+                "max_price": "1080",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.06.17 19:30",
+                "end_show_time": "2020.12.31 19:30",
+                "start_show_timestamp": 1592393400,
+                "end_show_timestamp": 1609414200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/109486",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "套票"
+                ],
+                "cate_parent_id": 86,
+                "show_time_data": [
+                    20201231,
+                    20200617
+                ],
+                "show_id": 40969,
+                "intro": "《平潭映象》是知名舞蹈艺术家杨丽萍继《云南映象》、《黄山映象》之后的第三个映象系列作品，是她导演的第八部大型舞台剧作品，首部海洋题材超民俗作品，也是她针对福建文化背景所创作的唯一一部作品，是一部具有国"
+            },
+            {
+                "schedular_id": 108886,
+                "city_name": "北京",
+                "venue_name": "世纪剧院",
+                "name": "【演出延期】聚橙出品 | 世界经典原版音乐剧《猫》CATS -北京站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/C8\/rAoKNV2QbsaANXF5AABBSaeFeSM447.jpg",
+                "min_price": "180",
+                "max_price": "1380",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.07.03 19:30",
+                "end_show_time": "2020.12.31 20:00",
+                "start_show_timestamp": 1593775800,
+                "end_show_timestamp": 1609416000,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/108886",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "可选座"
+                ],
+                "cate_parent_id": 79,
+                "show_time_data": [
+                    20201231,
+                    20200704,
+                    20200705,
+                    20200707,
+                    20200708,
+                    20200709,
+                    20200703
+                ],
+                "show_id": 40337,
+                "intro": "2020年世界经典原版音乐剧《猫》CATS "
+            },
+            {
+                "schedular_id": 110831,
+                "city_name": "成都",
+                "venue_name": "四川大剧院",
+                "name": "【演出延期】聚橙制作 | 法语音乐剧《摇滚红与黑》-成都站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/5C\/rAoKmV3qAqKARbmkAABmOa_mg14702.jpg",
+                "min_price": "199",
+                "max_price": "1099",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.09.11 19:30",
+                "end_show_time": "2020.12.31 19:30",
+                "start_show_timestamp": 1599823800,
+                "end_show_timestamp": 1609414200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/110831",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "可选座"
+                ],
+                "cate_parent_id": 79,
+                "show_time_data": [
+                    20201231,
+                    20200912,
+                    20200913,
+                    20200911
+                ],
+                "show_id": 41545,
+                "intro": "两个女人会怎样与他的欲望之路相互纠缠，又会以怎样的方式改写他的人生？"
+            },
+            {
+                "schedular_id": 110879,
+                "city_name": "西安",
+                "venue_name": "陕西大剧院-歌剧厅",
+                "name": "【演出延期】聚橙制作 | 法语音乐剧《摇滚红与黑》-西安站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/5B\/rAoKmV3pyguAVmL0AABn7i3YsZQ556.jpg",
+                "min_price": "199",
+                "max_price": "1099",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.09.18 19:45",
+                "end_show_time": "2020.12.31 19:45",
+                "start_show_timestamp": 1600429500,
+                "end_show_timestamp": 1609415100,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/110879",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "可选座"
+                ],
+                "cate_parent_id": 79,
+                "show_time_data": [
+                    20201231,
+                    20200919,
+                    20200918
+                ],
+                "show_id": 41568,
+                "intro": "两个女人会怎样与他的欲望之路相互纠缠，又会以怎样的方式改写他的人生？"
+            },
+            {
+                "schedular_id": 114307,
+                "city_name": "上海",
+                "venue_name": "上汽·上海文化广场",
+                "name": "【演出延期】聚橙制作 | 法语音乐剧《摇滚红与黑》-上海站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/04\/05\/rAoKNV3p9MGAL4-fAABlWN_fCvM587.jpg",
+                "min_price": "80",
+                "max_price": "1099",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.08.13 19:30",
+                "end_show_time": "2020.12.31 19:30",
+                "start_show_timestamp": 1597318200,
+                "end_show_timestamp": 1609414200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/114307",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "可选座"
+                ],
+                "cate_parent_id": 79,
+                "show_time_data": [
+                    20201231,
+                    20200815,
+                    20200816,
+                    20200822,
+                    20200823,
+                    20200813,
+                    20200814,
+                    20200818,
+                    20200819,
+                    20200820,
+                    20200821
+                ],
+                "show_id": 41578,
+                "intro": "两个女人会怎样与他的欲望之路相互纠缠，又会以怎样的方式改写他的人生？"
+            },
+            {
+                "schedular_id": 110284,
+                "city_name": "南京",
+                "venue_name": "江苏大剧院",
+                "name": "【演出延期】南京市文化消费政府补贴剧目2020年杨丽萍大型舞剧《平潭映象》-南京站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/4D\/rAoKmV3XRACAIeTaAACZ7L-jf3o894.jpg",
+                "min_price": "162",
+                "max_price": "1030",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.06.27 14:30",
+                "end_show_time": "2020.12.31 14:30",
+                "start_show_timestamp": 1593239400,
+                "end_show_timestamp": 1609396200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/110284",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [],
+                "cate_parent_id": 86,
+                "show_time_data": [
+                    20201231,
+                    20200627
+                ],
+                "show_id": 40828,
+                "intro": "是一部具有国际化视野和高度艺术水准的“台海文化巨著”。"
+            },
+            {
+                "schedular_id": 114264,
+                "city_name": "广州",
+                "venue_name": "广州友谊剧院",
+                "name": "【演出延期】聚橙制作 | 法语音乐剧《摇滚红与黑》-广州站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/04\/05\/rAoKNV3p9MGAL4-fAABlWN_fCvM587.jpg",
+                "min_price": "299",
+                "max_price": "1099",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.08.28 19:30",
+                "end_show_time": "2020.12.31 19:30",
+                "start_show_timestamp": 1598614200,
+                "end_show_timestamp": 1609414200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/114264",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "可选座"
+                ],
+                "cate_parent_id": 79,
+                "show_time_data": [
+                    20201231,
+                    20200829,
+                    20200830,
+                    20200828
+                ],
+                "show_id": 41572,
+                "intro": "两个女人会怎样与他的欲望之路相互纠缠，又会以怎样的方式改写他的人生？"
+            },
+            {
+                "schedular_id": 109010,
+                "city_name": "重庆",
+                "venue_name": "重庆文化宫大剧院",
+                "name": "（演出延期）【万有音乐系】《最后的莫西干人——亚历桑德罗印第安音乐品鉴会》-重庆站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/DE\/rAoKNV24BW-AD4OfAABs-X44akw801.jpg",
+                "min_price": "100",
+                "max_price": "380",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.06.19 19:30",
+                "end_show_time": "2020.12.31 19:30",
+                "start_show_timestamp": 1592566200,
+                "end_show_timestamp": 1609414200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/109010",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座",
+                    "套票"
+                ],
+                "cate_parent_id": 36,
+                "show_time_data": [
+                    20201231,
+                    20200619
+                ],
+                "show_id": 40771,
+                "intro": "【万有音乐系】《最后的莫西干人——亚历桑德罗印第安音乐品鉴会》-重庆站"
+            },
+            {
+                "schedular_id": 109030,
+                "city_name": "廊坊",
+                "venue_name": "固安大剧院",
+                "name": "【演出延期】国家艺术基金2018年度传播交流推广资助项目-话剧《祖传秘方》-固安",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/34\/rAoKmV22u7KAEANeAACFZkMT2yM793.jpg",
+                "min_price": "60",
+                "max_price": "120",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.08.04 19:30",
+                "end_show_time": "2020.12.31 19:30",
+                "start_show_timestamp": 1596540600,
+                "end_show_timestamp": 1609414200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/109030",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座"
+                ],
+                "cate_parent_id": 37,
+                "show_time_data": [
+                    20201231,
+                    20200804
+                ],
+                "show_id": 40784,
+                "intro": "国家艺术基金2018年度传播交流推广资助项目-话剧《祖传秘方》"
+            },
+            {
+                "schedular_id": 106347,
+                "city_name": "宜昌",
+                "venue_name": "宜昌剧院",
+                "name": "（演出取消）【小橙堡】奇思妙想童话剧《白雪公主》-宜昌站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/06\/rAoKmV1sgyKAHK0rAACkqd0OnLY797.jpg",
+                "min_price": "60",
+                "max_price": "160",
+                "show_time_top": "11\/08",
+                "show_time_bottom": "",
+                "start_show_time": "2020.11.08 10:30",
+                "end_show_time": "2020.11.08 15:00",
+                "start_show_timestamp": 1604802600,
+                "end_show_timestamp": 1604818800,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/106347",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i ju_icon\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座",
+                    "套票"
+                ],
+                "cate_parent_id": 38,
+                "show_time_data": [
+                    20201108
+                ],
+                "show_id": 39920,
+                "intro": "创意书写 勇士诞生  经典故事 绝妙改编  全新改编，善良、智慧与勇气并存"
+            },
+            {
+                "schedular_id": 116120,
+                "city_name": "安康",
+                "venue_name": "安康汉江大剧院(小剧场)",
+                "name": "女性独角戏《亿万次的孤独和每个身边的你》",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/B7\/rAoKmV8_nLyAHtT2AAIbb346UY0860.jpg",
+                "min_price": "80",
+                "max_price": "180",
+                "show_time_top": "11\/13 - 11\/14",
+                "show_time_bottom": "",
+                "start_show_time": "2020.11.13 19:30",
+                "end_show_time": "2020.11.14 19:30",
+                "start_show_timestamp": 1605267000,
+                "end_show_timestamp": 1605353400,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/116120",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "可选座"
+                ],
+                "cate_parent_id": 37,
+                "show_time_data": [
+                    20201113,
+                    20201114
+                ],
+                "show_id": 43303,
+                "intro": "一个人的孤独不是孤独，孤独也不是一个人的孤独。"
+            },
+            {
+                "schedular_id": 111995,
+                "city_name": "贵阳",
+                "venue_name": "贵阳星光剧场",
+                "name": "【小橙堡】格林童话经典人偶剧《睡美人》--贵阳站--2020文化惠民演出季",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/E2\/rAoKNV2_wbmAboF0AACgqkWuVI8850.jpg",
+                "min_price": "60",
+                "max_price": "180",
+                "show_time_top": "12\/13",
+                "show_time_bottom": "",
+                "start_show_time": "2020.12.13 15:30",
+                "end_show_time": "2020.12.13 19:30",
+                "start_show_timestamp": 1607844600,
+                "end_show_timestamp": 1607859000,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/111995",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i ju_icon\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座",
+                    "套票"
+                ],
+                "cate_parent_id": 38,
+                "show_time_data": [
+                    20201213
+                ],
+                "show_id": 41916,
+                "intro": "【小橙堡】格林童话经典人偶剧《睡美人》"
+            },
+            {
+                "schedular_id": 111600,
+                "city_name": "廊坊",
+                "venue_name": "固安大剧院",
+                "name": "河北梆子《王宝钏》",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/6B\/rAoKmV4AXkSAdphzAAGp6nceocQ895.jpg",
+                "min_price": "60",
+                "max_price": "120",
+                "show_time_top": "10\/15",
+                "show_time_bottom": "周四",
+                "start_show_time": "2020.10.15 19:30",
+                "end_show_time": "2020.10.15 19:30",
+                "start_show_timestamp": 1602761400,
+                "end_show_timestamp": 1602761400,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/111600",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座"
+                ],
+                "cate_parent_id": 91,
+                "show_time_data": [
+                    20201015
+                ],
+                "show_id": 41819,
+                "intro": "河北梆子经国务院批准列入第一批国家级非物质文化遗产名录。"
+            },
+            {
+                "schedular_id": 116122,
+                "city_name": "安康",
+                "venue_name": "安康汉江大剧院(小剧场)",
+                "name": "五周年纪念版 话剧《黑洞先生2020》",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/04\/61\/rAoKNV8_mtGAI6KOAACOHxL9LB8041.jpg",
+                "min_price": "80",
+                "max_price": "180",
+                "show_time_top": "10\/16 - 10\/17",
+                "show_time_bottom": "",
+                "start_show_time": "2020.10.16 19:30",
+                "end_show_time": "2020.10.17 19:30",
+                "start_show_timestamp": 1602847800,
+                "end_show_timestamp": 1602934200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/116122",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "可选座"
+                ],
+                "cate_parent_id": 37,
+                "show_time_data": [
+                    20201016,
+                    20201017
+                ],
+                "show_id": 43302,
+                "intro": "让我们告诉你，两位演员是如何分裂成四十重人格。"
+            },
+            {
+                "schedular_id": 110511,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院大剧院",
+                "name": "【演出延期】2020第七届城市戏剧节 NT-Live艾美奖得主菲比主演《伦敦生活》高清影像-深圳站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/53\/rAoKmV3ggq-AGJvkAAB2ev4KuJg353.jpg",
+                "min_price": "99",
+                "max_price": "199",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.06.20 19:30",
+                "end_show_time": "2020.12.31 19:30",
+                "start_show_timestamp": 1592652600,
+                "end_show_timestamp": 1609414200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/110511",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座"
+                ],
+                "cate_parent_id": 91,
+                "show_time_data": [
+                    20201231,
+                    20200620
+                ],
+                "show_id": 41386,
+                "intro": "菲比·沃勒-布里奇在独角戏中气场全开  同名改编剧集狂揽艾美奖4项大奖  伦敦西区演出一票难求"
+            },
+            {
+                "schedular_id": 110555,
+                "city_name": "成都",
+                "venue_name": "成都艺术中心音乐厅（原特仑苏音乐厅）",
+                "name": "（演出延期）【万有音乐系】《最后的莫西干人——亚历桑德罗印第安音乐品鉴会》-成都站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/E5\/rAoKNV3DzAGAAg8KAABs-X44akw723.jpg",
+                "min_price": "100",
+                "max_price": "380",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.06.21 19:30",
+                "end_show_time": "2020.12.31 19:30",
+                "start_show_timestamp": 1592739000,
+                "end_show_timestamp": 1609414200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/110555",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "可选座"
+                ],
+                "cate_parent_id": 36,
+                "show_time_data": [
+                    20201231,
+                    20200621
+                ],
+                "show_id": 41415,
+                "intro": "2020年上半年中国举办的巡回音乐品鉴会，为观众带来现场的演奏!"
+            },
+            {
+                "schedular_id": 111613,
+                "city_name": "成都",
+                "venue_name": "四川大剧院",
+                "name": "【演出延期】2020年杨丽萍大型舞剧《平潭映象》-成都站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/E6\/rAoKNV3FDp2AYoW7AADDFklcihs978.jpg",
+                "min_price": "180",
+                "max_price": "1080",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.06.06 19:30",
+                "end_show_time": "2020.12.31 19:30",
+                "start_show_timestamp": 1591443000,
+                "end_show_timestamp": 1609414200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/111613",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "可选座"
+                ],
+                "cate_parent_id": 86,
+                "show_time_data": [
+                    20201231,
+                    20200606
+                ],
+                "show_id": 41364,
+                "intro": "《平潭映象》是一部具有国际化视野和高度艺术水准的“台海文化巨著”。"
+            },
+            {
+                "schedular_id": 111616,
+                "city_name": "舟山",
+                "venue_name": "舟山普陀大剧院（大剧场）\t\t\t",
+                "name": "【演出延期】2020年杨丽萍大型舞剧《平潭映象》-舟山站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/E6\/rAoKNV3FDp2AYoW7AADDFklcihs978.jpg",
+                "min_price": "100",
+                "max_price": "880",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.06.21 19:30",
+                "end_show_time": "2020.12.31 19:30",
+                "start_show_timestamp": 1592739000,
+                "end_show_timestamp": 1609414200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/111616",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座"
+                ],
+                "cate_parent_id": 37,
+                "show_time_data": [
+                    20201231,
+                    20200621
+                ],
+                "show_id": 41822,
+                "intro": "《平潭映象》是一部具有国际化视野和高度艺术水准的“台海文化巨著”。"
+            },
+            {
+                "schedular_id": 113277,
+                "city_name": "济南",
+                "venue_name": "历山剧院",
+                "name": "【演出延期】2020第七届城市戏剧节 豆瓣高分 正宗英式独角戏《一个人的莎士比亚》-济南站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/04\/2E\/rAoKNV4b2fmADtjTAACfhe3xGlU048.jpg",
+                "min_price": "99",
+                "max_price": "299",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.06.20 19:30",
+                "end_show_time": "2020.12.31 19:30",
+                "start_show_timestamp": 1592652600,
+                "end_show_timestamp": 1609414200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/113277",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "可选座",
+                    "套票"
+                ],
+                "cate_parent_id": 91,
+                "show_time_data": [
+                    20201231,
+                    20200620
+                ],
+                "show_id": 42364,
+                "intro": "老戏骨约瑟夫呕心之作 自传体独角戏感动全城"
+            }
+        ],
+        "recommend_ad_list": [
+            {
+                "ad_name": "橙PLUS卡",
+                "ad_img": "https:\/\/image.juooo.com\/upload\/plus_image_ad.png",
+                "ad_link": "https:\/\/m.juooo.com\/plus\/index?from=r_a_l",
+                "ad_type": 1
+            },
+            {
+                "ad_name": "V+会员",
+                "ad_img": "https:\/\/image.juooo.com\/upload\/vip_image_ad.png",
+                "ad_link": "https:\/\/m.juooo.com\/vip\/index\/1?from=r_a_l",
+                "ad_type": 1
+            },
+            {
+                "ad_name": "热搜词",
+                "ad_link": "",
+                "ad_img": "",
+                "ad_type": 4,
+                "data": [
+                    {
+                        "url": "",
+                        "word": "魔女宅急便"
+                    },
+                    {
+                        "url": "",
+                        "word": "张泽音乐会"
+                    },
+                    {
+                        "url": "",
+                        "word": "第一次约会"
+                    },
+                    {
+                        "url": "",
+                        "word": "儿童剧"
+                    },
+                    {
+                        "url": "",
+                        "word": "话剧"
+                    },
+                    {
+                        "url": "",
+                        "word": "陈佳"
+                    }
+                ]
+            },
+            {
+                "ad_name": "演唱会",
+                "ad_type": 2,
+                "ad_img": "",
+                "ad_id": 35,
+                "ad_link": "https:\/\/m.juooo.com\/show\/showsLibrary?cid=0&caid=35",
+                "data": [
+                    {
+                        "schedular_id": 111062,
+                        "show_name": "（演出延期）202020当我们谈论爱情-梁静茹世界巡回演唱会-广州站",
+                        "start_show_time": 1582905600,
+                        "end_show_time": 1609344000,
+                        "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/61\/rAoKmV3xqgWAYdYAAANMMbTrrHg841.jpg",
+                        "venue_id": 3258
+                    },
+                    {
+                        "schedular_id": 116279,
+                        "show_name": "【南京】2020真的爱你-致敬BEYOND·黄家驹演唱会",
+                        "start_show_time": 1601724600,
+                        "end_show_time": 1601724600,
+                        "pic": "https:\/\/image.juooo.com\/group1\/M00\/00\/01\/rBAAI19XJaOAKosRAAChvWCoSTE021.jpg",
+                        "venue_id": 2966
+                    },
+                    {
+                        "schedular_id": 116280,
+                        "show_name": "【长沙】2020真的爱你-致敬BEYOND·黄家驹演唱会",
+                        "start_show_time": 1604662200,
+                        "end_show_time": 1604662200,
+                        "pic": "https:\/\/image.juooo.com\/group1\/M00\/00\/01\/rBAAI19XLDKAesW7AAChvWCoSTE584.jpg",
+                        "venue_id": 1198
+                    },
+                    {
+                        "schedular_id": 116283,
+                        "show_name": "【武汉】2020真的爱你-致敬BEYOND·黄家驹演唱会",
+                        "start_show_time": 1604748600,
+                        "end_show_time": 1604748600,
+                        "pic": "https:\/\/image.juooo.com\/group1\/M00\/00\/02\/rBAAFF9XNMqAO9syAAChvWCoSTE810.jpg",
+                        "venue_id": 3606
+                    }
+                ]
+            },
+            {
+                "ad_name": "音乐剧",
+                "ad_type": 2,
+                "ad_img": "",
+                "ad_id": 79,
+                "ad_link": "https:\/\/m.juooo.com\/show\/showsLibrary?cid=0&caid=79",
+                "data": [
+                    {
+                        "schedular_id": 114256,
+                        "show_name": "【档期调整】聚橙制作|百老汇爱情音乐轻喜剧《第一次约会》中文版-广州站",
+                        "start_show_time": 1608723000,
+                        "end_show_time": 1608982200,
+                        "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/73\/rAoKmV4Fwz2AKrc-AAB1ZkYSsmw114.jpg",
+                        "venue_id": 1705
+                    },
+                    {
+                        "schedular_id": 116258,
+                        "show_name": "聚橙制作 | 宫崎骏经典·暖心成长音乐剧《魔女宅急便》-深圳",
+                        "start_show_time": 1607148000,
+                        "end_show_time": 1607254200,
+                        "pic": "https:\/\/image.juooo.com\/group1\/M00\/00\/01\/rBAAI19W6WeAQ5EtAANNlbD6FdU622.png",
+                        "venue_id": 1078
+                    },
+                    {
+                        "schedular_id": 110379,
+                        "show_name": "【演出延期】聚橙出品 | 世界经典原版音乐剧《猫》CATS-西安站",
+                        "start_show_time": 1595591100,
+                        "end_show_time": 1609415100,
+                        "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/4F\/rAoKmV3coBSACvRgAAA_JxjLZt0032.jpg",
+                        "venue_id": 2735
+                    },
+                    {
+                        "schedular_id": 108886,
+                        "show_name": "【演出延期】聚橙出品 | 世界经典原版音乐剧《猫》CATS -北京站",
+                        "start_show_time": 1593775800,
+                        "end_show_time": 1609416000,
+                        "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/C8\/rAoKNV2QbsaANXF5AABBSaeFeSM447.jpg",
+                        "venue_id": 298
+                    }
+                ]
+            },
+            {
+                "ad_name": "音乐会",
+                "ad_type": 2,
+                "ad_img": "",
+                "ad_id": 36,
+                "ad_link": "https:\/\/m.juooo.com\/show\/showsLibrary?cid=0&caid=36",
+                "data": [
+                    {
+                        "schedular_id": 109010,
+                        "show_name": "（演出延期）【万有音乐系】《最后的莫西干人——亚历桑德罗印第安音乐品鉴会》-重庆站",
+                        "start_show_time": 1592566200,
+                        "end_show_time": 1609414200,
+                        "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/DE\/rAoKNV24BW-AD4OfAABs-X44akw801.jpg",
+                        "venue_id": 214
+                    },
+                    {
+                        "schedular_id": 110555,
+                        "show_name": "（演出延期）【万有音乐系】《最后的莫西干人——亚历桑德罗印第安音乐品鉴会》-成都站",
+                        "start_show_time": 1592739000,
+                        "end_show_time": 1609414200,
+                        "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/E5\/rAoKNV3DzAGAAg8KAABs-X44akw723.jpg",
+                        "venue_id": 174
+                    },
+                    {
+                        "schedular_id": 110101,
+                        "show_name": "（演出延期）【万有音乐系】《最后的莫西干人——亚历桑德罗印第安音乐品鉴会》-深圳站",
+                        "start_show_time": 1592308800,
+                        "end_show_time": 1609416000,
+                        "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/E5\/rAoKNV3DzAGAAg8KAABs-X44akw723.jpg",
+                        "venue_id": 1078
+                    },
+                    {
+                        "schedular_id": 116331,
+                        "show_name": "“我心中的钢琴英雄-李斯特”张家瑞钢琴独奏音乐会",
+                        "start_show_time": 1602070200,
+                        "end_show_time": 1602070200,
+                        "pic": "https:\/\/image.juooo.com\/group1\/M00\/00\/04\/rBAAI19fJV2ANTdsAADQwUNF6AE082.jpg",
+                        "venue_id": 2508
+                    }
+                ]
+            },
+            {
+                "ad_name": "舞台剧",
+                "ad_type": 2,
+                "ad_img": "",
+                "ad_id": 37,
+                "ad_link": "https:\/\/m.juooo.com\/show\/showsLibrary?cid=0&caid=37",
+                "data": [
+                    {
+                        "schedular_id": 111475,
+                        "show_name": "【演出延期】3D科幻舞台剧《三体Ⅱ黑暗森林》-深圳站",
+                        "start_show_time": 1602331200,
+                        "end_show_time": 1633953600,
+                        "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/40\/rAoKmV3LdBWAImHFAACB1n-G-Nk921.jpg",
+                        "venue_id": 1078
+                    },
+                    {
+                        "schedular_id": 114460,
+                        "show_name": "阿加莎悬疑推理名剧展演-话剧《谋杀启事》成都站",
+                        "start_show_time": 1604748600,
+                        "end_show_time": 1604835000,
+                        "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/99\/rAoKmV64pmuAdCHtAAH45lri6ck840.jpg",
+                        "venue_id": 3327
+                    },
+                    {
+                        "schedular_id": 109030,
+                        "show_name": "【演出延期】国家艺术基金2018年度传播交流推广资助项目-话剧《祖传秘方》-固安",
+                        "start_show_time": 1596540600,
+                        "end_show_time": 1609414200,
+                        "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/34\/rAoKmV22u7KAEANeAACFZkMT2yM793.jpg",
+                        "venue_id": 2639
+                    },
+                    {
+                        "schedular_id": 116120,
+                        "show_name": "女性独角戏《亿万次的孤独和每个身边的你》",
+                        "start_show_time": 1605267000,
+                        "end_show_time": 1605353400,
+                        "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/B7\/rAoKmV8_nLyAHtT2AAIbb346UY0860.jpg",
+                        "venue_id": 3554
+                    }
+                ]
+            }
+        ],
+        "page": 1,
+        "total": 230,
+        "result_type": 1
+    }
+}

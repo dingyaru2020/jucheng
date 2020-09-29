@@ -1,0 +1,16 @@
+{
+    "code": "200",
+    "msg": "ok",
+    "data": {
+        "theatre_id": 2,
+        "theatre_name": "南山文体中心",
+        "theatre_address": "广东省深圳市南山区南山大道和南头街交汇处",
+        "theatre_pic": "https:\/\/image.juooo.com\/group1\/M00\/01\/D2\/rAoKmVwknq2AQjJ3AABZC2s-o9o803.jpg",
+        "theatre_detail": "&lt;p&gt;深圳南山区文体中心剧院总建筑面积为2.38万平方米；包括一个&lt;\/p&gt;&lt;p&gt;1325座的大剧院和一个356座的小剧场。&lt;\/p&gt;&lt;p&gt;深圳南山文体中心2014年秋季开放，2015年一年共演出357场，成&lt;\/p&gt;&lt;p&gt;为中国剧院新概念的旗舰；2016年以570场演出的骄人成绩，成为中国&lt;\/p&gt;&lt;p&gt;剧院综合活力15强之一；2017年演出更是达到了近700场&lt;\/p&gt;&lt;p&gt;大量高品质演出和活动的举办，使得深圳南山区文体中心剧院成为&lt;\/p&gt;&lt;p&gt;业界的标杆，得到政府、社会的高度认可。&lt;\/p&gt;",
+        "city_name": "深圳",
+        "coordinate": "113.9234644349,22.536028418473",
+        "venue_ids": "1078,1079,1795",
+        "sch_num": 38,
+        "distance": ""
+    }
+}

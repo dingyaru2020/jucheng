@@ -1,0 +1,455 @@
+{
+    "code": "200",
+    "msg": "ok",
+    "data": {
+        "list": [
+            {
+                "schedular_id": 111475,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院大剧院",
+                "name": "【演出延期】3D科幻舞台剧《三体Ⅱ黑暗森林》-深圳站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/40\/rAoKmV3LdBWAImHFAACB1n-G-Nk921.jpg",
+                "min_price": "0",
+                "max_price": "0",
+                "show_time_top": "10\/10 - 10\/11",
+                "show_time_bottom": "",
+                "start_show_time": "2020.10.10 20:00",
+                "end_show_time": "2021.10.11 20:00",
+                "start_show_timestamp": 1602331200,
+                "end_show_timestamp": 1633953600,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/111475",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座"
+                ],
+                "cate_parent_id": 37,
+                "show_time_data": [
+                    20211010,
+                    20201010,
+                    20211011,
+                    20201011
+                ],
+                "show_id": 41170,
+                "intro": "根据刘慈欣同名科幻小说改编 3D科幻舞台剧《三体II 黑暗森林》"
+            },
+            {
+                "schedular_id": 116258,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院大剧院",
+                "name": "聚橙制作 | 宫崎骏经典·暖心成长音乐剧《魔女宅急便》-深圳",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/00\/01\/rBAAI19W6WeAQ5EtAANNlbD6FdU622.png",
+                "min_price": "180",
+                "max_price": "580",
+                "show_time_top": "12\/05 - 12\/06",
+                "show_time_bottom": "",
+                "start_show_time": "2020.12.05 14:00",
+                "end_show_time": "2020.12.06 19:30",
+                "start_show_timestamp": 1607148000,
+                "end_show_timestamp": 1607254200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/116258",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "限时9折起"
+                ],
+                "cate_parent_id": 79,
+                "show_time_data": [
+                    20201205,
+                    20201206
+                ],
+                "show_id": 43335,
+                "intro": "音乐剧《魔女宅急便》是根据国际安徒生奖得主、日本著名作家角野荣子的同名童话小说改编。国际安徒生评委会评价原作《魔女宅急便》童话小说拥有着“饱含无法言喻的温暖与热忱，充满了令人惊奇的魅力”。这部世界经典"
+            },
+            {
+                "schedular_id": 110511,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院大剧院",
+                "name": "【演出延期】2020第七届城市戏剧节 NT-Live艾美奖得主菲比主演《伦敦生活》高清影像-深圳站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/53\/rAoKmV3ggq-AGJvkAAB2ev4KuJg353.jpg",
+                "min_price": "99",
+                "max_price": "199",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.06.20 19:30",
+                "end_show_time": "2020.12.31 19:30",
+                "start_show_timestamp": 1592652600,
+                "end_show_timestamp": 1609414200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/110511",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座"
+                ],
+                "cate_parent_id": 91,
+                "show_time_data": [
+                    20201231,
+                    20200620
+                ],
+                "show_id": 41386,
+                "intro": "菲比·沃勒-布里奇在独角戏中气场全开  同名改编剧集狂揽艾美奖4项大奖  伦敦西区演出一票难求"
+            },
+            {
+                "schedular_id": 110101,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院大剧院",
+                "name": "（演出延期）【万有音乐系】《最后的莫西干人——亚历桑德罗印第安音乐品鉴会》-深圳站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/E5\/rAoKNV3DzAGAAg8KAABs-X44akw723.jpg",
+                "min_price": "80",
+                "max_price": "380",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.06.16 20:00",
+                "end_show_time": "2020.12.31 20:00",
+                "start_show_timestamp": 1592308800,
+                "end_show_timestamp": 1609416000,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/110101",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座"
+                ],
+                "cate_parent_id": 36,
+                "show_time_data": [
+                    20201231,
+                    20200616
+                ],
+                "show_id": 41202,
+                "intro": "2020“最后的莫西干人”—亚历桑德罗印第安音乐品鉴会  改变的是多了不一样的音乐，不变的是依旧悠扬的经典！    一生必听的大自然音乐家：亚历桑德罗"
+            },
+            {
+                "schedular_id": 113337,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院小剧院",
+                "name": "【演出延期】2020第七届城市戏剧节 豆瓣高分 正宗英式独角戏《一个人的莎士比亚》-深圳站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/04\/2E\/rAoKNV4b2fmADtjTAACfhe3xGlU048.jpg",
+                "min_price": "99",
+                "max_price": "299",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.06.17 20:00",
+                "end_show_time": "2020.12.31 20:00",
+                "start_show_timestamp": 1592395200,
+                "end_show_timestamp": 1609416000,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/113337",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座"
+                ],
+                "cate_parent_id": 91,
+                "show_time_data": [
+                    20201231,
+                    20200617,
+                    20200618
+                ],
+                "show_id": 42392,
+                "intro": "老戏骨约瑟夫呕心之作 自传体独角戏感动全城"
+            },
+            {
+                "schedular_id": 112259,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院小剧院",
+                "name": "【演出延期】2020第七届城市戏剧节 乌镇戏剧节“最佳戏剧奖”“最佳个人表现奖”团队最新作品《涂红》-深圳站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/6C\/rAoKmV4AZ3GAK-xpAABsQm0qZyQ219.jpg",
+                "min_price": "99",
+                "max_price": "299",
+                "show_time_top": "08\/08",
+                "show_time_bottom": "",
+                "start_show_time": "2020.08.08 19:30",
+                "end_show_time": "2021.08.08 19:30",
+                "start_show_timestamp": 1596886200,
+                "end_show_timestamp": 1628422200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/112259",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座"
+                ],
+                "cate_parent_id": 37,
+                "show_time_data": [
+                    20210808,
+                    20200814,
+                    20200808
+                ],
+                "show_id": 42053,
+                "intro": "人生有时需要绕一个大圈才能回到原点，你将看到的不过是一次回归，一场释怀，一段悄无声息的救赎....."
+            },
+            {
+                "schedular_id": 112496,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院大剧院",
+                "name": "【演出延期】】聚橙出品 |世界经典原版音乐剧《猫》CATS-深圳站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/04\/25\/rAoKNV4O1E2AR24SAABCOpBdJGk245.jpg",
+                "min_price": "0",
+                "max_price": "0",
+                "show_time_top": "08\/26 - 08\/30",
+                "show_time_bottom": "",
+                "start_show_time": "2020.08.26 19:30",
+                "end_show_time": "2021.08.30 19:30",
+                "start_show_timestamp": 1598441400,
+                "end_show_timestamp": 1630323000,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/112496",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座"
+                ],
+                "cate_parent_id": 79,
+                "show_time_data": [
+                    20210826,
+                    20200826,
+                    20210830,
+                    20200830
+                ],
+                "show_id": 42150,
+                "intro": "2020年，感动不说再见！"
+            },
+            {
+                "schedular_id": 114170,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院大剧院",
+                "name": "【档期调整】聚橙制作|百老汇爱情音乐轻喜剧《第一次约会》中文版-深圳站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/04\/04\/rAoKNV3o3tCAbCKNAAB3v6NC4vs503.jpg",
+                "min_price": "100",
+                "max_price": "580",
+                "show_time_top": "12\/18 - 12\/20",
+                "show_time_bottom": "",
+                "start_show_time": "2020.12.18 19:30",
+                "end_show_time": "2020.12.20 14:00",
+                "start_show_timestamp": 1608291000,
+                "end_show_timestamp": 1608444000,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/114170",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "可选座"
+                ],
+                "cate_parent_id": 79,
+                "show_time_data": [
+                    20201218,
+                    20201219,
+                    20201220
+                ],
+                "show_id": 41520,
+                "intro": "百老汇人气爱情音乐喜剧《FIRSTDATE》改编作品，中文版全新升级制作"
+            },
+            {
+                "schedular_id": 114297,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院大剧院",
+                "name": "【演出延期】聚橙制作 | 法语音乐剧《摇滚红与黑》-深圳站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/04\/05\/rAoKNV3p9MGAL4-fAABlWN_fCvM587.jpg",
+                "min_price": "299",
+                "max_price": "1099",
+                "show_time_top": "12\/31",
+                "show_time_bottom": "",
+                "start_show_time": "2020.09.03 19:30",
+                "end_show_time": "2020.12.31 19:30",
+                "start_show_timestamp": 1599132600,
+                "end_show_timestamp": 1609414200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/114297",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "可选座"
+                ],
+                "cate_parent_id": 79,
+                "show_time_data": [
+                    20201231,
+                    20200905,
+                    20200903,
+                    20200904,
+                    20200906
+                ],
+                "show_id": 41573,
+                "intro": "两个女人会怎样与他的欲望之路相互纠缠，又会以怎样的方式改写他的人生？"
+            },
+            {
+                "schedular_id": 110341,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院大剧院",
+                "name": "【演出延期】2020年杨丽萍大型舞剧《平潭映象》-深圳站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/E6\/rAoKNV3FDp2AYoW7AADDFklcihs978.jpg",
+                "min_price": "0",
+                "max_price": "0",
+                "show_time_top": "10\/31 - 11\/01",
+                "show_time_bottom": "",
+                "start_show_time": "2020.10.31 19:30",
+                "end_show_time": "2021.11.01 19:30",
+                "start_show_timestamp": 1604143800,
+                "end_show_timestamp": 1635766200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/110341",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座"
+                ],
+                "cate_parent_id": 86,
+                "show_time_data": [
+                    20211031,
+                    20201031,
+                    20211101,
+                    20201101
+                ],
+                "show_id": 41288,
+                "intro": "《平潭映象》是知名舞蹈艺术家杨丽萍继《云南映象》、《黄山映象》之后的第三个映象系列作品，是她导演的第八部大型舞台剧作品，首部海洋题材超民俗作品，也是她针对福建文化背景所创作的唯一一部作品，是一部具有国"
+            },
+            {
+                "schedular_id": 116369,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院小剧院",
+                "name": "【小橙堡】魔幻亲子儿童剧《阿拉丁神灯》-深圳站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/B4\/rAoKmV8jvvSAb6eBAAMW15z_Bp4992.jpg",
+                "min_price": "80",
+                "max_price": "200",
+                "show_time_top": "11\/08 - 11\/22",
+                "show_time_bottom": "",
+                "start_show_time": "2020.11.08 10:30",
+                "end_show_time": "2020.11.22 15:00",
+                "start_show_timestamp": 1604802600,
+                "end_show_timestamp": 1606028400,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/116369",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i ju_icon\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座"
+                ],
+                "cate_parent_id": 38,
+                "show_time_data": [
+                    20201108,
+                    20201122
+                ],
+                "show_id": 43389,
+                "intro": "一盏让人美梦成真的神灯，一阵来自异域的奇幻旋风，  让我们走进剧院，与阿拉丁相约，开启神奇的魔法冒险之旅！"
+            },
+            {
+                "schedular_id": 116373,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院小剧院",
+                "name": "【小橙堡】经典成长童话《三只小猪》-深圳站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/2A\/rAoKmV2lZg2AQ6n2AACcamyKID0576.jpg",
+                "min_price": "80",
+                "max_price": "200",
+                "show_time_top": "12\/06 - 12\/20",
+                "show_time_bottom": "",
+                "start_show_time": "2020.12.06 10:30",
+                "end_show_time": "2020.12.20 15:00",
+                "start_show_timestamp": 1607221800,
+                "end_show_timestamp": 1608447600,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/116373",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i ju_icon\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座"
+                ],
+                "cate_parent_id": 38,
+                "show_time_data": [
+                    20201206,
+                    20201220
+                ],
+                "show_id": 43390,
+                "intro": "讲述的是在大森林里，住着一群可爱的小动物，有兔子老师、皮皮狗、小猫咪、三只小猪，猪妈妈带着三只可爱的小猪快乐地生活着"
+            },
+            {
+                "schedular_id": 116312,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院小剧院",
+                "name": "（档期调整）【小橙堡】经典成长童话《匹诺曹》-深圳站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/03\/63\/rAoKmV3y6wCAIXZIAAChpncncD0689.jpg",
+                "min_price": "80",
+                "max_price": "200",
+                "show_time_top": "10\/18",
+                "show_time_bottom": "",
+                "start_show_time": "2020.10.18 10:30",
+                "end_show_time": "2020.10.18 16:30",
+                "start_show_timestamp": 1602988200,
+                "end_show_timestamp": 1603009800,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/116312",
+                "method": 1,
+                "method_icon": "https:\/\/image.juooo.com\/upload\/i.png",
+                "tag_icon": "<i class=\"logo_i ju_icon\"><\/i>",
+                "support_desc": [
+                    "电子票",
+                    "可选座"
+                ],
+                "cate_parent_id": 38,
+                "show_time_data": [
+                    20201018
+                ],
+                "show_id": 41688,
+                "intro": "寓教于乐，爱的启示"
+            },
+            {
+                "schedular_id": 116055,
+                "city_name": "深圳",
+                "venue_name": "南山文体中心剧院大剧院",
+                "name": "第十八届中外艺术精品演出季——中国最经典结构喜剧《阳台》-深圳站",
+                "pic": "https:\/\/image.juooo.com\/group1\/M00\/04\/33\/rAoKNV4epLeAD5LAAAD-muPbaEM061.jpg",
+                "min_price": "180",
+                "max_price": "680",
+                "show_time_top": "11\/13 - 11\/14",
+                "show_time_bottom": "",
+                "start_show_time": "2020.11.13 20:00",
+                "end_show_time": "2020.11.14 20:00",
+                "start_show_timestamp": 1605268800,
+                "end_show_timestamp": 1605355200,
+                "km": "",
+                "url": "https:\/\/m.juooo.com\/ticket\/116055",
+                "method": 0,
+                "method_icon": "",
+                "tag_icon": "",
+                "support_desc": [
+                    "电子票",
+                    "可选座"
+                ],
+                "cate_parent_id": 37,
+                "show_time_data": [
+                    20201113,
+                    20201114
+                ],
+                "show_id": 42497,
+                "intro": "第十八届中外艺术精品演出季——中国最经典结构喜剧《阳台》-深圳站"
+            }
+        ],
+        "recommend_ad_list": [],
+        "page": 1,
+        "total": 14,
+        "result_type": 1
+    }
+}
