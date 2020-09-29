@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="wrapper">
     home
     {{num}}
   </div>
@@ -18,5 +18,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
+  #wrapper{
+    color: red;
+  }
 </style>
