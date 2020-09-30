@@ -1,4 +1,5 @@
 import {} from "../../mutationTypes"
+//也可以写解构的形式，省去axios.xxx
 import axios from "@/axios"
 const state={
     num:123

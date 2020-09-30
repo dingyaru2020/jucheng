@@ -4,7 +4,9 @@ import App from './App.vue'
 //适配
 import "amfe-flexible"
 //请求
-import axios from "@/axios/index.js"
+import axios from "@/axios/axios.js"
+import * as API from "@/axios/index.js"
+Vue.prototype.$API = API
 Vue.prototype.$axios = axios
 
 import router from "./router/index.js"

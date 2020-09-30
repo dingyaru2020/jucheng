@@ -9,5 +9,16 @@ module.exports = {
             }
         }
     } ,
-    lintOnSave:false   
+    lintOnSave:false,
+    devServer:{
+        proxy: {
+            '/api': { 
+              target: 'https://api.juooo.com',
+              changeOrigin: true,
+              pathRewrite:{
+                  "^/api":""
+              }
+            }
+          }
+    }  
 }
