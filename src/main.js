@@ -12,10 +12,16 @@ Vue.prototype.$axios = axios
 
 import router from "./router/index.js"
 import store from "./store"
+import "./static/iconfont/iconfont.css"
 
 import "./plugin"
 
 Vue.config.productionTip = false
+
+// swiper的引入
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/swiper-bundle.css'
+Vue.use(VueAwesomeSwiper)
 
 new Vue({
   router,
