@@ -3,6 +3,8 @@ const Theater = () => import('@/views/Theater/index.vue')
 const Ticket = () => import('@/views/Ticket/index.vue')
 const Person = () => import('@/views/Person/index.vue')
 
+const ShowList = () => import("@/views/ShowList/index.vue")
+
 export default [
     {
         path:"/",
@@ -19,5 +21,9 @@ export default [
     {
         path:"/person",
         component:Person
+    },
+    {
+        path:"/showlist",
+        component:ShowList
     }
 ]

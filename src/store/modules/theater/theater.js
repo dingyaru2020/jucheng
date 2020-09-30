@@ -1,5 +1,6 @@
 import {} from "../../mutationTypes"
-import axios from "@/axios"
+//例：axios发请求需要写axios.home.reqindexData()
+import * as axios from "@/axios"
 const state={}
 const mutations={}
 const actions={}
