@@ -1,6 +1,6 @@
 import {} from "../../mutationTypes"
-//也可以写解构的形式，省去axios.xxx
-import axios from "@/axios"
+//例：axios发请求需要写axios.home.reqindexData()
+import * as axios from "@/axios"
 const state={
     num:123
 }
