@@ -1,5 +1,6 @@
 const Home = () => import('../../../src/views/Home')
-const Theater = () => import('@/views/Theater/index.vue')
+const Theater = () => import('@/views/Theater/swiperdome.vue')
+// const Theater = () => import('@/views/Theater/index.vue')
 const Ticket = () => import('@/views/Ticket/index.vue')
 const Person = () => import('@/views/Person/index.vue')
 

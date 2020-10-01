@@ -19,6 +19,12 @@
                         </div>
                     </a> -->
                     <div>
+                          <template>
+                            <swiper ref="mySwiper" :options="swiperOptions">
+                                <swiper-slide>Slide 1</swiper-slide>
+                                <div class="swiper-pagination" slot="pagination"></div>
+                            </swiper>
+                        </template>
                     </div>
                 </div>
             </div>
