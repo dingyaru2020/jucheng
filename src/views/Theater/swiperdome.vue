@@ -5,7 +5,7 @@
     <swiper-slide><img src="./1.png" alt=""></swiper-slide>
     <swiper-slide><img src="./1.png" alt=""></swiper-slide>
     <swiper-slide><img src="./1.png" alt=""></swiper-slide>
-    <div class="swiper-pagination" slot="pagination"></div>
+    <!-- <div class="swiper-pagination" slot="pagination"></div> -->
   </swiper>
 </template>
 
@@ -19,30 +19,31 @@
         //     el: '.swiper-pagination'
         //   },
             pagination: '.swiper-pagination',
-            slidesPerView: 3,
-            
+            slidesPerView: 2.5,
             paginationClickable: true,
-            spaceBetween: 30,
+            spaceBetween: 10,
             freeMode: true
         }
       }
     },
     computed: {
       swiper() {
+        console.log(1111,this.$refs.mySwiper.$swiper)
         return this.$refs.mySwiper.$swiper
       }
     },
     mounted() {
-      console.log('Current Swiper instance object', this.swiper)
+      console.log(this.swiper.slideTo,999)
       this.swiper.slideTo(0, 1000, false)
     }
   } 
 </script>
 <style lang="less" scoped>
-.swiper-wrapper{
-    width: 200px;
-    .swiper-slide swiper-slide-active{
-        image{ width: 200px;}
+.swiper-container {
+    width: 600px;
+    height: 300px;
+    img{
+      width: 210px;
     }
-}
+}  
 </style> 

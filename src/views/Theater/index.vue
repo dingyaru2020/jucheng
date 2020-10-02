@@ -6,7 +6,7 @@
                 <!-- 剧院信息 -->
                 <div class="content" v-for="Titme in theatre_list" :key="Titme.id">
                     <!-- 剧院头部信息 -->
-                    <!-- <a href="">
+                    <a href="">
                         <div class="theaterTitle">
                             <img :src="Titme.pic" alt="">
                             <div class="Ttitle">
@@ -17,12 +17,17 @@
                                 <i class="iconfont icon-19"></i>
                             </div>
                         </div>
-                    </a> -->
-                    <div>
-                          <template>
-                            <swiper ref="mySwiper" :options="swiperOptions">
-                                <swiper-slide>Slide 1</swiper-slide>
-                                <div class="swiper-pagination" slot="pagination"></div>
+                    </a>
+                    <div >
+                        <template>
+                            <swiper  ref="mySwiper" :options="swiperOptions">
+                                <swiper-slide v-for="showlist in Titme.showList" :key="showlist.id">
+                                    <div class="Scheduling">
+                                        <p>{{showlist.show_time}}</p>
+                                        <span></span>
+                                    </div>
+                                    <img :src="showlist.pic" alt="">
+                                </swiper-slide>
                             </swiper>
                         </template>
                     </div>
@@ -38,21 +43,33 @@ export default {
     name:"Theater",
     data () {
         return {
-            
-            title:"剧院",   
-            fanhui:true,
-            iocn:true,
-            page:1,
+            title:"剧院",    //topbar标题
+            page:1,        //页码
             version:"6.1.1",
             referer:2,
-            theatre_list:[]
+            theatre_list:[],    //剧院列表
+            swiperOptions: {    //swiper配置信息
+                pagination: '.swiper-pagination',
+                // slidesPerView :'auto',
+                slidesPerView :'2.8',  //一排显示多少张图片
+                paginationClickable: true,
+                // spaceBetween: 8,   //两张图片直接间隔
+                freeMode: true
+            }
         }
     },
+
     async mounted () {
         const res =await this.$axios.get(`https://api.juooo.com/theatre/index/getTheatreList?page=${this.page}&version=${this.version}&referer${this.referer}`,)  
         this.theatre_list = res.data.theatre_list
+        // this.swiper.slideTo(0, 1000, false)
+
     },
-   
+   computed: {
+       swiper() {
+        // return this.$refs.mySwiper.$swiper
+      }
+   },
     components: {
         TopBar
     }
@@ -107,6 +124,35 @@ export default {
                         }
                     }
                 }
+                .swiper-container {
+                    width: 600px;
+                    margin-top: 26px;
+                    .Scheduling{
+                        font-size: 28px;
+                        border-bottom: 4px solid #ebebeb;
+                        margin-bottom: 36px;
+                        padding-bottom: 26px;
+                        color: #b3b3b3;
+                        text-align: center;
+                        position: relative;
+                        span{
+                            display: block;
+                            position: absolute;
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                            background: #b3b3b3;
+                            left: 46%;
+                            right: 10px;
+                            top: 49px ;
+                        }
+                    }
+                    img{
+                        width: 200px;
+                        height: 293px;
+                        margin: 10px 10px 0 0;
+                    }
+                }  
             }
         }
     }
