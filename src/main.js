@@ -9,6 +9,9 @@ import * as API from "@/axios/index.js"
 Vue.prototype.$API = API
 Vue.prototype.$axios = axios
 
+// 注册公共组件
+import TopBar from "./components/TopBar"
+Vue.component("TopBar", TopBar)
 
 import router from "./router/index.js"
 import store from "./store"
