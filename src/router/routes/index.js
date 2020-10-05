@@ -4,6 +4,7 @@ const Ticket = () => import('@/views/Ticket/index.vue')
 const Person = () => import('@/views/Person/index.vue')
 
 const ShowList = () => import("@/views/ShowList/index.vue")
+const ShowInfo = () => import("@/views/ShowInfo/index.vue")
 
 export default [
     {
@@ -25,5 +26,9 @@ export default [
     {
         path:"/showlist",
         component:ShowList
+    },
+    {
+        path:"/showinfo",
+        component:ShowInfo
     }
 ]

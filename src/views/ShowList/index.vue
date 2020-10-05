@@ -51,6 +51,11 @@ export default {
       showDrawer:true
     };
   },
+  computed:{
+    ...mapState({
+      categoryList:state=>state.show.categoryList
+    })
+  },
   mounted(){
     this.getCategoryList()
   },
