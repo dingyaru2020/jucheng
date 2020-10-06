@@ -1,3 +1,4 @@
+
 const Home = () => import('../../../src/views/Home')
 // const Theater = () => import('@/views/Theater/swiperdome.vue')
 // 剧院
@@ -17,7 +18,7 @@ const Person = () => import('@/views/Person/index.vue')
 
 const ShowList = () => import("@/views/ShowList/index.vue")
 const ShowInfo = () => import("@/views/ShowInfo/index.vue")
-
+const test = () => import("@/views/test/index.vue")
 export default [
     {
         path:"/",
@@ -64,5 +65,9 @@ export default [
     {
         path:"/showinfo",
         component:ShowInfo
+    },
+    {
+        path:"/test",
+        component:test
     }
 ]
