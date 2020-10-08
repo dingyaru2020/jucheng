@@ -1,6 +1,6 @@
 import {GET_CATEGORY_LIST} from "../../mutationTypes"
 import * as axios from "@/axios"
-console.log("-----",axios)
+// console.log("-----",axios)
 const state={
     categoryList:[]
 }
@@ -12,7 +12,7 @@ const mutations={
 const actions={
     async getCategoryList({commit}){
         const {data} = await axios.show.reqCategoryList()
-        console.log(data)
+        // console.log(data)
     }
 }
 const getters={}

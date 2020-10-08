@@ -49,9 +49,9 @@ export default [
     {
         path:"/theater",
         component:Theater,
-        // children: [
-        //     { path: 'detail', component: Detail }
-        // ]
+        children: [
+            { path: 'detail', component: Detail }
+        ]
     },
     {
         path:"/ticket",

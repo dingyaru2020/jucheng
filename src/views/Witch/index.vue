@@ -1,11 +1,16 @@
 <template>
-    <div class="witch">
-        
-        <!-- <div class="witchTitle" :style="backgroundImage:url({{mobile_col_img}})"> -->
-        <div class="witchTitle" >
-            <TopBar />
+    <div class="witch"  ref="witchTitle">
+        <div class="www">
+        <div class="witchTitle">
+            <!-- <TopBar /> -->
             <div class="bg">
                 <img :src="witch.mobile_col_img" alt="">
+            </div>
+            <div class="navBar">
+
+                <div class="iconfont icon-fanhui" ></div>
+                <div class="treater">{{title}}</div>
+                <div class="iconfont icon-19" ></div>
             </div>
             <div class="titleContent">
                 <img :src="witch.mobile_col_img" alt="">
@@ -32,11 +37,17 @@
             </div>
             
         </div>
+        </div>
+        
+        <!-- <div class="witchTitle" :style="backgroundImage:url({{mobile_col_img}})"> -->
+        
     </div>
 </template>
 
 <script>
 import moment from 'moment';
+import BetterScroll from 'better-scroll'
+
 export default {
     name:"Witch",
     data () {
@@ -47,25 +58,6 @@ export default {
             witch:{},
             startTime:0,
             endTime:0
-// city_id: 4
-// city_name: "上海"
-// end_time: 1591097400
-// is_end: 1
-// min_price: 100
-// sch_id: 114634
-// sch_name: " 聚橙制作 | 宫崎骏经典·暖心成长音乐剧《魔女宅急便》-上海站"
-// show_id: 42814
-// start_time: 1590751800
-// venue_id: 184
-// venue_name: "人民大舞台"
-// city_num: 8
-// end_time: 1607254200
-// id: 3
-// list: (8) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
-// mobile_col_img: "https://image.juooo.com/group1/M00/00/02/rBAAI19XUwCAMM2fAACX3iQYe5s860.jpg"
-// name: "聚橙制作 | 宫崎骏经典·暖心成长音乐剧《魔女宅急便》"
-// sch_num: 24
-// show_num: 2
         }
     },
     async mounted () {
@@ -80,13 +72,26 @@ export default {
         this.endTime = moment(res.data.end_time).format('YYYY-MM-DDTHH:mm');
         console.log(res.data.start_time,res.data.end_time)
         console.log(this.startTime,this.endTime)
+    //     new BetterScroll(this.$refs.witchTitle,{
+    //     //    scrollY
+    //    })
+                this.$nextTick(()=>{
+                    //将滑屏的包裹器传入到BScroll内部就可以产生滑屏
+                    this.leftScroll = new BetterScroll(this.$refs.witchTitle,);
+                    //计算得到右侧滑屏元素移动的实时距离(正值)
+            
+                })
+
     }
 }
 </script>
 
 <style lang="less" scoped>
     .witch{
+        height: 100%;
+        width: 100%;
         background: #f5f5f5;
+        
         .witchTitle{
             height: 459px;
             overflow: hidden;

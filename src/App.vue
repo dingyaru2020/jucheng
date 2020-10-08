@@ -14,6 +14,8 @@ export default {
 
 <style>
   #app{
-    color:#232323
+    color:#232323;
+    width: 100%;
+    height: 100%;
   }
 </style>
