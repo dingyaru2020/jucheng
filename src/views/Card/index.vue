@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div re>
         <TopBar class="topBar" :title="title" :fanhui="fanhui" :icon="icon"></TopBar>
         <!-- 头部轮播 -->
         <div class="swiper">
@@ -15,17 +15,77 @@
                 <h6>vip+ </h6>
                 <span>开通VIP+，演出随心看</span>
             </div>
-            <!-- <div class="vipSwiper"  v-for="list in equity_list" :key="list.benefits_name"> -->
             <div class="vipSwiper" >
                 <div class="vips" v-for="list in equity_list" :key="list.benefits_name">
-                    <!-- <img :src="list.benefits_icon" alt=""> -->
                     <div class="v">
-                        <!-- <i :class="'right-cell__icon--'+list.benefits_icon" class="right-cell"></i> -->
                         <div :class="'right-cell right-cell__icon--'+list.benefits_icon " ></div>
                         <span>{{list.benefits_name}}</span>
                     </div>
                 </div>
             </div>
+            <!-- <div class="entry-block margin-top">
+                
+                <div class="entry-block__title">
+                    {{once_card.store_card[0].card_type_name}}
+                <span class="entry-block__title__desc">{{once_card.store_title}}</span>
+                </div>
+                 <div class="entry-card-list">
+                     <div class="card-list__item">
+                         <div class="orange-plus">
+                             <div class="card-cell">
+                             <div class="image card-cell__bg-img">
+                                 <img :src="once_card.store_card[0].card_image" class="ju-image ju-image--fill">
+                             </div>
+                             <div class="card-cell__desc">
+                                 <div class="card-cell__desc__top">
+                                {{once_card.store_card[0].name}}
+                                </div>
+                                <div class="card-cell__desc__middle">有效期： 长期有效</div>
+                                <div class="card-cell__desc__bottom">
+                                    <div class="orange-plus__price">
+                                        <span class="orange-plus__price__num">¥{{once_card.store_card[0].card_price}}</span>
+                                         <span class="orange-plus__price__give">赠VIP+</span>
+                                    </div>
+                                </div>
+                             </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+            </div> -->
+              <div class="entry-block margin-top" >
+                <div class="entry-block__title">
+                    <div class="entry-title">品类
+                         <span class="entry-title__point"></span>
+                        次卡
+                    </div>
+                </div>
+                 <div class="entry-card-list" v-for="list1 in once_card.cate_card" :key="list1.card_type_id">
+                     <div class="card-list__item">
+                         <div class="orange-plus">
+                             <div class="card-cell">
+                             <div class="image card-cell__bg-img">
+                                 <img :src="once_card.store_card[0].card_image" class="ju-image ju-image--fill">
+                             </div>
+                             <div class="card-cell__desc">
+                                 <div class="card-cell__desc__top">
+                                {{once_card.store_card[0].name}}
+                                </div>
+                                <div class="card-cell__desc__middle">有效期： 长期有效</div>
+                                <div class="card-cell__desc__bottom">
+                                    <div class="orange-plus__price">
+                                        <span class="orange-plus__price__num">¥{{once_card.store_card[0].card_price}}</span>
+                                         <span class="orange-plus__price__give">赠VIP+</span>
+                                    </div>
+                                </div>
+                             </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+
+            
         </div>
         <!-- <Card :onceCard="once_card" ></Card> -->
        
@@ -168,5 +228,133 @@ export default {
         }
     }
 }
+.margin-top{
+    margin-top:24px;
+}
+.entry-block{
+    width: 100%;
+    background-color: white;
+    padding: 20px 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.entry-block__title {
+    padding-bottom:px35;
+    height: 54px;
+    line-height: 54px;
+    color: #232323;
+    font-size: 38px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: bold;
+}
+.entry-block__title__desc{
+    font-size: 28px;
+    color: #666666;
+    font-weight: normal;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-left:20px;
+}
+.card-list {
+    margin-top: -40px;
+    margin-bottom: -51px;
+}
+.card-list__item {
+    padding: 50px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+.card-cell {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.image, .ju-tabbar {
+    position: relative;
+}
+.card-cell__bg-img {
+    width: 320px;
+    height: 202px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.ju-image--fill {
+    width: 100%;
+    height: 100%;
+}
+.card-cell__desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin-left: 30px;
+}
+.card-cell__desc__top{
+    color: #232323;
+    font-size: 34px;
+    font-weight: bold;
+}
+.card-cell__desc__middle{
+    color: #999999;
+    font-size: 24px;
+    height: 48px;
+    line-height: 48px;
+}
+.card-cell__desc__bottom {
+    height: 48px;
+    line-height: 48px;
+}
+.orange-plus__price__num {
+    color: #ff6743;
+    font-size: 32px;
+    font-weight: bold;
+}
+.orange-plus__price__give {
+    display: inline-block;
+    width: 94px;
+    height: 34px;
+    background: rgba(255,129,0,0.1);
+    border-radius: 6px;
+    text-align: center;
+    line-height: 34px;
+    font-size:  24px;
+    color: #d5a370;
+    padding-top: 1px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 32px;
+}
+.entry-title__point{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #232323;
+    margin: 12px;
 
+}
+.entry-title{
+        display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
 </style>
