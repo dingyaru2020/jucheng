@@ -1,12 +1,14 @@
 <template>
-    <div class="theater-head">
+    <div class="theater-head" v-show="showtheater">
         <TopBar :title="title" ></TopBar>
+        <!-- <router-view><router-view> -->
         <div class="theater-body">
             <div class="wrapper">
                 <!-- 剧院信息 -->
                 <div class="content" v-for="Titme in theatre_list" :key="Titme.id">
                     <!-- 剧院头部信息 -->
-                    <a href="">
+                    <a href="javascript:" @click="display">
+                    <!-- <router-link to="theater/detail" @click="display"> -->
                         <div class="theaterTitle">
                             <img :src="Titme.pic" alt="">
                             <div class="Ttitle">
@@ -17,6 +19,7 @@
                                 <i class="iconfont icon-19"></i>
                             </div>
                         </div>
+                    <!-- </router-link> -->
                     </a>
                     <div >
                         <template>
@@ -38,7 +41,8 @@
 </template>
 
 <script>
-    import TopBar from "../../components/TopBar"
+    // import TopBar from "../../components/TopBar"
+    // import BScroll from '@better-scroll/core'
 export default {
     name:"Theater",
     data () {
@@ -55,7 +59,8 @@ export default {
                 paginationClickable: true,
                 // spaceBetween: 8,   //两张图片直接间隔
                 freeMode: true
-            }
+            },
+            showtheater:true
         }
     },
 
@@ -65,7 +70,13 @@ export default {
         // this.swiper.slideTo(0, 1000, false)
 
     },
-   computed: {
+    methods: {
+        display(){
+            console.log(11111)
+            this.showtheater=false
+        }
+    },
+    computed: {
        swiper() {
         // return this.$refs.mySwiper.$swiper
       }
