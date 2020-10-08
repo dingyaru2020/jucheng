@@ -2,6 +2,8 @@ const Home = () => import('../../../src/views/Home')
 // const Theater = () => import('@/views/Theater/swiperdome.vue')
 // 剧院
 const Theater = () => import('@/views/Theater/index.vue')
+// 剧院详情
+const Detail = () => import('@/views/Detail/index.vue')
 // 欢聚橙卡
 const Card = () => import('@/views/Card/index.vue')
 // 橙PLUS卡
@@ -46,7 +48,10 @@ export default [
     // 剧院
     {
         path:"/theater",
-        component:Theater
+        component:Theater,
+        // children: [
+        //     { path: 'detail', component: Detail }
+        // ]
     },
     {
         path:"/ticket",
@@ -59,5 +64,7 @@ export default [
     {
         path:"/showlist",
         component:ShowList
-    }
+    },
+    { path: '/detail', component: Detail }
+    
 ]

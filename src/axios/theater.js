@@ -29,5 +29,18 @@ export default{
     // https://api.juooo.com/vip/index/getVipRule?vip_rule_id=1&type=0&version=6.1.1&referer=2
     getVipRuleID(vip_rule_id,type,version,referer){
         return axios.get(`/api/vip/index/getVipRule?vip_rule_id=${vip_rule_id}&type=${type}&${version}&referer=${referer}`)
+    },
+    // 剧院详情
+    // 剧院地址信息
+    // https://api.juooo.com/theatre/index/getTheatreInfo?theatre_id=2&longitude=&latitude=&version=6.1.1&referer=2
+    // getTheatreInfo(theatre_id,version,referer){
+    getTheatreInfo(theatre_id,version,referer){
+        return axios.get(`/api/theatre/index/getTheatreInfo?theatre_id=2&longitude=&latitude=&version=6.1.1&referer=2`)
+    },
+    // 剧院列表信息
+    // https://api.juooo.com/Show/Search/getShowList?page=1&venue_id=1078,1079,1795&time=1602038108501&version=6.1.1&referer=2&sign=eea8d1c956abcf5a517ed73f47c0984f
+    // getShowList(page,venue_id,time,version,referer,sign){
+    getShowList(){
+        return axios.get(`/api/Show/Search/getShowList?page=1&venue_id=1078,1079,1795&time=1602038108501&version=6.1.1&referer=2&sign=eea8d1c956abcf5a517ed73f47c0984f`)
     }
 }

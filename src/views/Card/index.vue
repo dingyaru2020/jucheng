@@ -21,7 +21,7 @@
                     <!-- <img :src="list.benefits_icon" alt=""> -->
                     <div class="v">
                         <!-- <i :class="'right-cell__icon--'+list.benefits_icon" class="right-cell"></i> -->
-                        <div :class="'right-cell right-cell__icon--'+list.benefits_icon " id=""></div>
+                        <div :class="'right-cell right-cell__icon--'+list.benefits_icon " ></div>
                         <span>{{list.benefits_name}}</span>
                     </div>
                 </div>
@@ -142,7 +142,7 @@ export default {
                     display: block;
                     height: 94px;
                     width: 94px;
-                    background:red;
+                    // background:red;
                     border-radius: 50%;
                     background-image: url(../../static/img/vip_plus_right.61e731b.png);
                     background-size: 442px 332px;
