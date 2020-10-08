@@ -18,6 +18,8 @@ import store from "./store"
 import "./static/iconfont/iconfont.css"
 
 import "./plugin"
+//注册全局时间过滤器
+// import "./plugin/filter.js"
 
 Vue.config.productionTip = false
 
@@ -25,6 +27,13 @@ Vue.config.productionTip = false
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/swiper-bundle.css'
 Vue.use(VueAwesomeSwiper)
+
+//图片懒加载
+import VueLazyload from 'vue-lazyload'
+Vue.use(VueLazyload,{
+  error:"@/static/images/show/error.jpg",
+  loading:'@/static/images/show/loading.gif'
+})
 
 new Vue({
   router,

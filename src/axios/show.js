@@ -15,5 +15,9 @@ export default{
     //请求演出详情   /Schedule/Schedule/getScheduleInfo?schedular_id=111475&version=6.1.1&referer=2
     reqShowInfo(schedularId){
         return axios.get(`/api/Schedule/Schedule/getScheduleInfo?schedular_id=${schedularId}`)
+    },
+    //立即购买弹出框/Schedule/Schedule/getScheduleTicket?schedular_id=116291
+    reqTicketList(schedularId){
+        return axios.get(`/api/Schedule/Schedule/getScheduleTicket?schedular_id=${schedularId}`)
     }
 }

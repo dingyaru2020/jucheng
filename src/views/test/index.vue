@@ -39,16 +39,15 @@
 </template>
 
 <script>
-import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
-import 'swiper/swiper-bundle.css'
+import BScroll from "better-scroll";
 export default {
   name: 'test',
   mounted(){
       console.log(this.$refs.swiper)
-      const swiper = new Swiper(this.$refs.swiper,{
-          direction:"vertical"
+      this.$nextTick(()=>{
+          new BScroll(this.$refs.swiper,{click:true})
       })
-      console.log(swiper)
+      
   }
 }
 </script>
@@ -57,14 +56,15 @@ export default {
     .wrapper{
         width: 100%;
         height: 100%;
-        position: relative;
-        overflow: hidden;
+        // position: relative;
+        // overflow: hidden;
         .swiper{
-            zoom: 1;
-            background: darkcyan;
+            // background: darkcyan;
             width: 100%;
-            position: absolute;
-            top: 20px;
+            height: 100%;
+            overflow: hidden;
+            // position: absolute;
+            // top: 20px;
         }
         .footer{
             position: fixed;
