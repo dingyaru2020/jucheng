@@ -15,10 +15,13 @@ const VIP = () => import('@/views/Card/index.vue')
 // 未做
 const Ticket = () => import('@/views/Ticket/index.vue')
 const Person = () => import('@/views/Person/index.vue')
-
+//演出列表页
 const ShowList = () => import("@/views/ShowList/index.vue")
+//演出详情页
 const ShowInfo = () => import("@/views/ShowInfo/index.vue")
 const test = () => import("@/views/test/index.vue")
+//订单确认页
+const OrderConfirm = () => import("@/views/OrderConfirm/index.vue")
 export default [
     {
         path:"/",
@@ -65,6 +68,10 @@ export default [
     {
         path:"/showinfo",
         component:ShowInfo
+    },
+    {
+        path:"/orderconfirm",
+        component:OrderConfirm
     },
     {
         path:"/test",
