@@ -187,14 +187,16 @@ export default {
       }
     })
   },
-  mounted() {
-    this.getList();
-    this.getDiscountList();
-    this.getShowSwiperList();
-    this.getHotShowList();
-    this.getRecommendList();
+  created() {
+    // this.initWrapper();
+  },
+  async mounted() {
+    await this.getList();
+    await this.getDiscountList();
+    await this.getShowSwiperList();
+    await this.getHotShowList();
+    await this.getRecommendList();
     this.initWrapper();
-    console.log(this.list);
   },
   methods: {
     ...mapActions([
@@ -239,7 +241,7 @@ export default {
     toShowList(id) {
       this.$router.push({
         path: "/showlist",
-        query:{id}
+        query: { id }
       });
     }
   }
