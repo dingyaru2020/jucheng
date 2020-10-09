@@ -8,21 +8,28 @@
                 <div class="vipBody" ref="vipBody">
                     <div class="vipTitle">
                         <div class="zhe">专享折扣</div>
-                        <span></span>
+                        <span class="iconfont icon-iconfontjiantou3"></span>
                     </div>
                     <div class="vipitem" >
                         <div v-for="(item,index) in vipList" :key="index" class="item" >
-                            <!-- <img :src="item.pic" alt="">
-                            <div class="vipName">{{item.schedular_name}}</div>
-                            <p>{{item.min_discount}}<span>折起</span></p> -->
-                            <div class="vipContent">
+                            <div class="vipContent" @click="go(item.schedular_id)">
                                 <div>
                                     <img :src="item.pic" alt="">
                                     <div class="vipName">{{item.schedular_name}}</div>
-                                    <p>{{item.min_discount}}<span>折起</span></p>
+                                    <p>{{item.min_discount}} <span>折起</span></p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="carditem">
+                        <div class="cardName">双倍积分</div>
+                        <img src="../../static/img/vip_plus_double_points.3e1951f.png" alt="">
+                    </div>
+                    <div class="carditem">
+                        <div class="cardName">全场包邮</div>
+                        <img src="../../static/img/vip_plus_free_shipping.95caaaa.png" alt="">
                     </div>
                 </div>
             </div>
@@ -57,6 +64,12 @@ export default {
             })
         })
     },
+    methods: {
+        go(schedular_id){
+            // console.log(schedular_id)
+            this.$router.push({path:"showinfo",query:{schedular_id}})
+        }  
+    },
     components: {
         Discount:Discount
     }
@@ -75,10 +88,13 @@ export default {
         .vipbs{
             width: 100%;
             height: 100%;
+            background: #f5f5f5;
         }
         .vipBody{
             height: 100%;
-            margin-left: 24px;
+            padding-left: 24px;
+            background: #fff;
+            // padding-bottom: 50px;
             .vipTitle{
                 padding-bottom: 0.46667rem;
                 height: 0.72rem;
@@ -96,10 +112,21 @@ export default {
                     font-size: 0.50667rem;
                     font-weight: bold;
                 }
+                span{
+                    display: inline-block;
+                    font-weight: normal;
+                    font-size: 30px;
+                    // transform: scale(0.5);
+                    transform-origin: 100% 50%;
+                    color: #666666;
+                    // margin-top: -0.05333rem;
+                    margin-right: 40px;
+                }
             }
             .vipitem{
                 display: flex;
                 // justify-content: space-around;
+                // height:789px;
                 flex-wrap: wrap;
                 .item{
                     margin: 0 10px;
@@ -145,6 +172,34 @@ export default {
                 }
             }
 
+        }
+        .card{
+            padding-bottom: 90px;
+            .carditem{
+                width: 100%;
+                background-color: white;
+                padding: 0.58667rem 0.4rem;
+                box-sizing: border-box;
+                overflow: hidden;
+                margin-top: 0.32rem;
+                .cardName{
+                    padding-bottom: 0.46667rem;
+                    height: 0.72rem;
+                    line-height: 0.72rem;
+                    color: #232323;
+                    font-size: 0.50667rem;
+                    align-items: center;
+                    font-weight: bold;
+                }
+                img{
+                    border: none;
+                    border-color: transparent;
+                    vertical-align: middle;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            
         }
     }
 </style>

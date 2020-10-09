@@ -61,9 +61,9 @@ export default [
     meta: {
       title: "Home",
       show: true,
-    }
+    },
     // children: [
-    //     { path: 'detail', component: Detail }
+    //     { path: 'detail/:sid', component: Detail }
     // ]
   },
   {
@@ -102,5 +102,5 @@ export default [
     path: "/test",
     component: test
   },
-  { path: "/detail", component: Detail }
+  { path: "/detail/:sid", component: Detail }
 ];
