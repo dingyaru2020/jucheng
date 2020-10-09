@@ -49,7 +49,7 @@
 </template>
 
 <script>
-import { mapState, mapActions, mapGetters } from "vuex";
+import { mapState, mapActions, mapGetters, mapMutations } from "vuex";
 import ShowCard from "@/components/ShowCard"
 import BScroll from "better-scroll";
 export default {
@@ -86,6 +86,7 @@ export default {
     },
     changeActiveId(id){
       this.activeId = id 
+      this.$store.commit("CLEAR_SHOW_LIST")
     }
   },
   components:{

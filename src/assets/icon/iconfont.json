@@ -1,0 +1,30 @@
+{
+  "id": "1656058",
+  "name": "zxp",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "9853453",
+      "name": "左右箭头",
+      "font_class": "zuoyoujiantou21",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "11134727",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "17509247",
+      "name": "左右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

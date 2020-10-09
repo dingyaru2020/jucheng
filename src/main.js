@@ -9,6 +9,8 @@ import * as API from "@/axios/index.js"
 Vue.prototype.$API = API
 Vue.prototype.$axios = axios
 
+import axios1 from "@/axios/axios1.js"
+Vue.prototype.$axios1 = axios1
 // 注册公共组件
 import TopBar from "./components/TopBar"
 Vue.component("TopBar", TopBar)
@@ -34,6 +36,20 @@ Vue.use(VueLazyload,{
   error:"@/static/images/show/error.jpg",
   loading:'@/static/images/show/loading.gif'
 })
+
+import { Swipe, SwipeItem, Tabbar, TabbarItem, Form, button ,field} from "vant";
+import "./assets/icon/iconfont.css";
+import Recommend from "../src/components/Recommend";
+import waterfall from 'vue-waterfall2'
+Vue.use(Swipe);
+Vue.use(SwipeItem);
+Vue.use(Tabbar);
+Vue.use(TabbarItem);
+Vue.use(Form);
+Vue.use(button);
+Vue.use(field);
+Vue.use(waterfall)
+Vue.component("Recommend", Recommend);
 
 new Vue({
   router,

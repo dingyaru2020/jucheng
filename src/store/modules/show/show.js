@@ -3,7 +3,8 @@ import {
     GET_SHOW_LIST,
     GET_CITY_LIST,
     GET_SHOW_INFO,
-    GET_TICKET_LIST
+    GET_TICKET_LIST,
+    CLEAR_SHOW_LIST
 } from "../../mutationTypes"
 import * as axios from "@/axios"
 // console.log("-----",axios)
@@ -40,6 +41,10 @@ const mutations={
     [GET_TICKET_LIST](state,data){
         state.ticketList = data
     },
+    [CLEAR_SHOW_LIST](state){
+        state.showList = []
+        console.log("---","清除showlist")
+    }
 }
 const actions={
     async getCategoryList({commit}){
