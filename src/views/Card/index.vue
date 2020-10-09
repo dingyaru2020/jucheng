@@ -1,94 +1,130 @@
 <template>
-    <div re>
+    <div class="card">
         <TopBar class="topBar" :title="title" :fanhui="fanhui" :icon="icon"></TopBar>
-        <!-- 头部轮播 -->
-        <div class="swiper">
-            <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-                <van-swipe-item v-for="banner in HotBanner" :key="banner.mb_image">
-                    <img :src="banner.mb_image" alt="">
-                </van-swipe-item>
-            </van-swipe>
-        </div>
-        <!-- VIP+ -->
-        <div class="vip">
-            <div class="vipTitle">
-                <h6>vip+ </h6>
-                <span>开通VIP+，演出随心看</span>
-            </div>
-            <div class="vipSwiper" >
-                <div class="vips" v-for="list in equity_list" :key="list.benefits_name">
-                    <div class="v">
-                        <div :class="'right-cell right-cell__icon--'+list.benefits_icon " ></div>
-                        <span>{{list.benefits_name}}</span>
-                    </div>
+        <div class="careswiper" ref="card">
+            <div>
+                <!-- 头部轮播 -->
+                <div class="swiper">
+                    <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+                        <van-swipe-item v-for="banner in HotBanner" :key="banner.mb_image">
+                            <img :src="banner.mb_image" alt="">
+                        </van-swipe-item>
+                    </van-swipe>
                 </div>
-            </div>
-            <!-- <div class="entry-block margin-top">
-                
-                <div class="entry-block__title">
-                    {{once_card.store_card[0].card_type_name}}
-                <span class="entry-block__title__desc">{{once_card.store_title}}</span>
-                </div>
-                 <div class="entry-card-list">
-                     <div class="card-list__item">
-                         <div class="orange-plus">
-                             <div class="card-cell">
-                             <div class="image card-cell__bg-img">
-                                 <img :src="once_card.store_card[0].card_image" class="ju-image ju-image--fill">
-                             </div>
-                             <div class="card-cell__desc">
-                                 <div class="card-cell__desc__top">
-                                {{once_card.store_card[0].name}}
+                <!-- VIP+ -->
+                <div class="vip">
+                    <div class="vipTitle">
+                        <div class="vipbg">
+                            <h6>vip+ </h6>
+                            <span>开通VIP+，演出随心看</span>
+                        </div>
+                        <div class="vipSwiper" >
+                            <div class="vips" v-for="list in equity_list" :key="list.benefits_name">
+                                <div class="v">
+                                    <div :class="'right-cell right-cell__icon--'+list.benefits_icon " ></div>
+                                    <span>{{list.benefits_name}}</span>
                                 </div>
-                                <div class="card-cell__desc__middle">有效期： 长期有效</div>
-                                <div class="card-cell__desc__bottom">
-                                    <div class="orange-plus__price">
-                                        <span class="orange-plus__price__num">¥{{once_card.store_card[0].card_price}}</span>
-                                         <span class="orange-plus__price__give">赠VIP+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- 卡的种类 -->
+                    <div class="entry-block margin-top">
+                        
+                        <div class="entry-block__title">
+                            {{store_card[0].card_type_name}}
+                        <span class="entry-block__title__desc">{{store_title}}</span>
+                        </div>
+                        <div class="entry-card-list">
+                            <div class="card-list__item">
+                                <div class="orange-plus">
+                                    <div class="card-cell">
+                                    <div class="image card-cell__bg-img">
+                                        <img :src="store_card[0].card_image" class="ju-image ju-image--fill">
+                                    </div>
+                                    <div class="card-cell__desc">
+                                        <div class="card-cell__desc__top">
+                                        {{store_card[0].name}}
+                                        </div>
+                                        <div class="card-cell__desc__middle">有效期： 长期有效</div>
+                                        <div class="card-cell__desc__bottom">
+                                            <div class="orange-plus__price">
+                                                <span class="orange-plus__price__num">¥{{store_card[0].card_price}}</span>
+                                                <span class="orange-plus__price__give">赠VIP+</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                     </div>
                                 </div>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-            </div> -->
-              <div class="entry-block margin-top" >
-                <div class="entry-block__title">
-                    <div class="entry-title">品类
-                         <span class="entry-title__point"></span>
-                        次卡
+                            </div>
+                        </div>
                     </div>
-                </div>
-                 <div class="entry-card-list" v-for="list1 in once_card.cate_card" :key="list1.card_type_id">
-                     <div class="card-list__item">
-                         <div class="orange-plus">
-                             <div class="card-cell">
-                             <div class="image card-cell__bg-img">
-                                 <img :src="once_card.store_card[0].card_image" class="ju-image ju-image--fill">
-                             </div>
-                             <div class="card-cell__desc">
-                                 <div class="card-cell__desc__top">
-                                {{once_card.store_card[0].name}}
-                                </div>
-                                <div class="card-cell__desc__middle">有效期： 长期有效</div>
-                                <div class="card-cell__desc__bottom">
-                                    <div class="orange-plus__price">
-                                        <span class="orange-plus__price__num">¥{{once_card.store_card[0].card_price}}</span>
-                                         <span class="orange-plus__price__give">赠VIP+</span>
+                    <div class="entry-block margin-top" >
+                        <div class="entry-block__title">
+                            <div class="entry-title">品类
+                                <span class="entry-title__point"></span>
+                                次卡
+                            </div>
+                        </div>
+                        <div class="entry-card-list" v-for="list in cate_card" :key="list.id">
+                            <div class="card-list__item">
+                                <div class="orange-plus">
+                                    <div class="card-cell">
+                                        <div class="image card-cell__bg-img">
+                                            <img :src="list.card_image" class="ju-image ju-image--fill">
+                                        </div>
+                                        <div class="card-cell__desc">
+                                            <div class="card-cell__desc__top">
+                                                {{list.name}}
+                                            </div>
+                                            <div class="card-cell__desc__middle">有效期： 长期有效</div>
+                                            <div class="card-cell__desc__bottom">
+                                                <div class="orange-plus__price">
+                                                    <span class="orange-plus__price__num">¥{{list.card_price}}</span>
+                                                    <span class="orange-plus__price__give">赠VIP+</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                             </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entry-block margin-top" >
+                        <div class="entry-block__title">
+                            <div class="entry-title">品类
+                                <span class="entry-title__point"></span>
+                                次卡
+                            </div>
+                        </div>
+                        <div class="entry-card-list" v-for="list in once_card" :key="list.id">
+                            <div class="card-list__item">
+                                <div class="orange-plus">
+                                    <div class="card-cell">
+                                        <div class="image card-cell__bg-img">
+                                            <img :src="list.card_image" class="ju-image ju-image--fill">
+                                        </div>
+                                        <div class="card-cell__desc">
+                                            <div class="card-cell__desc__top">
+                                                {{list.name}}
+                                            </div>
+                                            <div class="card-cell__desc__middle">有效期： 长期有效</div>
+                                            <div class="card-cell__desc__bottom">
+                                                <div class="orange-plus__price">
+                                                    <span class="orange-plus__price__num">¥{{list.card_price}}</span>
+                                                    <span class="orange-plus__price__give">赠VIP+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
             </div>
-
-            
         </div>
-        <!-- <Card :onceCard="once_card" ></Card> -->
-       
+        <!-- <Card :onceCard="once_card" ></Card> --> 
     </div>
 </template>
 
@@ -100,6 +136,7 @@ import { Swipe, SwipeItem } from 'vant';
 Vue.use(Swipe);
 Vue.use(SwipeItem);
 import Card from "../../components/card"
+import BetterScroll from 'better-scroll'
 export default {
     data () {
         return {
@@ -108,26 +145,39 @@ export default {
             icon:true,
             version:"6.1.1",
             referer:2,
-            once_card:{},
+            once_card:[],
+            store_card:[{}],
+            cate_card:[],
+            store_title:"",
             HotBanner:[],
             equity_list:[]
-
         }
     },
-  
-
     async mounted () {
         this.options={
             version:this.version,
             referer:this.referer
         }   
-        const res = await this.$API.default.theater.getCardGroupList(this.version,this.referer)
-        this.once_card = res.data
-        const berner = await this.$API.default.theater.getHotBanner(this.version,this.referer)
+        const res = await this.$API.theater.getCardGroupList(this.version,this.referer)
+        this.once_card = res.data.once_card
+        const {once_card,store_card,cate_card,store_title} = res.data
+        this.once_card = once_card
+        this.store_card = store_card
+        this.cate_card = cate_card
+        this.store_title = store_title
+        console.log(
+            this.once_card, this.store_card,this.cate_card,this.store_title 
+        )
+        const berner = await this.$API.theater.getHotBanner(this.version,this.referer)
         this.HotBanner = berner.data
-        const vipRule = await this.$API.default.theater.getVipRule(this.version,this.referer)
+        const vipRule = await this.$API.theater.getVipRule(this.version,this.referer)
         this.equity_list =vipRule.data.vip_rule_data.equity_list
-        console.log(this.once_card)
+        // console.log(this.once_card)
+        this.$nextTick(()=>{
+            new BetterScroll(this.$refs.card,{
+                click:true
+            })
+        })
     },
 
     components: {
@@ -140,6 +190,15 @@ export default {
 // html{overflow: hidden;}
 .topBar{
     background: white;
+    position: relative;
+    z-index: 11;
+}
+.card{
+    height: 100%;
+
+}
+.careswiper{
+    height: 100%;
 }
 .swiper{
     width: 750px;
@@ -171,11 +230,15 @@ export default {
 .vip{
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
+    background: #f5f5f5;
     .vipTitle{
-        display: flex;
+        background: #fff;
         width: 100%;
-        height: 54px;
         line-height: 54px;
+        .vipbg{
+            display: flex;
+        }
         h6{
             padding:0 20px;
             font-size: 38px;
@@ -191,8 +254,8 @@ export default {
     .vipSwiper{
         display: flex;
         width: 100%;
-        // overflow-x:scroll;
-                margin-top: 35px;
+        background: #fff;
+        margin-top: 35px;
 
         .vips{
             margin-left: 32px;
@@ -202,7 +265,6 @@ export default {
                     display: block;
                     height: 94px;
                     width: 94px;
-                    // background:red;
                     border-radius: 50%;
                     background-image: url(../../static/img/vip_plus_right.61e731b.png);
                     background-size: 442px 332px;

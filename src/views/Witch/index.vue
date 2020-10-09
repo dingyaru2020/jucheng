@@ -1,59 +1,44 @@
 <template>
     <div class="witch"  ref="witchTitle">
         <div class="www">
-        <div class="witchTitle">
-            <!-- <TopBar /> -->
-            
-            <div class="bg">
-                <img :src="witch.mobile_col_img" alt="">
-            </div>
-            
-            <div class="titleContent">
-                <div class="navBar">
+            <div class="witchTitle">
 
-                <div class="iconfont icon-fanhui" ></div>
-                <div class="treater">魔女</div>
-                <div class="iconfont icon-home" @click="$router.push({path:'/'})"></div>
-                <!-- <div class="iconfont icon-home" @click="console.log(11)">121212</div> -->
-                <!-- <i class="icon iconfont icon-home" @click="$router.push({path:'/'})"></i> -->
-                
-            </div>
-            <div class="witchimg">
-                <img :src="witch.mobile_col_img" alt="">
-                <div class="witchSwiper">
-                    <h3 class="name">{{witch.name}}</h3>
-                    <div class="city">{{witch.city_num}}个城市 | {{witch.sch_num}}场演出</div>
-                    <div class="endtime">{{witch.end_time}}</div>
+                <div class="bg">
+                    <img :src="witch.mobile_col_img" alt="">
                 </div>
-            </div>
-                <!-- <img :src="witch.mobile_col_img" alt="">
-                <div class="witchSwiper">
-                    <h3 class="name">{{witch.name}}</h3>
-                    <div class="city">{{witch.city_num}}个城市 | {{witch.sch_num}}场演出</div>
-                    <div class="endtime">{{witch.end_time}}</div>
-                </div> -->
-            </div>
-            
-        </div>
-        
-        <div class="witchContent">
-            <div v-for="item in witch.list" :key="item.id">
-                <div class="conswiper">
-                    <div class="data">{{item.start_time | myDate(item.end_time)}}</div>
-                    <div class="conDetails">
-                        <h4>{{item.sch_name}}</h4>
-                        <span>{{item.city_name}} | {{item.venue_name}}</span>
-                        <p>{{item.min_price}} <span>起</span></p>
+                <!-- 魔女头部 -->
+                <div class="titleContent">
+                    <div class="navBar">
+                        <div class="iconfont icon-fanhui" ></div>
+                        <div class="treater">魔女</div>
+                        <div class="iconfont icon-home" @click="$router.push({path:'/'})"></div>
+                    </div>
+                    <!-- 魔女头部图片。。。。。。。。。。。。。。 -->
+                <div class="witchimg">
+                    <img :src="witch.mobile_col_img" alt="">
+                    <div class="witchSwiper">
+                        <h3 class="name">{{witch.name}}</h3>
+                        <div class="city">{{witch.city_num}}个城市 | {{witch.sch_num}}场演出</div>
+                        <div class="endtime">{{witch.end_time}}</div>
                     </div>
                 </div>
+                </div>
                 
             </div>
-            
+            <!-- 演出计划 -->
+            <div class="witchContent">
+                <div v-for="item in witch.list" :key="item.id">
+                    <div class="conswiper">
+                        <div class="data">{{item.start_time | myDate(item.end_time)}}</div>
+                        <div class="conDetails">
+                            <h4>{{item.sch_name}}</h4>
+                            <span>{{item.city_name}} | {{item.venue_name}}</span>
+                            <p>{{item.min_price}} <span>起</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-        
-        <!-- <div class="witchTitle" :style="backgroundImage:url({{mobile_col_img}})"> -->
-        
     </div>
 </template>
 
@@ -97,18 +82,13 @@ export default {
         this.endTime = moment(res.data.end_time).format('YYYY-MM-DDTHH:mm');
         console.log(res.data.start_time,res.data.end_time)
         console.log(this.startTime,this.endTime)
-    //     new BetterScroll(this.$refs.witchTitle,{
-    //     //    scrollY
-    //    })
-                this.$nextTick(()=>{
-                    //将滑屏的包裹器传入到BScroll内部就可以产生滑屏
-                    this.leftScroll = new BetterScroll(this.$refs.witchTitle,{
-                        click:true
-                    });
-                    //计算得到右侧滑屏元素移动的实时距离(正值)
-            
-                })
-
+        // 滑屏
+        this.$nextTick(()=>{
+            //将滑屏的包裹器传入到BScroll内部就可以产生滑屏
+            this.leftScroll = new BetterScroll(this.$refs.witchTitle,{
+                click:true
+            });
+        })
     }
 }
 </script>

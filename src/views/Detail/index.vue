@@ -1,5 +1,5 @@
 <template>
-    <div class="detail">
+    <div class="detail" ref="detail">
         <div class="detailHeder">
             <div class="font">
                 <span class="iconfont icon-fanhui"></span>
@@ -40,6 +40,7 @@
 </template>
 
 <script>
+import BetterScroll from 'better-scroll'
 export default {
     name:"Detail",
     data () {
@@ -60,7 +61,11 @@ export default {
         this.theatreList = res.data
         // console.log(this.theatreList)
         this.showList = showList.data
-        // console.log(this.showList.list)
+        this.$nextTick(()=>{
+            new BetterScroll(this.$refs.detail,{
+                click:true
+            })
+        })
     }
 
 }
