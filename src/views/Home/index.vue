@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="container">
     <!-- 顶部搜索栏 -->
     <div class="top">
       <div class="left">
@@ -15,8 +15,10 @@
       </div>
     </div>
     <!-- 内容区 -->
-    <div class="home">
-      <!-- 头部轮播 -->
+
+    <div class="home" ref="homeWrapper">
+      <div class="homeSwiper">
+        <!-- 头部轮播 -->
       <div class="swiper">
         <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
           <van-swipe-item
@@ -148,6 +150,7 @@
         :recommendList="recommendList"
         @getRecommendList="getRecommendList"
       />
+      </div>
     </div>
   </div>
 </template>
@@ -179,12 +182,13 @@ export default {
       }
     })
   },
-  mounted() {
-    this.getList();
-    this.getDiscountList();
-    this.getShowSwiperList();
-    this.getHotShowList();
-    this.getRecommendList();
+  async mounted() {
+    await this.getList();
+    await this.getDiscountList();
+    await this.getShowSwiperList();
+    await this.getHotShowList();
+    await this.getRecommendList();
+    this.initWrapper()
   },
   methods: {
     ...mapActions([
@@ -210,8 +214,13 @@ export default {
         }
       });
     },
+    initWrapper() {
+      this.$nextTick(() => {
+        new BScroll(this.$refs.homeWrapper, { click: true });
+      });
+    },
     async getRecommendList() {
-      const result = await this.$axios.get(
+      const result = await this.$axios1.get(
         `https://api.juooo.com/Show/Search/getShowList?city_id=0&category=&keywords=&venue_id=&start_time=&page=1&referer_type=index&time=1601691033139&version=6.1.1&referer=2&sign=63f665caf603ac4cdbff744329244166`
       );
       let recList = result.data.list;
@@ -226,11 +235,20 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.top {
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .top {
+  height: 60px;
   margin: 14px 20px 30px 20px;
   display: flex;
   justify-content: space-around;
 }
+}
+
+
 .left img {
   width: 40px;
   height: 40px;
@@ -264,6 +282,8 @@ export default {
   margin-top: 10px;
 }
 .home {
+  flex: 1;
+  overflow: hidden;
   margin: 0 30px 0 30px;
 }
 .swiper {
