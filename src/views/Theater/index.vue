@@ -1,26 +1,26 @@
 <template>
-    <div class="theater-head" v-show="showtheater">
+    <div class="theater" v-show="showtheater">
         <TopBar :title="title" ></TopBar>
         <!-- <router-view><router-view> -->
-        <div class="theater-body">
+        <div class="theater-body" ref="theater_body">
             <div class="wrapper">
                 <!-- 剧院信息 -->
                 <div class="content" v-for="Titme in theatre_list" :key="Titme.id">
                     <!-- 剧院头部信息 -->
-                    <a href="javascript:" @click="display">
-                    <!-- <router-link to="theater/detail" @click="display"> -->
-                        <div class="theaterTitle">
-                            <img :src="Titme.pic" alt="">
-                            <div class="Ttitle">
-                                <span class="TitmeName">{{Titme.name}}</span>
-                                <span class="TitmeCount">{{Titme.count}}场在售演出</span>
-                            </div>
-                            <div class="Tmore">
-                                <i class="iconfont icon-19"></i>
-                            </div>
+                    <!-- <router-link to="theater/detail"  v-if="Titme.count!==0"> -->
+                    <div  v-if="Titme.count!==0">
+                        <div class="theaterTitle" @click="display(Titme.id)">
+                                <img :src="Titme.pic" alt="">
+                                <div class="Ttitle">
+                                    <span class="TitmeName">{{Titme.name}}</span>
+                                    <span class="TitmeCount">{{Titme.count}}场在售演出</span>
+                                </div>
+                                <div class="Tmore">
+                                    <i class="iconfont icon-19"></i>
+                                </div> 
                         </div>
                     <!-- </router-link> -->
-                    </a>
+                    </div>
                     <div >
                         <template>
                             <swiper  ref="mySwiper" :options="swiperOptions">
@@ -41,8 +41,10 @@
 </template>
 
 <script>
-    // import TopBar from "../../components/TopBar"
+    import TopBar from "../../components/TopBar"
     // import BScroll from '@better-scroll/core'
+import BetterScroll from 'better-scroll'
+
 export default {
     name:"Theater",
     data () {
@@ -68,18 +70,22 @@ export default {
         const res =await this.$axios.get(`https://api.juooo.com/theatre/index/getTheatreList?page=${this.page}&version=${this.version}&referer${this.referer}`,)  
         this.theatre_list = res.data.theatre_list
         // this.swiper.slideTo(0, 1000, false)
+        this.$nextTick(()=>{
+            new BetterScroll(this.$refs.theater_body,{
+                click:true
+            })
+        })
 
     },
     methods: {
-        display(){
-            console.log(11111)
-            this.showtheater=false
-        }
+        display(sid){
+            console.log(sid)
+            // this.$router.push({path:"theater/detail",query:{sid}})
+            this.$router.push({path:"/detail",query:{sid}})
+        },
     },
     computed: {
-       swiper() {
-        // return this.$refs.mySwiper.$swiper
-      }
+       
    },
     components: {
         TopBar
@@ -89,6 +95,10 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.theater{
+    height: 100%;
+    width: 100%;
+}
     .theater-body {
         background: #fafafa;
         height: 100%;
@@ -101,6 +111,7 @@ export default {
                 // 剧院头部信息
                 .theaterTitle{
                     display: flex;
+                    padding: 0 20px;
                     img{
                         width: 100px;
                         height: 100px;
@@ -112,7 +123,7 @@ export default {
                         flex-direction: column;
                         margin-left: 20px;
                         .TitmeName{
-                            width: 500px;
+                            // width: 500px;
                             font-size: 34px;
                             font-weight: bold;
                             color: black;
@@ -128,7 +139,7 @@ export default {
                     }
                     .Tmore{
                         width: 30px;
-                        margin-right: 20px;
+                        // margin-right: 40px;
                         i{
                             font-size: 36px;
                             color: #666666;

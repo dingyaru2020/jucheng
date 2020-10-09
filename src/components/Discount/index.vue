@@ -10,9 +10,7 @@
 							<div class="item">
 								<div :class="'right-cell right-cell__icon--'+item.benefits_icon " ></div>
 								<span>{{item.benefits_name}}</span>
-							</div>
-							<!-- <div :class=" benefits_icon"></div> -->
-                        	
+							</div>                        	
 						</div>
 					</div>
 				</div>
@@ -41,9 +39,7 @@
      }
    },
    async mounted () {
-        // console.log(this.$API.default.theater)
-       const res =await this.$API.default.theater.getVipRule("6.1.1",2)
-	//    console.log(res.data)
+       const res =await this.$API.theater.getVipRule("6.1.1",2)
 	   this.equity_list = res.data.vip_rule_data.equity_list
 	   this.price = res.data.vip_rule_data.open_data.price
 	   this.equity_list.push(

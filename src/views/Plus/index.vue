@@ -14,7 +14,7 @@ export default {
     },
     async mounted () {
         // console.log(this.$API.default.theater)
-       const res =await this.$API.default.theater.getCardGroupList("6.1.1",2)
+       const res =await this.$API.theater.getCardGroupList("6.1.1",2)
        console.log(res,2222)
     }
 }
