@@ -9,7 +9,7 @@
                     <!-- 剧院头部信息 -->
                     <!-- <router-link to="theater/detail"  v-if="Titme.count!==0"> -->
                     <div  v-if="Titme.count!==0">
-                        <div class="theaterTitle" @click="display()">
+                        <div class="theaterTitle" @click="display(Titme.id)">
                                 <img :src="Titme.pic" alt="">
                                 <div class="Ttitle">
                                     <span class="TitmeName">{{Titme.name}}</span>
@@ -71,14 +71,17 @@ export default {
         this.theatre_list = res.data.theatre_list
         // this.swiper.slideTo(0, 1000, false)
         this.$nextTick(()=>{
-            new BetterScroll(this.$refs.theater_body)
+            new BetterScroll(this.$refs.theater_body,{
+                click:true
+            })
         })
 
     },
     methods: {
-        display(){
-            console.log(11111)
-            this.$router.push({path:"/detail"})
+        display(sid){
+            console.log(sid)
+            // this.$router.push({path:"theater/detail",query:{sid}})
+            this.$router.push({path:"/detail",query:{sid}})
         },
     },
     computed: {

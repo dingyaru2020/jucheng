@@ -44,20 +44,23 @@ export default {
     name:"Detail",
     data () {
         return {
-            theatre_id:2,
             version:"6.1.1",
             referer:2,
             theatreList:{},
-            showList:{}
+            showList:{},
+            sid:0,
+            venue_id:""
         }
     },
     async mounted () {
-        const res = await this.$API.default.theater.getTheatreInfo(this.theatre_id,this.version,this.referer)
-        const showList = await this.$API.default.theater.getShowList()
+        this.sid = this.$route.query.sid
+        // page=1&venue_id=1078,1079,1795&time=1602038108501&version=6.1.1&referer=2&sign=eea8d1c956abcf5a517ed73f47c0984f
+        const res = await this.$API.theater.getTheatreInfo(this.sid,this.version,this.referer)
+        const showList = await this.$API.theater.getShowList()
         this.theatreList = res.data
-        console.log(this.theatreList)
+        // console.log(this.theatreList)
         this.showList = showList.data
-        console.log(this.showList.list)
+        // console.log(this.showList.list)
     }
 
 }
