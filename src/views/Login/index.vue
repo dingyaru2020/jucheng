@@ -97,7 +97,7 @@ export default {
       this.$router.push({ path: "/person" });
     },
     async login() {
-      const result = await this.$axios({
+      const result = await this.$axios1({
         method: "post",
         url:
           "https://api.juooo.com/passport/login/index?version=6.1.1&referer=2",
@@ -110,7 +110,7 @@ export default {
       });
       if (result.code === "200") {
         localStorage.setItem("token", result.data.token);
-        const res = await this.$axios.get(
+        const res = await this.$axios1.get(
           "https://api.juooo.com/user/account/basicInfo?version=6.1.1&referer=2"
         );
         let userInfo = JSON.stringify(res.data);
