@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper case">
+    <waterfall :col="col" :data="recommendList" @loadmore="loadmore">
       <div
         class="recommendWrap"
         v-for="(item, index) in recommendList"
@@ -163,7 +164,7 @@
           </div>
         </div>
       </div>
-
+    </waterfall>
   </div>
 </template>
 
@@ -173,13 +174,23 @@ export default {
   props: {
     recommendList: Array
   },
+  data() {
+    return {
+      col: 2
+    };
+  },
+   methods: {
+    loadmore() {
+      this.$emit("getRecommendList");
+    }
+  }
 };
 </script>
 
 <style lang="less">
 .wrapper {
   display: flex;
-//   display: -webkit-flex;
+  //   display: -webkit-flex;
   justify-content: space-between;
   // flex-direction: row;
   flex-wrap: wrap;
