@@ -122,7 +122,6 @@ export default {
     }
   },
   mounted() {
-    console.log('///////////////')
     if (localStorage.getItem("userInfo")) {
       let user = JSON.parse(localStorage.getItem("userInfo"));
       const {

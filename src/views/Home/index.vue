@@ -19,137 +19,142 @@
     <div class="home" ref="homeWrapper">
       <div class="homeSwiper">
         <!-- 头部轮播 -->
-      <div class="swiper">
-        <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-          <van-swipe-item
-            class="swpie-item"
-            v-for="(item, index) in list.slide_list"
-            :key="index"
-          >
-            <img :src="item.image_url" alt="" />
-          </van-swipe-item>
-        </van-swipe>
-      </div>
-      <!-- 导航 -->
-      <div class="navContent">
-        <div class="navItem" v-for="item in list.classify_list" :key="item.id">
-          <img :src="item.pic" alt="" />
-          <div>{{ item.name }}</div>
-        </div>
-      </div>
-      <!-- 广告轮播 -->
-      <div class="adSwiper">
-        <div class="adTop">
-          <div class="adLeft">
-            <img src="../../assets/homeImg/会员.png" alt="" />
-            <span>会员专享折扣</span>
-          </div>
-          <div class="adRight">
-            99元/年
-            <span>></span>
-          </div>
-        </div>
-        <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-          <van-swipe-item
-            class="swpie-item"
-            v-for="(item, index) in discountList"
-            :key="index"
-          >
-            <div class="imgWrap">
-              <img :src="item.pic" alt="" />
-            </div>
-            <div class="descWrap">
-              <div class="desc">
-                {{ item.schedular_name }}
-              </div>
-              <div class="discountWrap">
-                <div>
-                  <span class="discountNum">{{ item.min_discount }}</span>
-                  <span class="discount">折起</span>
-                </div>
-
-                <button>立即抢购</button>
-              </div>
-            </div>
-          </van-swipe-item>
-        </van-swipe>
-      </div>
-      <!-- 热门演出 -->
-      <div class="hotShow">
-        <div class="hot">
-          <div class="hotLeft">热门演出</div>
-          <div class="hotRight">
-            <span class="all">全部</span>
-            <span class="other">></span>
-          </div>
-        </div>
-        <div class="showNav wrapper" ref="wrapper">
-          <ul class="mycontent" ref="mycontent">
-            <li
-              class="navList"
-              v-for="(item, index) in hotShowList"
+        <div class="swiper">
+          <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+            <van-swipe-item
+              class="swpie-item"
+              v-for="(item, index) in list.slide_list"
               :key="index"
             >
-              <img :src="item.pic" alt="" />
-              <div>
-                {{ item.show_name }}
-              </div>
-            </li>
-          </ul>
+              <img :src="item.image_url" alt="" />
+            </van-swipe-item>
+          </van-swipe>
         </div>
-      </div>
-      <!-- 巡回演出 -->
-      <div class="show">
-        <div class="hot">
-          <div class="hotLeft">巡回演出</div>
-          <div class="hotRight">
-            <span class="all">全部</span>
-            <span class="other">></span>
+        <!-- 导航 -->
+        <div class="navContent">
+          <div
+            class="navItem"
+            v-for="item in list.classify_list"
+            :key="item.id"
+            @click="toShowList(item.id)"
+          >
+            <img :src="item.pic" alt="" />
+            <div>{{ item.name }}</div>
           </div>
         </div>
-        <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-          <van-swipe-item
-            class="swpie-item showSwipe"
-            v-for="(item, index) in showSwiperList"
-            :key="index"
-          >
-            <img :src="item.mobile_col_img" alt="" />
-            <div class="showDescWrap">
-              <div class="showTime">
-                {{ item.start_time }}
-              </div>
-              <div class="showTitle">
-                {{ item.name }}
-              </div>
-              <div class="showPrice">
-                <span> ￥{{ item.min_price }} </span>
-                起
-              </div>
-              <div class="showCountry">
-                <span class="num">
-                  {{ item.citys.length }}
-                </span>
-                <span class="other">
-                  城巡演
-                </span>
-                <span
-                  class="country"
-                  v-for="(city, index) in item.citys"
-                  :key="index"
-                >
-                  {{ city.name }}
-                </span>
-              </div>
+        <!-- 广告轮播 -->
+        <div class="adSwiper">
+          <div class="adTop">
+            <div class="adLeft">
+              <img src="../../assets/homeImg/会员.png" alt="" />
+              <span>会员专享折扣</span>
             </div>
-          </van-swipe-item>
-        </van-swipe>
-      </div>
-      <!-- 为你推荐 -->
-      <div class="recommend">为你推荐</div>
-      <Recommend
-        :recommendList="recommendList"
-        @getRecommendList="getRecommendList"
-      />
+            <div class="adRight">
+              99元/年
+              <span>></span>
+            </div>
+          </div>
+          <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+            <van-swipe-item
+              class="swpie-item"
+              v-for="(item, index) in discountList"
+              :key="index"
+            >
+              <div class="imgWrap">
+                <img :src="item.pic" alt="" />
+              </div>
+              <div class="descWrap">
+                <div class="desc">
+                  {{ item.schedular_name }}
+                </div>
+                <div class="discountWrap">
+                  <div>
+                    <span class="discountNum">{{ item.min_discount }}</span>
+                    <span class="discount">折起</span>
+                  </div>
+
+                  <button>立即抢购</button>
+                </div>
+              </div>
+            </van-swipe-item>
+          </van-swipe>
+        </div>
+        <!-- 热门演出 -->
+        <div class="hotShow">
+          <div class="hot">
+            <div class="hotLeft">热门演出</div>
+            <div class="hotRight">
+              <span class="all">全部</span>
+              <span class="other">></span>
+            </div>
+          </div>
+          <div class="showNav wrapper" ref="wrapper">
+            <ul class="mycontent" ref="mycontent">
+              <li
+                class="navList"
+                v-for="(item, index) in hotShowList"
+                :key="index"
+              >
+                <img :src="item.pic" alt="" />
+                <div>
+                  {{ item.show_name }}
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 巡回演出 -->
+        <div class="show">
+          <div class="hot">
+            <div class="hotLeft">巡回演出</div>
+            <div class="hotRight">
+              <span class="all">全部</span>
+              <span class="other">></span>
+            </div>
+          </div>
+          <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+            <van-swipe-item
+              class="swpie-item showSwipe"
+              v-for="(item, index) in showSwiperList"
+              :key="index"
+            >
+              <img :src="item.mobile_col_img" alt="" />
+              <div class="showDescWrap">
+                <div class="showTime">
+                  {{ item.start_time }}
+                </div>
+                <div class="showTitle">
+                  {{ item.name }}
+                </div>
+                <div class="showPrice">
+                  <span> ￥{{ item.min_price }} </span>
+                  起
+                </div>
+                <div class="showCountry">
+                  <span class="num">
+                    {{ item.citys.length }}
+                  </span>
+                  <span class="other">
+                    城巡演
+                  </span>
+                  <span
+                    class="country"
+                    v-for="(city, index) in item.citys"
+                    :key="index"
+                  >
+                    {{ city.name }}
+                  </span>
+                </div>
+              </div>
+            </van-swipe-item>
+          </van-swipe>
+        </div>
+        <!-- 为你推荐 -->
+        <div class="recommend">为你推荐</div>
+        <Recommend
+          :recommendList="recommendList"
+          @getRecommendList="getRecommendList"
+        />
       </div>
     </div>
   </div>
@@ -182,13 +187,14 @@ export default {
       }
     })
   },
-  async mounted() {
-    await this.getList();
-    await this.getDiscountList();
-    await this.getShowSwiperList();
-    await this.getHotShowList();
-    await this.getRecommendList();
-    this.initWrapper()
+  mounted() {
+    this.getList();
+    this.getDiscountList();
+    this.getShowSwiperList();
+    this.getHotShowList();
+    this.getRecommendList();
+    this.initWrapper();
+    console.log(this.list);
   },
   methods: {
     ...mapActions([
@@ -229,6 +235,12 @@ export default {
         recList.splice(4 * (index + 1) + index, 0, item);
       });
       this.recommendList = [...this.recommendList, ...recList];
+    },
+    toShowList(id) {
+      this.$router.push({
+        path: "/showlist",
+        query:{id}
+      });
     }
   }
 };
@@ -241,13 +253,12 @@ export default {
   display: flex;
   flex-direction: column;
   .top {
-  height: 60px;
-  margin: 14px 20px 30px 20px;
-  display: flex;
-  justify-content: space-around;
+    height: 60px;
+    margin: 14px 20px 30px 20px;
+    display: flex;
+    justify-content: space-around;
+  }
 }
-}
-
 
 .left img {
   width: 40px;
