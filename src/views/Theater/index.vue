@@ -80,8 +80,8 @@ export default {
     methods: {
         display(sid){
             console.log(sid)
-            // this.$router.push({path:"theater/detail",query:{sid}})
-            this.$router.push({path:"/detail",query:{sid}})
+            this.$router.push({path:`/detail/${sid}`,params:{sid}})
+            // this.$router.push({path:"/theater/detail",query:{sid}})
         },
     },
     computed: {

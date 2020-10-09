@@ -195,7 +195,6 @@ export default {
 }
 .card{
     height: 100%;
-
 }
 .careswiper{
     height: 100%;
