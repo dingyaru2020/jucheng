@@ -1,186 +1,175 @@
 <template>
   <div class="wrapper case">
-    <waterfall
-      :col="col"
-      :gutterWidth="20"
-      :data="recommendList"
-      @loadmore="loadmore"
-      :lazyDistance="200"
-    >
-      <template>
-        <div
-          class="recommendWrap"
-          v-for="(item, index) in recommendList"
-          :key="index"
-        >
-          <!-- 推荐列表 -->
-          <div v-if="!item.ad_type">
-            <div class="recommendImg">
-              <img :src="item.pic" alt="" />
+    <waterfall :col="col" :data="recommendList" @loadmore="loadmore">
+      <div
+        class="recommendWrap"
+        v-for="(item, index) in recommendList"
+        :key="index"
+      >
+        <!-- 推荐列表 -->
+        <div v-if="!item.ad_type">
+          <div class="recommendImg">
+            <img :src="item.pic" alt="" />
 
-              <div class="country">
-                {{ item.city_name }}
-              </div>
-            </div>
-            <div class="recommendContent">
-              <div class="recommendTitle">
-                <img class="sign" src="../../assets/homeImg/主办.png" alt="" />
-                <span class="detail">{{ item.name }}</span>
-              </div>
-              <div class="time">
-                2020-01-02-2020-03-03
-              </div>
-              <div class="price" v-if="item.min_price > 0">
-                <span class="money">￥{{ item.min_price }}</span>
-                <span>起</span>
-              </div>
-              <div v-else class="pending">待定</div>
-              <div class="mark">
-                <span v-for="(desc, index) in item.support_desc" :key="index">
-                  {{ desc }}
-                </span>
-              </div>
+            <div class="country">
+              {{ item.city_name }}
             </div>
           </div>
-
-          <!-- 广告列表 -->
-          <!-- 1 -->
-          <div
-            class="adImg"
-            v-else-if="item.ad_type === 1 && item.ad_name === '橙PLUS卡'"
-          >
-            <img src="../../assets/homeImg/plus卡.png" alt="" />
-          </div>
-
-          <!-- 2 -->
-          <div
-            class="adImg"
-            v-else-if="item.ad_type === 1 && item.ad_name === 'V+会员'"
-          >
-            <img src="../../assets/homeImg/vip.png" alt="" />
-          </div>
-
-          <!-- 3 -->
-          <div
-            class="adContent"
-            v-else-if="item.ad_type === 4 && item.ad_name === '热搜词'"
-          >
-            <div class="search">
-              <span>热门搜索</span>
-              <img
-                src="../../assets/homeImg/搜索.png"
-                alt=""
-                class="searchImg"
-              />
-              <img src="../../assets/homeImg/bj.png" alt="" class="bjImg" />
+          <div class="recommendContent">
+            <div class="recommendTitle">
+              <img class="sign" src="../../assets/homeImg/主办.png" alt="" />
+              <span class="detail">{{ item.name }}</span>
             </div>
-            <div class="all">
-              大家都在看
+            <div class="time">
+              2020-01-02-2020-03-03
             </div>
-            <div class="adList">
-              <div>魔女宅急便</div>
-              <div>张泽音乐会</div>
-              <div>第一次约会</div>
-              <div>儿童剧</div>
+            <div class="price" v-if="item.min_price > 0">
+              <span class="money">￥{{ item.min_price }}</span>
+              <span>起</span>
             </div>
-          </div>
-
-          <!-- 4 -->
-          <div
-            class="showContent songs"
-            v-else-if="item.ad_type === 2 && item.ad_name === '演唱会'"
-          >
-            <div class="showImg">
-              <img src="../../assets/homeImg/演唱会1.jpg" alt="" class="img1" />
-              <img src="../../assets/homeImg/演唱会2.jpg" alt="" />
-              <img src="../../assets/homeImg/演唱会2.jpg" alt="" class="img3" />
-              <img src="../../assets/homeImg/演唱会2.jpg" alt="" />
-            </div>
-            <div class="showTitle songsTitle">
-              <img src="../../assets/homeImg/演唱会5.png" alt="" />
-              <span class="desc songsDesc">演唱会</span>
-              <span class="more moreSongs">></span>
-            </div>
-          </div>
-
-          <!-- 5 -->
-          <div
-            class="showContent music"
-            v-else-if="item.ad_type === 2 && item.ad_name === '音乐剧'"
-          >
-            <div class="showImg">
-              <img src="../../assets/homeImg/音乐剧1.jpg" alt="" class="img1" />
-              <img src="../../assets/homeImg/音乐剧2.png" alt="" />
-              <img src="../../assets/homeImg/音乐剧3.jpg" alt="" class="img3" />
-              <img src="../../assets/homeImg/音乐剧3.jpg" alt="" />
-            </div>
-            <div class="showTitle musicTitle">
-              <img src="../../assets/homeImg/音乐剧4.png" alt="" />
-              <span class="desc musicDesc">音乐剧</span>
-              <span class="more moreMusic">></span>
-            </div>
-          </div>
-
-          <!-- 6 -->
-          <div
-            class="showContent concert"
-            v-else-if="item.ad_type === 2 && item.ad_name === '音乐会'"
-          >
-            <div class="showImg">
-              <img src="../../assets/homeImg/音乐会1.jpg" alt="" class="img1" />
-              <img src="../../assets/homeImg/音乐会1.jpg" alt="" />
-              <img src="../../assets/homeImg/音乐会1.jpg" alt="" class="img3" />
-              <img src="../../assets/homeImg/音乐会2.jpg" alt="" />
-            </div>
-            <div class="showTitle concertTitle">
-              <img src="../../assets/homeImg/音乐会3.png" alt="" />
-              <span class="desc concertDesc">音乐会</span>
-              <span class="more moreConcert">></span>
-            </div>
-          </div>
-
-          <!-- 7 -->
-          <div
-            class="showContent baby"
-            v-else-if="item.ad_type === 2 && item.ad_name === '舞台剧'"
-          >
-            <div class="showImg">
-              <img src="../../assets/homeImg/亲子1.jpg" alt="" class="img1" />
-              <img src="../../assets/homeImg/亲子2.jpg" alt="" />
-              <img src="../../assets/homeImg/亲子2.jpg" alt="" class="img3" />
-              <img src="../../assets/homeImg/亲子3.jpg" alt="" />
-            </div>
-            <div class="showTitle babyTitle">
-              <img src="../../assets/homeImg/亲子4.png" alt="" />
-              <span class="desc babyDesc">儿童亲子</span>
-              <span class="more moreBaby">></span>
-            </div>
-          </div>
-
-          <!-- 8 -->
-          <div
-            class="showContent exhibition"
-            v-else-if="item.ad_type === 2 && item.ad_name === '舞台剧'"
-          >
-            <div class="showImg">
-              <img src="../../assets/homeImg/展览1.jpg" alt="" class="img1" />
-              <img src="../../assets/homeImg/展览2.jpg" alt="" />
-              <img src="../../assets/homeImg/展览3.jpg" alt="" class="img3" />
-              <img src="../../assets/homeImg/展览4.png" alt="" />
-            </div>
-            <div class="showTitle exhibitionTitle">
-              <img src="../../assets/homeImg/展览5.png" alt="" />
-              <span class="desc exhibitionDesc">展览</span>
-              <span class="more moreExhibition">></span>
+            <div v-else class="pending">待定</div>
+            <div class="mark">
+              <span v-for="(desc, index) in item.support_desc" :key="index">
+                {{ desc }}
+              </span>
             </div>
           </div>
         </div>
-      </template>
+
+        <!-- 广告列表 -->
+        <!-- 1 -->
+        <div
+          class="adImg"
+          v-else-if="item.ad_type === 1 && item.ad_name === '橙PLUS卡'"
+        >
+          <img src="../../assets/homeImg/plus卡.png" alt="" />
+        </div>
+
+        <!-- 2 -->
+        <div
+          class="adImg"
+          v-else-if="item.ad_type === 1 && item.ad_name === 'V+会员'"
+        >
+          <img src="../../assets/homeImg/vip.png" alt="" />
+        </div>
+
+        <!-- 3 -->
+        <div
+          class="adContent"
+          v-else-if="item.ad_type === 4 && item.ad_name === '热搜词'"
+        >
+          <div class="search">
+            <span>热门搜索</span>
+            <img src="../../assets/homeImg/搜索.png" alt="" class="searchImg" />
+            <img src="../../assets/homeImg/bj.png" alt="" class="bjImg" />
+          </div>
+          <div class="all">
+            大家都在看
+          </div>
+          <div class="adList">
+            <div>魔女宅急便</div>
+            <div>张泽音乐会</div>
+            <div>第一次约会</div>
+            <div>儿童剧</div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div
+          class="showContent songs"
+          v-else-if="item.ad_type === 2 && item.ad_name === '演唱会'"
+        >
+          <div class="showImg">
+            <img src="../../assets/homeImg/演唱会1.jpg" alt="" class="img1" />
+            <img src="../../assets/homeImg/演唱会2.jpg" alt="" />
+            <img src="../../assets/homeImg/演唱会2.jpg" alt="" class="img3" />
+            <img src="../../assets/homeImg/演唱会2.jpg" alt="" />
+          </div>
+          <div class="showTitle songsTitle">
+            <img src="../../assets/homeImg/演唱会5.png" alt="" />
+            <span class="desc songsDesc">演唱会</span>
+            <span class="more moreSongs">></span>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div
+          class="showContent music"
+          v-else-if="item.ad_type === 2 && item.ad_name === '音乐剧'"
+        >
+          <div class="showImg">
+            <img src="../../assets/homeImg/音乐剧1.jpg" alt="" class="img1" />
+            <img src="../../assets/homeImg/音乐剧2.png" alt="" />
+            <img src="../../assets/homeImg/音乐剧3.jpg" alt="" class="img3" />
+            <img src="../../assets/homeImg/音乐剧3.jpg" alt="" />
+          </div>
+          <div class="showTitle musicTitle">
+            <img src="../../assets/homeImg/音乐剧4.png" alt="" />
+            <span class="desc musicDesc">音乐剧</span>
+            <span class="more moreMusic">></span>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div
+          class="showContent concert"
+          v-else-if="item.ad_type === 2 && item.ad_name === '音乐会'"
+        >
+          <div class="showImg">
+            <img src="../../assets/homeImg/音乐会1.jpg" alt="" class="img1" />
+            <img src="../../assets/homeImg/音乐会1.jpg" alt="" />
+            <img src="../../assets/homeImg/音乐会1.jpg" alt="" class="img3" />
+            <img src="../../assets/homeImg/音乐会2.jpg" alt="" />
+          </div>
+          <div class="showTitle concertTitle">
+            <img src="../../assets/homeImg/音乐会3.png" alt="" />
+            <span class="desc concertDesc">音乐会</span>
+            <span class="more moreConcert">></span>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div
+          class="showContent baby"
+          v-else-if="item.ad_type === 2 && item.ad_name === '舞台剧'"
+        >
+          <div class="showImg">
+            <img src="../../assets/homeImg/亲子1.jpg" alt="" class="img1" />
+            <img src="../../assets/homeImg/亲子2.jpg" alt="" />
+            <img src="../../assets/homeImg/亲子2.jpg" alt="" class="img3" />
+            <img src="../../assets/homeImg/亲子3.jpg" alt="" />
+          </div>
+          <div class="showTitle babyTitle">
+            <img src="../../assets/homeImg/亲子4.png" alt="" />
+            <span class="desc babyDesc">儿童亲子</span>
+            <span class="more moreBaby">></span>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div
+          class="showContent exhibition"
+          v-else-if="item.ad_type === 2 && item.ad_name === '舞台剧'"
+        >
+          <div class="showImg">
+            <img src="../../assets/homeImg/展览1.jpg" alt="" class="img1" />
+            <img src="../../assets/homeImg/展览2.jpg" alt="" />
+            <img src="../../assets/homeImg/展览3.jpg" alt="" class="img3" />
+            <img src="../../assets/homeImg/展览4.png" alt="" />
+          </div>
+          <div class="showTitle exhibitionTitle">
+            <img src="../../assets/homeImg/展览5.png" alt="" />
+            <span class="desc exhibitionDesc">展览</span>
+            <span class="more moreExhibition">></span>
+          </div>
+        </div>
+      </div>
     </waterfall>
   </div>
 </template>
 
 <script>
+import BScroll from "better-scroll";
 export default {
   name: "Recommend",
   data() {
@@ -199,7 +188,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 .wrapper {
   display: flex;
   display: -webkit-flex;
@@ -211,6 +200,7 @@ export default {
   width: 339px;
   border: 1px solid #e3e3e4;
   margin-bottom: 10px;
+  display: flex;
 }
 .recommendWrap .adImg {
   width: 339px;

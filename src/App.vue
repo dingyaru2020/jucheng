@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <!-- <keep-alive> -->
-    <router-view></router-view>
-    <!-- </keep-alive> -->
+  
+        <!-- <keep-alive> -->
+        <router-view></router-view>
+        <!-- </keep-alive> -->
+     
     <van-tabbar
       route
       v-model="active"
@@ -56,6 +58,7 @@
 </template>
 
 <script>
+import BScroll from "better-scroll";
 export default {
   name: "App",
   data() {
@@ -69,13 +72,7 @@ export default {
   mounted() {
     const { pathname } = window.location;
     this.active = pathname === "/" ? "home" : pathname.slice(1);
-    // console.log(this.$route,'.......');
   },
-  methods: {
-    // onChange(index) {
-    //   console.log(index)
-    // }
-  }
 };
 </script>
 
@@ -86,6 +83,7 @@ export default {
   height: 100%;
   position: relative;
 }
+
 .tabbarWrapper {
   height: 92px;
   border-top: 1px solid #fefefe;
