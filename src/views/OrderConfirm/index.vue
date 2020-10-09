@@ -1,8 +1,8 @@
 <template>
   <div class="orderWrapper">
     <TopBar :fanhui="true" title="确认订单" :icon="false" class="topBar" />
-    <div class="orderSwiper">
-      <div class="swiper">
+    <div class="orderSwiper" ref="swiper">
+      <div class="swiper" >
         <div class="cardWrapper">
           <div class="cardBg"></div>
           <div class="card">
@@ -38,12 +38,33 @@
           </div>
           <p class="toast">支付成功后，请于演出开演前1小时在演出现场取票</p>
         </div>
-        <!-- <div class="priceWrapper">
-          <div class="priceCon">
-            <span class="text">商品金额</span>
-            <span class="price">￥180.00</span>
+        <div class="container">
+          <div class="delivery priceWrapper">
+            <div class="inner priceCon">
+              <span class="text">商品金额</span>
+              <span class="price">￥180.00</span>
+            </div>
+            <div class="inner fee">
+              <span class="text">运费</span>
+              <span class="price">+￥18</span>
+            </div>
+            <div class="inner">
+              <span class="text">活动优惠</span>
+              <div class="icon">
+                <span class="noDiscount">不使用优惠</span>
+                <i class="iconfont icon-iconfontjiantou3"></i>
+              </div>
+            </div>
+            <div class="inner remark">
+                <span class="text">订单备注</span>
+                <input placeholder="填写备注信息，用于客服发货"/>
+            </div>
+            <div class="inner total">
+              <span class="text">合计</span>
+              <span class="totalPrice">￥198.00</span>
+            </div>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
     <div class="footer">
@@ -57,8 +78,40 @@
 </template>
 
 <script>
+import {mapActions,mapState} from "vuex"
+import BScroll from "better-scroll";
 export default {
   name: "OrderConfirm",
+  data(){
+    return {
+      postData:{
+        sku_list: this.$route.query.sku_list+'^1',
+        card_no: '',
+        is_around: '',
+        client_type_id: 2,
+        card_rule_id: '',
+        ticket_seat_data: '',
+        is_package_ticket: '',
+        biz_extend_params: '',
+        is_exchange_coupon_shop:'' ,
+        sign: '784b56a40025d63e5ec78e7d97c3a16b'
+      }
+    }
+  },
+  computed:{
+    ...mapState({
+      confirmInfo:state=>state.show.confirmInfo,
+    })
+  },
+  methods:{
+    ...mapActions(['getConfirmInfo'])
+  },
+  async mounted(){
+    await this.getConfirmInfo(this.postData)
+    this.$nextTick(() => {
+      new BScroll(this.$refs.swiper, { click: true });
+    });
+  }
 };
 </script>
 
@@ -118,13 +171,15 @@ export default {
         }
       }
       .delivery {
-        height: 112px;
+        margin-bottom: 20px;
         padding: 0 30px;
+        background: #fff;
         .inner{
+          height: 100px;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          height: 100%;
+          // height: 100%;
           line-height: $height;
           border-bottom: 2px solid #ebebeb;
           .text{
@@ -163,10 +218,27 @@ export default {
           font-size: 28px;
         }
       }
-      .priceWrapper{
-        background: #F5F5F5;
-        padding: 30px;
-        height: 540px;
+      .container{
+        background: #ebebeb;
+        padding: 20px 0;
+        .priceWrapper{
+          .price{
+            font-size: 32px;
+          }
+          .noDiscount{
+            font-size: 32px;
+          }
+          .remark{
+            input{
+              margin-left: 50px;
+            }
+          }
+          .total{
+            .totalPrice{
+              color: #ff6743;
+            }
+          }
+        }
       }
     }
   }

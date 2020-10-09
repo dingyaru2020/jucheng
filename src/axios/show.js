@@ -19,5 +19,23 @@ export default{
     //立即购买弹出框/Schedule/Schedule/getScheduleTicket?schedular_id=116291
     reqTicketList(schedularId){
         return axios.get(`/api/Schedule/Schedule/getScheduleTicket?schedular_id=${schedularId}`)
+    },
+    //获取订单确认页信息  /shop/Checkout/checkoutOrder?timestamp=1602247528&version=6.1.1&referer=2
+    reqConfirmInfo(data){
+        return axios({
+            url:'/api/shop/Checkout/checkoutOrder',
+            method:'POST',
+            data,
+            transformRequest: [function (data) {
+                let ret = ''
+                for (let it in data) {
+                 ret += encodeURIComponent(it) + '=' + encodeURIComponent(data[it]) + '&'
+                }
+                return ret
+                }],
+                headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+                }
+        })
     }
 }

@@ -86,7 +86,7 @@ export default {
     },
     changeActiveId(id){
       this.activeId = id 
-      this.$store.commit("CLEAR_SHOW_LIST")
+      // this.$store.commit("CLEAR_SHOW_LIST")
     }
   },
   components:{

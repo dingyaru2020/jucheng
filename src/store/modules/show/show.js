@@ -4,7 +4,8 @@ import {
     GET_CITY_LIST,
     GET_SHOW_INFO,
     GET_TICKET_LIST,
-    CLEAR_SHOW_LIST
+    CHANGE_ACTIVE_DATE_INDEX,
+    CHANGE_CONFIRM_INFO
 } from "../../mutationTypes"
 import * as axios from "@/axios"
 // console.log("-----",axios)
@@ -13,17 +14,20 @@ const state={
     showList:[],
     cityList:[],
     showInfo:{
-        item_list:[],
+        item_list:[{}],
         share_data:{share_title:""},
         static_data:{
             city:{},
             venue:{},
             tips:{},
             show_desc:{},
-            show_time_data:{}
+            show_time_data:{},
+            support:{list:[]}
         }
     },
-    ticketList:[]
+    ticketList:[],
+    // activeDateIndex:0,
+    confirmInfo:{}
 }
 const mutations={
     [GET_CATEGORY_LIST](state,data){
@@ -41,10 +45,13 @@ const mutations={
     [GET_TICKET_LIST](state,data){
         state.ticketList = data
     },
-    [CLEAR_SHOW_LIST](state){
-        state.showList = []
-        console.log("---","清除showlist")
-    }
+    [CHANGE_ACTIVE_DATE_INDEX](state,data){
+        state.activeDateIndex = data
+    },
+    [CHANGE_CONFIRM_INFO](state,data){
+        state.confirmInfo = data
+    },
+
 }
 const actions={
     async getCategoryList({commit}){
@@ -70,7 +77,11 @@ const actions={
     async getTicketList({commit},id){
         const {data:{list}} = await axios.show.reqTicketList(id)
         commit(GET_TICKET_LIST,list)
-    }
+    },
+    async getConfirmInfo({commit},postData){
+        const {data}= await axios.show.reqConfirmInfo(postData)
+        commit(CHANGE_CONFIRM_INFO,data)
+    },
 }
 const getters={
     categoryList(state){
@@ -80,6 +91,24 @@ const getters={
     cityList(state){
         const citys = [{id:0,name:"全国"},...state.cityList]
         return citys
+    },
+    dateList(state){
+        const list = state.showInfo.item_list
+        const list2 = []
+        list.forEach((item)=>{
+            if(!list2.includes(item.project_time)){
+                list2.push(item.project_time)
+            }
+        })
+        return list2
+    },
+    timeList(state,getters){
+        const {activeDateIndex,showInfo:{item_list}}=state
+        const {dateList} = getters
+        let activeProjectTime = dateList[activeDateIndex]
+        const arr=item_list.filter(item=>item.project_time===activeProjectTime&&(item.session_time!==''))
+        // console.log(arr)
+        return arr
     }
 }
 export default {
@@ -88,3 +117,8 @@ export default {
     actions,
     getters
 }
+
+
+
+
+

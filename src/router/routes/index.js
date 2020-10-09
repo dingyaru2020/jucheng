@@ -93,7 +93,7 @@ export default [
         path:"/orderconfirm",
         component:OrderConfirm
     },
-    { path: '/detail', component: Detail }
-    
+    { path: '/detail', component: Detail },
+    { path: '/login', component: Login }
 ]
 
