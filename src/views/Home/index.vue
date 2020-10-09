@@ -256,7 +256,7 @@ export default {
       //     path: "/vip",
       //     query: { id }
       //   });
-      // } else {
+      } else {
         this.$router.push({
           path: "/showlist",
           query: { id }
