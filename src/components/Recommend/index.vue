@@ -1,6 +1,5 @@
 <template>
   <div class="wrapper case">
-    <waterfall :col="col" :data="recommendList" @loadmore="loadmore">
       <div
         class="recommendWrap"
         v-for="(item, index) in recommendList"
@@ -164,36 +163,25 @@
           </div>
         </div>
       </div>
-    </waterfall>
+
   </div>
 </template>
 
 <script>
-import BScroll from "better-scroll";
 export default {
   name: "Recommend",
-  data() {
-    return {
-      col: 2
-    };
-  },
   props: {
     recommendList: Array
   },
-  methods: {
-    loadmore() {
-      this.$emit("getRecommendList");
-    }
-  }
 };
 </script>
 
 <style lang="less">
 .wrapper {
   display: flex;
-  display: -webkit-flex;
+//   display: -webkit-flex;
   justify-content: space-between;
-  flex-direction: row;
+  // flex-direction: row;
   flex-wrap: wrap;
 }
 .recommendWrap {

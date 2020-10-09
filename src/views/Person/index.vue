@@ -118,6 +118,9 @@ export default {
   },
   methods: {
     toLogin() {
+      if(this.isLogin === 1){
+        return
+      }
       this.$router.push({ path: "/login" });
     }
   },

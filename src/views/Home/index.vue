@@ -15,7 +15,6 @@
       </div>
     </div>
     <!-- 内容区 -->
-
     <div class="home" ref="homeWrapper">
       <div class="homeSwiper">
         <!-- 头部轮播 -->
@@ -154,7 +153,6 @@
         <Recommend
           :recommendList="recommendList"
           @getRecommendList="getRecommendList"
-          class="recList"
         />
       </div>
     </div>
@@ -195,6 +193,18 @@ export default {
     await this.getHotShowList();
     await this.getRecommendList();
     this.initScroll();
+    this.$nextTick(() => {
+      this.bs = new BScroll(this.$refs.homeWrapper, {
+        click: true,
+        pullUpLoad: {
+          threshold: -30
+        }
+      });
+      this.bs.on("pullingUp", () => {
+        this.getRecommendList();
+        this.bs.finishPullUp();
+      });
+    });
   },
   methods: {
     ...mapActions([
@@ -207,8 +217,8 @@ export default {
       this.$nextTick(() => {
         const width = this.hotShowList.length * 218 - 36;
         this.$refs.mycontent.style.width = width + "px";
-        if (!this.Scroller) {
-          this.Scroller = new BScroll(this.$refs.wrapper, {
+        if (!this.scroll) {
+          this.scroll = new BScroll(this.$refs.wrapper, {
             startX: 0,
             click: true,
             scrollX: true,
@@ -229,6 +239,7 @@ export default {
         recList.splice(4 * (index + 1) + index, 0, item);
       });
       this.recommendList = [...this.recommendList, ...recList];
+      this.bs && this.bs.refresh();
     },
     toList(id) {
       if (id === 42) {
@@ -251,22 +262,17 @@ export default {
           path: "/vip",
           query: { id }
         });
-      // } else if (id === 46) {
-      //   this.$router.push({
-      //     path: "/vip",
-      //     query: { id }
-      //   });
+        // } else if (id === 46) {
+        //   this.$router.push({
+        //     path: "/vip",
+        //     query: { id }
+        //   });
       } else {
         this.$router.push({
           path: "/showlist",
           query: { id }
         });
       }
-      // console.log(id)
-      // this.$router.push({
-      //   path: "/showlist",
-      //   query: { id }
-      // });
     }
   }
 };
