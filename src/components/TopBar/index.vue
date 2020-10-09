@@ -3,7 +3,7 @@
         <div class="navBar">
             <!-- <span class="iconfont icon-fanhui"></span> -->
             <!-- <i class="iconfont icon-fanhui"></i> -->
-            <div class="iconfont icon-fanhui" v-show="fanhui"></div>
+            <div class="iconfont icon-fanhui" v-show="fanhui" @click="$router.go(-1)"></div>
             <div class="treater">{{title}}</div>
             <div class="iconfont icon-19" v-if="icon"></div>
         </div>
@@ -19,7 +19,6 @@ export default {
         fanhui:Boolean,
         icon:Boolean
     },
-
 }
 </script>
 

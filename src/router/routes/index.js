@@ -21,7 +21,6 @@ const Person = () => import('@/views/Person/index.vue')
 const ShowList = () => import("@/views/ShowList/index.vue")
 //演出详情页
 const ShowInfo = () => import("@/views/ShowInfo/index.vue")
-const test = () => import("@/views/test/index.vue")
 //订单确认页
 const OrderConfirm = () => import("@/views/OrderConfirm/index.vue")
 export default [
@@ -77,10 +76,6 @@ export default [
     {
         path:"/orderconfirm",
         component:OrderConfirm
-    },
-    {
-        path:"/test",
-        component:test
     },
     { path: '/detail', component: Detail }
     

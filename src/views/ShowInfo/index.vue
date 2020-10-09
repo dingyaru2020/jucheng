@@ -5,7 +5,7 @@
         <div class="cardWrapper">
           <div class="headerWrapper">
             <div class="topBar">
-              <i class="icon iconfont icon-fanhui" @click="goback"></i>
+              <i class="icon iconfont icon-fanhui" @click="$router.go(-1)"></i>
               <div class="treater">演出详情</div>
               <div class="right">
                 <i class="icon iconfont icon-fenxiang share"></i>
@@ -154,7 +154,7 @@
                 v-for="item in ticketList" :key="item.ticket_id"
                 @click="changeActiveTicketId(item)">
                   {{item.price}}元
-                  <span class="desc">（{{item.ticekt_name}}）</span>
+                  <span class="desc" v-show="item.ticekt_name">（{{item.ticekt_name}}）</span>
                 </li>
               </ul>
             </div>
@@ -172,7 +172,7 @@
           </div>
         </div>
         <div class="button">
-          <button>立即购买</button>
+          <button @click="goConfirm">立即购买</button>
         </div>
       </div>
     </div>
@@ -236,9 +236,12 @@ export default {
         this.num++
       }
     },200),
-    goback(){
-      this.$router.go(-1)
-    },
+    
+    goConfirm(){
+      if(this.activeTicketId){
+        this.$router.push({path:"/orderconfirm"})
+      }
+    }
   },
   watch: {
     showDialog() {
@@ -368,7 +371,7 @@ export default {
           .iconfont {
             position: absolute;
             bottom: 0;
-            right: 40px;
+            right: 10px;
             width: 60px;
             height: $width;
             line-height: $height;
@@ -472,13 +475,23 @@ export default {
             margin-bottom: 15px;
           }
           .pic {
-            width: 690px;
-            height: 976px;
-            box-sizing: border-box;
+            // width: 690px;
+            // height: 976px;
+            // box-sizing: border-box;
             text-align: center;
+            /deep/ strong{
+              font-size: 26px;
+              font-weight: bold;
+            }
+            /deep/ p{
+              font-size: 26px;
+              color: #232323;
+              margin: 18px 0;
+              line-height: $height;
+            }
             /deep/ img {
-              width: 100%;
-              height: 100%;
+              width: 680px;
+              height: 900px;
             }
           }
           .desc {
@@ -660,7 +673,7 @@ export default {
             .date {
               height: 85px;
               padding: 0 38px;
-              margin-bottom: 20px;
+              margin:0 20px 20px 0;
               border-radius: 10px;
               background: #f5f5f5;
               color: #232323;

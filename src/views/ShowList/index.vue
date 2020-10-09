@@ -58,7 +58,7 @@ export default {
     return {
       active: 0,
       showDrawer: false,
-      activeId:35,
+      activeId:this.$route.query.id*1,
       activeCityId:0
     };
   },
