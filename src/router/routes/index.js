@@ -50,7 +50,7 @@ export default [
         path:"/theater",
         component:Theater,
         children: [
-            { path: 'detail', component: Detail }
+            { path: 'detail/:id', component: Detail }
         ]
     },
     {

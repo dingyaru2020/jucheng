@@ -7,8 +7,9 @@
                 <!-- 剧院信息 -->
                 <div class="content" v-for="Titme in theatre_list" :key="Titme.id">
                     <!-- 剧院头部信息 -->
-                    <router-link to="theater/detail" @click="display"  v-if="Titme.count!==0">
-                        <div class="theaterTitle" @click="display" >
+                    <!-- <router-link to="theater/detail"  v-if="Titme.count!==0"> -->
+                    <div  v-if="Titme.count!==0">
+                        <div class="theaterTitle" @click="display()">
                                 <img :src="Titme.pic" alt="">
                                 <div class="Ttitle">
                                     <span class="TitmeName">{{Titme.name}}</span>
@@ -18,7 +19,8 @@
                                     <i class="iconfont icon-19"></i>
                                 </div> 
                         </div>
-                    </router-link>
+                    <!-- </router-link> -->
+                    </div>
                     <div >
                         <template>
                             <swiper  ref="mySwiper" :options="swiperOptions">
@@ -76,8 +78,8 @@ export default {
     methods: {
         display(){
             console.log(11111)
-            // this.showtheater=false
-        }
+            this.$router.push({path:"/detail"})
+        },
     },
     computed: {
        
