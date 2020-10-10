@@ -24,6 +24,7 @@ const ShowInfo = () => import("@/views/ShowInfo/index.vue")
 //订单确认页
 const OrderConfirm = () => import("@/views/OrderConfirm/index.vue");
 const Login = () => import("../../views/Login/index.vue");
+const Out = () => import("../../views/Out/index.vue");
 export default [
     {
         path:"/",
@@ -98,7 +99,11 @@ export default [
         component:OrderConfirm
     },
     { path: "/detail/:sid", component: Detail },
-    { path: '/login', component: Login }
+    { path: '/login', component: Login },
+    {
+      path: "/out",
+      component: Out
+    },
 ]
 
 

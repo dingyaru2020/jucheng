@@ -184,13 +184,17 @@ export default {
       },
     }),
   },
+  created() {
+    this.initHomeWrapper();
+  },
   async mounted() {
-    await this.getList();
-    await this.getDiscountList();
-    await this.getShowSwiperList();
+    this.getList();
+    this.getDiscountList();
+    this.getShowSwiperList();
+    this.getRecommendList();
     await this.getHotShowList();
-    await this.getRecommendList();
     this.initScroll();
+<<<<<<< HEAD
     this.$nextTick(() => {
       this.bs = new BScroll(this.$refs.homeWrapper, {
         click: true,
@@ -203,6 +207,11 @@ export default {
         this.bs.finishPullUp();
       });
     });
+=======
+    // setTimeout(() => {
+    //   this.initHomeWrapper();
+    // }, 2000);
+>>>>>>> c2563e3333df81a6ddce7f64713591274acb34c1
   },
   methods: {
     ...mapActions([
@@ -225,6 +234,21 @@ export default {
         } else {
           this.scroll.refresh();
         }
+      });
+    },
+    initHomeWrapper() {
+      this.$nextTick(() => {
+        this.bs = new BScroll(this.$refs.homeWrapper, {
+          click: true,
+          mouseWheel: true,
+          pullUpLoad: {
+            threshold: -30
+          }
+        });
+        this.bs.on("pullingUp", () => {
+          this.getRecommendList();
+          this.bs.finishPullUp();
+        });
       });
     },
     async getRecommendList() {

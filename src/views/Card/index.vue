@@ -4,7 +4,7 @@
         <div class="careswiper" ref="card">
             <div>
                 <!-- 头部轮播 -->
-                <div class="swiper">
+                <div class="swiper" @click="go" >
                     <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
                         <van-swipe-item v-for="banner in HotBanner" :key="banner.mb_image">
                             <img :src="banner.mb_image" alt="">
@@ -13,19 +13,31 @@
                 </div>
                 <!-- VIP+ -->
                 <div class="vip">
-                    <div class="vipTitle">
+                    <div class="vipTitle" >
                         <div class="vipbg">
                             <h6>vip+ </h6>
                             <span>开通VIP+，演出随心看</span>
                         </div>
-                        <div class="vipSwiper" >
-                            <div class="vips" v-for="list in equity_list" :key="list.benefits_name">
-                                <div class="v">
-                                    <div :class="'right-cell right-cell__icon--'+list.benefits_icon " ></div>
-                                    <span>{{list.benefits_name}}</span>
+                        <!-- <div ref="vipSwiper" class="vipsss">
+                            <div  class="vipSwiper">
+                                <div class="vips" v-for="list in equity_list" :key="list.benefits_name">
+                                    <div class="v">
+                                        <div :class="'right-cell right-cell__icon--'+list.benefits_icon " ></div>
+                                        <span>{{list.benefits_name}}</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
+                        <template>
+                            <swiper  ref="mySwiper" :options="swiperOptions">
+                                <swiper-slide  class="vips" v-for="list in equity_list" :key="list.benefits_name">
+                                    <div  class="v">
+                                        <div :class="'right-cell right-cell__icon--'+list.benefits_icon " ></div>
+                                        <span>{{list.benefits_name}}</span>
+                                    </div>
+                                </swiper-slide>
+                            </swiper>
+                        </template>
                     </div>
                     <!-- </div> -->
                     <!-- 卡的种类 -->
@@ -81,7 +93,7 @@
                                             <div class="card-cell__desc__bottom">
                                                 <div class="orange-plus__price">
                                                     <span class="orange-plus__price__num">¥{{list.card_price}}</span>
-                                                    <span class="orange-plus__price__give">赠VIP+</span>
+                                                    <span class="orange-plus__price__give">兑换券{{list.use_limit}}张</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -112,7 +124,7 @@
                                             <div class="card-cell__desc__bottom">
                                                 <div class="orange-plus__price">
                                                     <span class="orange-plus__price__num">¥{{list.card_price}}</span>
-                                                    <span class="orange-plus__price__give">赠VIP+</span>
+                                                    <span class="orange-plus__price__give">兑换券{{list.use_limit}}张</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -150,9 +162,18 @@ export default {
             cate_card:[],
             store_title:"",
             HotBanner:[],
-            equity_list:[]
+            equity_list:[],
+            swiperOptions: {    //swiper配置信息
+                pagination: '.swiper-pagination',
+                // slidesPerView :'auto',
+                slidesPerView :'5',  //一排显示多少张图片
+                paginationClickable: true,
+                // spaceBetween: 8,   //两张图片直接间隔
+                freeMode: true
+            },
         }
     },
+
     async mounted () {
         this.options={
             version:this.version,
@@ -165,9 +186,9 @@ export default {
         this.store_card = store_card
         this.cate_card = cate_card
         this.store_title = store_title
-        console.log(
-            this.once_card, this.store_card,this.cate_card,this.store_title 
-        )
+        // console.log(
+        //     this.once_card, this.store_card,this.cate_card,this.store_title 
+        // )
         const berner = await this.$API.theater.getHotBanner(this.version,this.referer)
         this.HotBanner = berner.data
         const vipRule = await this.$API.theater.getVipRule(this.version,this.referer)
@@ -175,9 +196,21 @@ export default {
         // console.log(this.once_card)
         this.$nextTick(()=>{
             new BetterScroll(this.$refs.card,{
-                click:true
+                click:true,
+                bounce:false
             })
+            // new BetterScroll(this.$refs.vipSwiper,{
+            //     click:true,
+            //     scrollX:true,
+            //     bounce:false
+            // })
         })
+    },
+    methods: {
+        go(){
+            console.log(12)
+             this.$router.push({path:'/vip'})
+        }  
     },
 
     components: {
@@ -195,9 +228,12 @@ export default {
 }
 .card{
     height: 100%;
+    width: 100%;
+
 }
 .careswiper{
     height: 100%;
+    width: 100%;
 }
 .swiper{
     width: 750px;
@@ -235,6 +271,7 @@ export default {
         background: #fff;
         width: 100%;
         line-height: 54px;
+        .vipsss{width: 100%;}
         .vipbg{
             display: flex;
         }
@@ -248,16 +285,24 @@ export default {
             color: #666666;
             font-size: 28px;
         }
-        
     }
     .vipSwiper{
         display: flex;
-        width: 100%;
         background: #fff;
         margin-top: 35px;
 
         .vips{
-            margin-left: 32px;
+            margin-left: 32px;    
+        }
+    }
+    .swiper-container{
+        // margin-top: 35px;
+        // margin-left:30px ;
+        margin: 30px 0 35px 20px;
+    }
+    .swiper-wrapper{
+        margin-top: 35px;
+        .vips{
             .v{
                 width: 130px;
                 .right-cell{
@@ -267,7 +312,8 @@ export default {
                     border-radius: 50%;
                     background-image: url(../../static/img/vip_plus_right.61e731b.png);
                     background-size: 442px 332px;
-                    background-position: -10px -20px;
+                    // background-position: -10px -20px;
+                    margin: 0 8px;
 
                 }
                 .right-cell__icon--prior-buy{ background-position: -0.12rem -3.06667rem;}
@@ -276,7 +322,7 @@ export default {
                 .right-cell__icon--coupon {background-position: -4.52rem -0.12rem;  }
                 .right-cell__icon--free-shipping { background-position: -1.58667rem -1.6rem; }
                 .right-cell__icon--double-points { background-position: -3.05333rem -1.6rem;  } 
-                .right-cell__icon--ticket { background-position: -1.58667rem -3.06667rem;  } 
+                .right-cell__icon--free-ticket{ background-position: -1.58667rem -3.06667rem;}
                 .right-cell__icon--activity { background-position: -0.12rem -1.6rem; }
                 .right-cell__icon--periodical { background-position: -1.58667rem -0.12rem; }
                 .right-cell__icon--birthday { background-position: -3.05333rem -0.12rem; }
@@ -388,7 +434,7 @@ export default {
 }
 .orange-plus__price__give {
     display: inline-block;
-    width: 94px;
+    // width: 94px;
     height: 34px;
     background: rgba(255,129,0,0.1);
     border-radius: 6px;
@@ -397,6 +443,7 @@ export default {
     font-size:  24px;
     color: #d5a370;
     padding-top: 1px;
+    padding: 0 10px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-left: 32px;
