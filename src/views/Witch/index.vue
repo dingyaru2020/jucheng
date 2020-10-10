@@ -129,7 +129,8 @@ export default {
         this.$nextTick(()=>{
             //将滑屏的包裹器传入到BScroll内部就可以产生滑屏
             this.leftScroll = new BetterScroll(this.$refs.witchTitle,{
-                click:true
+                click:true,
+                bounce:false
             });
         })
     }

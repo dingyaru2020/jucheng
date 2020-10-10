@@ -3,7 +3,7 @@
         <div class="detailb">
             <div class="detailHeder">
                 <div class="font">
-                    <span class="iconfont icon-fanhui"></span>
+                    <span class="iconfont icon-fanhui" @click="goback"></span>
                 </div>
                 <div class="detailTitle">
                     <div class="detilehead">
@@ -66,7 +66,9 @@ export default {
         this.showList = showList.data
         this.$nextTick(()=>{
             new BetterScroll(this.$refs.detail,{
-                click:true
+                click:true,
+                bounce:false
+
             })
         })
     },
@@ -74,7 +76,10 @@ export default {
         go(schedular_id){
             // console.log(schedular_id)
             this.$router.push({path:"/showinfo",query:{schedular_id}})
-        } 
+        } ,
+        goback(){
+            this.$router.go(-1)
+        }
     }
 
 }
