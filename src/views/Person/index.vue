@@ -1,6 +1,6 @@
 <template>
   <div class="personWrapper">
-    <div class="bacImg">
+    <div class="bacImg" @click="toBack">
       <i class="iconfont icon-shezhi"></i>
     </div>
 
@@ -119,9 +119,23 @@ export default {
   methods: {
     toLogin() {
       if(this.isLogin === 1){
-        ret
+        return
       }
       this.$router.push({ path: "/login" });
+    },
+       toBack(){
+      if(localStorage.getItem("userInfo")){
+        this.$router.push({
+          path:'/out',
+          query:{
+            name:this.userInfo.nick_name,
+            id:this.userInfo.uid,
+            photo:this.userInfo.photo
+          }
+        })
+      }else{
+        this.$router.push('/login')
+      }
     }
   },
   mounted() {
@@ -137,13 +151,7 @@ export default {
       this.userInfo.coupon = user.coupon_info.total;
     }
   },
-  computed: {
-    // ...mapState({
-    //   userInfo(state){
-    //     return state.person.userInfo
-    //   }
-    // })
-  }
+  
 };
 </script>
 
@@ -177,6 +185,7 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
+  
 }
 .contentWrapper .top {
   border-radius: 10px;
@@ -184,6 +193,7 @@ export default {
   width: 690px;
   position: relative;
   padding-bottom: 15px;
+  height: 290px;
 }
 .contentWrapper .top .userInfo .userImg {
   width: 116px;
@@ -206,6 +216,7 @@ export default {
   font-weight: bolder;
   color: black;
   margin-bottom: 12px;
+  margin-top: 10px
 }
 .top .signUp i {
   font-size: 26px;
@@ -259,6 +270,7 @@ export default {
   color: #666666;
   width: 172.5px;
   text-align: center;
+  margin-top: 30px
 }
 .contentWrapper .top .descNav .navItem .num {
   font-size: 40px;
