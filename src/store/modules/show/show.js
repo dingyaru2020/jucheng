@@ -46,7 +46,6 @@ const mutations={
         state.ticketList = data
     },
     [CHANGE_ACTIVE_DATE_INDEX](state,data){
-        console.log('xuex',data)
         state.activeDateIndex = data
     },
     [CHANGE_CONFIRM_INFO](state,data){

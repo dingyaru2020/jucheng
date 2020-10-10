@@ -38,13 +38,14 @@
         </div>
       </div>
     </div>
-    <div class="showLoading" v-show="showLoading">
-      <img src="../../static/images/loading.svg" alt="">
-    </div>
+    
     <div class="showListCon" ref="showList">
       
       <div class="showList">
-        <router-view></router-view>
+        <keep-alive>
+          <router-view></router-view>
+        </keep-alive>
+        
       </div>
     </div>
   </div>
@@ -77,12 +78,12 @@ export default {
     this.initScroll()
   },
   methods: {
-    ...mapActions(["getCategoryList","getShowList","getCityList"]),
+    ...mapActions(["getCategoryList","getCityList"]),
     initScroll() {
       this.$nextTick(() => {
         new BScroll(this.$refs.tabList, { click: true, scrollX: true });
         const city=new BScroll(this.$refs.cityUl, { click: true });
-        new BScroll(this.$refs.showList, { click: true});
+        // new BScroll(this.$refs.showList, { click: true});
       });
     },
     changeActiveId(id){
@@ -123,17 +124,7 @@ export default {
       text-align: center;
     }
   }
-  .showLoading{
-    width: 100%;
-    height: 86%;
-    background: #fff;
-    // text-align: center;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  
   .listContainer {
     box-sizing: border-box;
     padding: 0 30px;
@@ -261,12 +252,14 @@ export default {
   .showListCon{
     background: #FAFAFA;
     box-sizing: border-box;
-    padding: 35px 0 22px 20px;
+    padding: 35px 0 22px 0;
     height: 1154px;
     overflow: hidden;
     .showList{
       display: flex;
       flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
     }
   }
 }

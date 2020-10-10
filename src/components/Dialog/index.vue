@@ -105,6 +105,7 @@ export default {
       showLack: false,
       name: "",
       phone: "",
+      activeTimeId:this.timeList?this.timeList[0].id:this.schedular_id
     };
   },
   computed: {
@@ -117,9 +118,9 @@ export default {
     activeItem() {
       return this.dateList[this.activeDateIndex];
     },
-    activeTimeId(){
-      return this.timeList[0].id || 0
-    },
+    // activeTimeId(){
+    //   return this.timeList[0]?this.timeList[0].id:this.schedular_id
+    // },
     buttonText() {
       return this.showLack === true ? "提交" : "立即购买";
     },
@@ -166,10 +167,15 @@ export default {
     changeActiveDateIndex(DateIndex) {
       this.activeDateIndex = DateIndex;
       this.$store.commit("CHANGE_ACTIVE_DATE_INDEX",DateIndex)
+      
     },
     
     closeDialog(){
       this.$emit("closeDialog",false)
+    },
+    changeActiveTimeId(timeId){
+      this.activeTimeId = timeId
+      this.getTicketList(this.activeTimeId)
     }
   },
   watch: {
@@ -180,9 +186,14 @@ export default {
         });
       });
     },
+    //点击日期改变ticketList
     activeTimeId() {
       this.getTicketList(this.activeTimeId);
     },
+    //初始化选中第一个时间
+    activeDateIndex(){
+      this.activeTimeId = this.timeList[0]?this.timeList[0].id:this.schedular_id
+    }
   },
   
 };

@@ -1,100 +1,87 @@
 <template>
-  <div class="showCard" @click="goDetail">
-      <!-- <img v-lazy="showInfo.pic">
-      <div class="desc">
-          <div class="title">{{showInfo.name}}</div>
-          <div class="date" v-if="showInfo.show_time_data">{{showInfo.show_time_data[0]}}-{{showInfo.show_time_top}}</div>
-          <div class="price">
-              <span class="num">￥{{showInfo.min_price}}</span>起
-          </div>
+  <div class="showCard" ref="showList">
+      <div class="swiperWrapper">
+          <div class="showLoading" v-show="showLoading">
+        <img src="../../static/images/loading.svg" alt="">
+        </div>
+        <div class="error" v-show="showError">加载出错了请重试……</div>
+      <Recommend :recommendList="showList" v-show="!showLoading"/>
       </div>
-      <span class="city">{{showInfo.city_name}}</span> -->
-      card{{id}}
+      
   </div>
 </template>
 
 <script>
+import BScroll from "better-scroll";
 import { mapState, mapActions, mapGetters, mapMutations } from "vuex";
 export default {
   name: 'ShowCard',
   data(){
       return {
-          id:this.$route.params.id.slice(1)*1
+          id:this.$route.params.id.slice(1)*1,
+          showLoading:false,
+          showError:false
       }
   },
-//   computed:{},
+  computed:{
+      ...mapState({
+          showList:state=>state.show.showList
+      })
+  },
   methods:{
-      ...mapActions(["getShowList"]),
-      goDetail(){
-        //   this.$router.push({
-        //       path:"showinfo",
-        //       query:{schedular_id:this.showInfo.schedular_id}
-        //   })
-      }
+      ...mapActions(["getShowList"])
   },
   watch:{
-      $route(to ,from){
-          this.id = to.params.id.slice(1)*1
+    $route(to ,from){
+        this.id = to.params.id.slice(1)*1
+    },
+    id:async function(){
+        this.showLoading = true
+        this.showError = false
+      try {
+        await this.getShowList(this.id)
+        this.showLoading = false
+      } catch (error) {
+          this.showLoading = false
+          this.showError = true
       }
+    }
   },
-  mounted(){
-      this.getShowList(this.id)
+  async mounted(){
+      this.showLoading = true
+      this.showError = false
+      try {
+        await this.getShowList(this.id)
+        this.showLoading = false
+      } catch (error) {
+          this.showLoading = false
+          this.showError = true
+      }
+      
+
+      this.$nextTick(()=>{
+           new BScroll(this.$refs.showList, { click: true});
+      })
   }
 }
 </script>
 
 <style lang="less" scoped>
     .showCard{
-        width: 343px;
-        height: 687px;
-        border-radius: 10px;
-        overflow: hidden;
-        background: #fff;
-        position: relative;
-        margin: 0 22px 15px 0;
-        img{
+        width: 100%;
+        height: 100%;
+        .showLoading,.error{
             width: 100%;
-            height: 463px;
+            height: 86%;
+            background: #fff;
+            // text-align: center;
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
         }
-        .desc{
-            height: 224px;
-            padding: 15px;
-            .title{
-                font-size: 28px;
-                color: #232323;
-                overflow: hidden;
-                font-size:26rpx;
-                line-height: 40px;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-            }
-            .date{
-                margin: 20px 0;
-                color: #666;
-                font-size: 26px;
-            }
-            .price{
-                font-size: 22px;
-                color: #999;
-                .num{
-                    color: #ff6743;
-                    font-size: 32px;
-                    margin-right: 6px;
-                }
-            }
-        }
-        .city{
-            height: 36px;
-            position: absolute;
-            top: 20px;
-            right: 14px;
-            font-size: 24px;
-            line-height: $height;
-            color: #fff;
-            padding: 0 10px;
-            background: linear-gradient(-45deg, rgba(38,38,38,0.8), rgba(70,68,65,0.8));;
-        }
+        
     }
 </style>

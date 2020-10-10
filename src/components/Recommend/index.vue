@@ -1,10 +1,14 @@
 <template>
-  <div class="wrapper case">
-    <waterfall :col="col" :data="recommendList" @loadmore="loadmore">
+  <div class="abcdefg">
+     <div class="wrapper case">
+    <waterfall :col="col" :data="recommendList" @loadmore="loadmore" class="test">
+      
+<!-- <div> -->
       <div
         class="recommendWrap"
         v-for="(item, index) in recommendList"
         :key="index"
+        @click="goDetail(item.schedular_id)"
       >
         <!-- 推荐列表 -->
         <div v-if="!item.ad_type">
@@ -38,23 +42,23 @@
 
         <!-- 广告列表 -->
         <!-- 1 -->
-        <div
+        <!-- <div
           class="adImg"
           v-else-if="item.ad_type === 1 && item.ad_name === '橙PLUS卡'"
         >
           <img src="../../assets/homeImg/plus卡.png" alt="" />
-        </div>
+        </div> -->
 
         <!-- 2 -->
-        <div
+        <!-- <div
           class="adImg"
           v-else-if="item.ad_type === 1 && item.ad_name === 'V+会员'"
         >
           <img src="../../assets/homeImg/vip.png" alt="" />
-        </div>
+        </div> -->
 
         <!-- 3 -->
-        <div
+        <!-- <div
           class="adContent"
           v-else-if="item.ad_type === 4 && item.ad_name === '热搜词'"
         >
@@ -72,10 +76,10 @@
             <div>第一次约会</div>
             <div>儿童剧</div>
           </div>
-        </div>
+        </div> -->
 
         <!-- 4 -->
-        <div
+        <!-- <div
           class="showContent songs"
           v-else-if="item.ad_type === 2 && item.ad_name === '演唱会'"
         >
@@ -90,10 +94,10 @@
             <span class="desc songsDesc">演唱会</span>
             <span class="more moreSongs">></span>
           </div>
-        </div>
+        </div> -->
 
         <!-- 5 -->
-        <div
+        <!-- <div
           class="showContent music"
           v-else-if="item.ad_type === 2 && item.ad_name === '音乐剧'"
         >
@@ -108,10 +112,10 @@
             <span class="desc musicDesc">音乐剧</span>
             <span class="more moreMusic">></span>
           </div>
-        </div>
+        </div> -->
 
         <!-- 6 -->
-        <div
+        <!-- <div
           class="showContent concert"
           v-else-if="item.ad_type === 2 && item.ad_name === '音乐会'"
         >
@@ -126,10 +130,10 @@
             <span class="desc concertDesc">音乐会</span>
             <span class="more moreConcert">></span>
           </div>
-        </div>
+        </div> -->
 
         <!-- 7 -->
-        <div
+        <!-- <div
           class="showContent baby"
           v-else-if="item.ad_type === 2 && item.ad_name === '舞台剧'"
         >
@@ -144,10 +148,10 @@
             <span class="desc babyDesc">儿童亲子</span>
             <span class="more moreBaby">></span>
           </div>
-        </div>
+        </div> -->
 
         <!-- 8 -->
-        <div
+        <!-- <div
           class="showContent exhibition"
           v-else-if="item.ad_type === 2 && item.ad_name === '舞台剧'"
         >
@@ -162,10 +166,13 @@
             <span class="desc exhibitionDesc">展览</span>
             <span class="more moreExhibition">></span>
           </div>
-        </div>
+        </div> -->
       </div>
+<!-- </div> -->
     </waterfall>
   </div>
+  </div>
+ 
 </template>
 
 <script>
@@ -182,12 +189,19 @@ export default {
    methods: {
     loadmore() {
       this.$emit("getRecommendList");
+    },
+    goDetail(schedular_id){
+      this.$router.push({
+        path:"/showinfo",
+        query:{schedular_id}
+      })
     }
   }
 };
 </script>
 
-<style lang="less">
+<style lang="less" >
+.abcdefg{
 .wrapper {
   display: flex;
   //   display: -webkit-flex;
@@ -195,11 +209,19 @@ export default {
   // flex-direction: row;
   flex-wrap: wrap;
 }
+// .wrapper .test{
+//   display: flex;
+//   width: 100%;
+//   flex-wrap: wrap;
+// }
 .recommendWrap {
   width: 339px;
   border: 1px solid #e3e3e4;
   margin-bottom: 10px;
   display: flex;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .recommendWrap .adImg {
   width: 339px;
@@ -409,4 +431,6 @@ export default {
   color: #ff6743;
   margin-right: 20px;
 }
+}
+
 </style>

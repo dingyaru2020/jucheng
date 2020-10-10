@@ -257,10 +257,7 @@ export default {
           path: "/vip",
         });
       } else {
-        this.$router.push({
-          name: "/showlist",
-          path: { category_id },
-        });
+        this.$router.push(`/showlist/:${category_id}`)
       }
     },
   },
