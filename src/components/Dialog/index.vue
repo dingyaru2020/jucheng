@@ -193,6 +193,9 @@ export default {
     //初始化选中第一个时间
     activeDateIndex(){
       this.activeTimeId = this.timeList[0]?this.timeList[0].id:this.schedular_id
+    },
+    timeList(){
+      this.activeTimeId=this.timeList[0].id
     }
   },
   
