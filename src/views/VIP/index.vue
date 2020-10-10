@@ -75,11 +75,12 @@ export default {
        this.$nextTick(()=>{
             this.BS = new BetterScroll(this.$refs.vipbs,{
                 click:true,
+                bounce:false,
                 probeType:2
             })
             console.log(this.BS)
             this.BS.on('scroll', (position) => {
-                console.log(+position.y, +position.y <-430)
+                // console.log(+position.y, +position.y <-430)
                 if( +position.y <-430){
                     this.isShow=true 
                 }else{
@@ -203,7 +204,7 @@ export default {
 
         }
         .card{
-            padding-bottom:240px;
+            padding-bottom:200px;
             .carditem{
                 width: 100%;
                 background-color: white;
@@ -230,14 +231,14 @@ export default {
             }
             
         }
-        .vip-plus__more{
-                color: #999999;
-                font-size: 0.32rem;
-                height: 1.33333rem;
-                line-height: 1.33333rem;
-                margin-bottom: 1.30667rem;
-                text-align: center;
-            }
+        // .vip-plus__more{
+        //         color: #999999;
+        //         font-size: 0.32rem;
+        //         height: 1.33333rem;
+        //         line-height: 1.33333rem;
+        //         margin-bottom: 1.30667rem;
+        //         text-align: center;
+        //     }
         .kaitong{
             position: fixed;
             left: 0;

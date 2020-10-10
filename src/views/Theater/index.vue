@@ -72,7 +72,8 @@ export default {
         // this.swiper.slideTo(0, 1000, false)
         this.$nextTick(()=>{
             new BetterScroll(this.$refs.theater_body,{
-                click:true
+                click:true,
+                bounce:false
             })
         })
 

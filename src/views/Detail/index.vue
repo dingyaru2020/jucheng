@@ -66,7 +66,9 @@ export default {
         this.showList = showList.data
         this.$nextTick(()=>{
             new BetterScroll(this.$refs.detail,{
-                click:true
+                click:true,
+                bounce:false
+
             })
         })
     },
