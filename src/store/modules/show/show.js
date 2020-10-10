@@ -108,7 +108,7 @@ const getters={
         let activeProjectTime = dateList[activeDateIndex]
         const arr=item_list.filter(item=>item.project_time===activeProjectTime&&(item.session_time!==''))
         // console.log(arr)
-        return arr
+        return arr===undefined?[]:arr
     }
 }
 export default {

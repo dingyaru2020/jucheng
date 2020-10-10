@@ -34,7 +34,7 @@
             </div>
           </template>
 
-          <div class="choosePrice">选择价格</div>
+          <div class="choosePrice" v-show="showPrice">选择价格</div>
           <div class="choosePriceWrapper">
             <ul class="container">
               <li
@@ -105,7 +105,8 @@ export default {
       showLack: false,
       name: "",
       phone: "",
-      activeTimeId:this.timeList?this.timeList[0].id:this.schedular_id
+      showPrice:false,
+      activeTimeId:this.schedular_id
     };
   },
   computed: {
@@ -118,6 +119,9 @@ export default {
     activeItem() {
       return this.dateList[this.activeDateIndex];
     },
+    // showPrice(){
+    //   return this.timeList.length>0?true:false
+    // },
     // activeTimeId(){
     //   return this.timeList[0]?this.timeList[0].id:this.schedular_id
     // },
@@ -166,6 +170,8 @@ export default {
     },
     changeActiveDateIndex(DateIndex) {
       this.activeDateIndex = DateIndex;
+      this.activeTimeId = 0
+      this.activeTicketId = 0
       this.$store.commit("CHANGE_ACTIVE_DATE_INDEX",DateIndex)
       
     },
@@ -185,20 +191,25 @@ export default {
           click: true ,
         });
       });
+      if(this.timeList.length>0){
+        this.showPrice = true
+      }
     },
     //点击日期改变ticketList
     activeTimeId() {
       this.getTicketList(this.activeTimeId);
     },
-    //初始化选中第一个时间
+    //初始化选中第一个场次
     activeDateIndex(){
       this.activeTimeId = this.timeList[0]?this.timeList[0].id:this.schedular_id
     },
-    timeList(){
-      this.activeTimeId=this.timeList[0].id
-    }
+    // timeList(){
+    //   this.activeTimeId=this.timeList[0].id
+    // }
   },
-  
+  beforeCreate(){
+    console.log('---dialog',this.timeList,this.activeTimeId)
+  }
 };
 </script>
 
