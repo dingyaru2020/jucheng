@@ -35,7 +35,7 @@
             class="navItem"
             v-for="item in list.classify_list"
             :key="item.id"
-            @click="toList(item.id)"
+            @click="toList(item.id, item.category_id)"
           >
             <img :src="item.pic" alt="" />
             <div>{{ item.name }}</div>
@@ -186,25 +186,19 @@ export default {
       }
     })
   },
+  created() {
+    this.initHomeWrapper();
+  },
   async mounted() {
-    await this.getList();
-    await this.getDiscountList();
-    await this.getShowSwiperList();
+    this.getList();
+    this.getDiscountList();
+    this.getShowSwiperList();
+    this.getRecommendList();
     await this.getHotShowList();
-    await this.getRecommendList();
     this.initScroll();
-    this.$nextTick(() => {
-      this.bs = new BScroll(this.$refs.homeWrapper, {
-        click: true,
-        pullUpLoad: {
-          threshold: -30
-        }
-      });
-      this.bs.on("pullingUp", () => {
-        this.getRecommendList();
-        this.bs.finishPullUp();
-      });
-    });
+    // setTimeout(() => {
+    //   this.initHomeWrapper();
+    // }, 2000);
   },
   methods: {
     ...mapActions([
@@ -229,6 +223,21 @@ export default {
         }
       });
     },
+    initHomeWrapper() {
+      this.$nextTick(() => {
+        this.bs = new BScroll(this.$refs.homeWrapper, {
+          click: true,
+          mouseWheel: true,
+          pullUpLoad: {
+            threshold: -30
+          }
+        });
+        this.bs.on("pullingUp", () => {
+          this.getRecommendList();
+          this.bs.finishPullUp();
+        });
+      });
+    },
     async getRecommendList() {
       const result = await this.$axios1.get(
         `https://api.juooo.com/Show/Search/getShowList?city_id=0&category=&keywords=&venue_id=&start_time=&page=1&referer_type=index&time=1601691033139&version=6.1.1&referer=2&sign=63f665caf603ac4cdbff744329244166`
@@ -241,37 +250,25 @@ export default {
       this.recommendList = [...this.recommendList, ...recList];
       this.bs && this.bs.refresh();
     },
-    toList(id) {
+    toList(id, category_id) {
       if (id === 42) {
         this.$router.push({
-          path: "/card",
-          query: { id }
+          path: "/card"
         });
       } else if (id === 43) {
         this.$router.push({
-          path: "/plus",
-          query: { id }
+          path: "/plus"
         });
       } else if (id === 44) {
         this.$router.push({
-          path: "/witch",
-          query: { id }
+          path: "/witch"
         });
       } else if (id === 45) {
         this.$router.push({
-          path: "/vip",
-          query: { id }
+          path: "/vip"
         });
-        // } else if (id === 46) {
-        //   this.$router.push({
-        //     path: "/vip",
-        //     query: { id }
-        //   });
       } else {
-        this.$router.push({
-          path: "/showlist",
-          query: { id }
-        });
+        this.$router.push(`/showlist/:${category_id}`);
       }
     }
   }

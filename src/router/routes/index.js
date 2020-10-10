@@ -24,13 +24,14 @@ const test = () => import("@/views/test/index.vue");
 //订单确认页
 const OrderConfirm = () => import("@/views/OrderConfirm/index.vue");
 const Login = () => import("../../views/Login/index.vue");
+const Out = () => import("../../views/Out/index.vue");
 export default [
   {
     path: "/",
     component: Home,
     meta: {
       title: "Home",
-      show: true,
+      show: true
     }
   },
   // 欢聚橙卡
@@ -60,8 +61,8 @@ export default [
     component: Theater,
     meta: {
       title: "Home",
-      show: true,
-    },
+      show: true
+    }
     // children: [
     //     { path: 'detail/:sid', component: Detail }
     // ]
@@ -71,7 +72,7 @@ export default [
     component: Ticket,
     meta: {
       title: "Home",
-      show: true,
+      show: true
     }
   },
   {
@@ -79,14 +80,19 @@ export default [
     component: Person,
     meta: {
       title: "Home",
-      show: true,
+      show: true
     }
+  },
+  {
+    path: "/out",
+    component: Out
   },
   {
     path: "/login",
     component: Login
   },
   {
+    name:'showlist',
     path: "/showlist",
     component: ShowList
   },
