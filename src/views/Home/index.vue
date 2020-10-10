@@ -239,10 +239,7 @@ export default {
       this.recommendList = [...this.recommendList, ...recList];
     },
     toShowList(id) {
-      this.$router.push({
-        path: "/showlist",
-        query: { id }
-      });
+      this.$router.push(`/showlist/:${id}`);
     }
   }
 };

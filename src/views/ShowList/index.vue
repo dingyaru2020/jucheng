@@ -38,11 +38,13 @@
         </div>
       </div>
     </div>
+    <div class="showLoading" v-show="showLoading">
+      <img src="../../static/images/loading.svg" alt="">
+    </div>
     <div class="showListCon" ref="showList">
+      
       <div class="showList">
-        <div class="cardWrapper" v-for="showInfo in showList" :key="showInfo.show_id">
-          <ShowCard :showInfo="showInfo" v-if="showList.length>0"/>
-        </div>
+        <router-view></router-view>
       </div>
     </div>
   </div>
@@ -50,16 +52,15 @@
 
 <script>
 import { mapState, mapActions, mapGetters, mapMutations } from "vuex";
-import ShowCard from "@/components/ShowCard"
 import BScroll from "better-scroll";
 export default {
   name: "ShowList",
   data() {
     return {
-      active: 0,
       showDrawer: false,
-      activeId:this.$route.query.id*1,
-      activeCityId:0
+      activeId:this.$route.params.id.slice(1)*1,
+      activeCityId:0,
+      showLoading:false
     };
   },
   computed: {
@@ -71,7 +72,7 @@ export default {
   },
   async mounted() {
     await this.getCategoryList();
-    await this.getShowList(this.activeId)
+    
     await this.getCityList()
     this.initScroll()
   },
@@ -89,12 +90,10 @@ export default {
       // this.$store.commit("CLEAR_SHOW_LIST")
     }
   },
-  components:{
-    ShowCard
-  },
+  
   watch:{
     activeId(){
-      this.getShowList(this.activeId)
+      this.$router.replace(`/showlist/:${this.activeId}`)
     },
     showDrawer(){
       this.$nextTick(() => {
@@ -123,6 +122,17 @@ export default {
       font-size: 36px;
       text-align: center;
     }
+  }
+  .showLoading{
+    width: 100%;
+    height: 86%;
+    background: #fff;
+    // text-align: center;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .listContainer {
     box-sizing: border-box;
@@ -247,6 +257,7 @@ export default {
       }
     }
   }
+  
   .showListCon{
     background: #FAFAFA;
     box-sizing: border-box;

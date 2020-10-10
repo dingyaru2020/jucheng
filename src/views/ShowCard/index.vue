@@ -1,6 +1,6 @@
 <template>
   <div class="showCard" @click="goDetail">
-      <img v-lazy="showInfo.pic">
+      <!-- <img v-lazy="showInfo.pic">
       <div class="desc">
           <div class="title">{{showInfo.name}}</div>
           <div class="date" v-if="showInfo.show_time_data">{{showInfo.show_time_data[0]}}-{{showInfo.show_time_top}}</div>
@@ -8,29 +8,37 @@
               <span class="num">￥{{showInfo.min_price}}</span>起
           </div>
       </div>
-      <span class="city">{{showInfo.city_name}}</span>
+      <span class="city">{{showInfo.city_name}}</span> -->
+      card{{id}}
   </div>
 </template>
 
 <script>
+import { mapState, mapActions, mapGetters, mapMutations } from "vuex";
 export default {
   name: 'ShowCard',
-  props:{
-        showInfo:{
-            type:Object,
-            default:{
-                show_time_data:[]
-            }
-        }
+  data(){
+      return {
+          id:this.$route.params.id.slice(1)*1
+      }
   },
 //   computed:{},
   methods:{
+      ...mapActions(["getShowList"]),
       goDetail(){
-          this.$router.push({
-              path:"showinfo",
-              query:{schedular_id:this.showInfo.schedular_id}
-          })
+        //   this.$router.push({
+        //       path:"showinfo",
+        //       query:{schedular_id:this.showInfo.schedular_id}
+        //   })
       }
+  },
+  watch:{
+      $route(to ,from){
+          this.id = to.params.id.slice(1)*1
+      }
+  },
+  mounted(){
+      this.getShowList(this.id)
   }
 }
 </script>
