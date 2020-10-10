@@ -194,24 +194,9 @@ export default {
     this.getRecommendList();
     await this.getHotShowList();
     this.initScroll();
-<<<<<<< HEAD
-    this.$nextTick(() => {
-      this.bs = new BScroll(this.$refs.homeWrapper, {
-        click: true,
-        pullUpLoad: {
-          threshold: -30,
-        },
-      });
-      this.bs.on("pullingUp", () => {
-        this.getRecommendList();
-        this.bs.finishPullUp();
-      });
-    });
-=======
     // setTimeout(() => {
     //   this.initHomeWrapper();
     // }, 2000);
->>>>>>> c2563e3333df81a6ddce7f64713591274acb34c1
   },
   methods: {
     ...mapActions([
