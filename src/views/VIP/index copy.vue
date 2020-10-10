@@ -4,7 +4,7 @@
         <!-- <Discount></Discount> -->
         <div class="vipbs" ref="vipbs">
             <div class="vipb">
-                <Discount ref="discount" />
+                <Discount />
                 <div class="vipBody" ref="vipBody">
                     <div class="vipTitle">
                         <div class="zhe">专享折扣</div>
@@ -32,21 +32,8 @@
                         <img src="../../static/img/vip_plus_free_shipping.95caaaa.png" alt="">
                     </div>
                 </div>
-                <!-- <div class="vip-plus__more">
-                    更多VIP+尊享权益，敬请期待
-                </div> -->
             </div>
         </div>
-        
-        <div class="kaitong" v-show="isShow">
-					<button class="btn">
-						立即开通
-						<span class="price">99</span>
-						<span class="year">/年</span>
-					</button>
-					<!-- <div class="quanyi"><a href="">权益解读</a></div> -->
-		</div>
-        
     </div>
 </template>
 
@@ -64,40 +51,24 @@ export default {
             limit: 10,
             version: "6.1.1",
             referer: 2,
-            vipList:[],
-            isShow:false
+            vipList:[]
         }
     },
     async mounted () {
-        // console.log(this.$API.theater)
+        console.log(this.$API.theater)
        const res = await this.$API.theater.getDiscountList(this.page,this.limit,this.version,this.referer)
        this.vipList = res.data.list
        this.$nextTick(()=>{
-            this.BS = new BetterScroll(this.$refs.vipbs,{
-                click:true,
-                probeType:2
+            new BetterScroll(this.$refs.vipbs,{
+                click:true
             })
-            console.log(this.BS)
-            this.BS.on('scroll', (position) => {
-                console.log(+position.y, +position.y <-430)
-                if( +position.y <-430){
-                    this.isShow=true 
-                }else{
-                    this.isShow = false
-                }
-            })
-            this.BS.refresh()
         })
-        
     },
     methods: {
         go(schedular_id){
             // console.log(schedular_id)
             this.$router.push({path:"showinfo",query:{schedular_id}})
-        } ,
-        change(){
-            console.log(111)
-        }
+        }  
     },
     components: {
         Discount:Discount
@@ -123,9 +94,7 @@ export default {
             height: 100%;
             padding-left: 24px;
             background: #fff;
-            position: relative;
-            // padding-top: 88px;
-            // padding-bottom: 280px;
+            // padding-bottom: 50px;
             .vipTitle{
                 padding-bottom: 0.46667rem;
                 height: 0.72rem;
@@ -156,6 +125,8 @@ export default {
             }
             .vipitem{
                 display: flex;
+                // justify-content: space-around;
+                // height:789px;
                 flex-wrap: wrap;
                 .item{
                     margin: 0 10px;
@@ -203,7 +174,7 @@ export default {
 
         }
         .card{
-            padding-bottom:240px;
+            padding-bottom: 290px;
             .carditem{
                 width: 100%;
                 background-color: white;
@@ -230,44 +201,5 @@ export default {
             }
             
         }
-        .vip-plus__more{
-                color: #999999;
-                font-size: 0.32rem;
-                height: 1.33333rem;
-                line-height: 1.33333rem;
-                margin-bottom: 1.30667rem;
-                text-align: center;
-            }
-        .kaitong{
-            position: fixed;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            // display: grid;
-            .btn{
-                width: 100%;
-                margin-top: 0.61333rem;
-                font-size: 0.45333rem;
-                height: 1.2rem;
-                // border-radius: 26.66667rem;
-                background: linear-gradient(90deg,#FECE9D,#D79A62);
-                color: #85470E;
-                display: inline-block;
-                line-height: 1;
-                white-space: nowrap;
-                text-align: center;
-                outline: 0;
-                border: none;
-                padding: 0 0.4rem;
-                cursor: pointer;
-                .price{
-                    font-weight: bold;
-                }
-                .year{
-                    font-size: 0.29333rem;
-                }
-            }
-        }
-        
     }
 </style>

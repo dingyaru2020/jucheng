@@ -1,8 +1,13 @@
 <template>
-    <TopBar :title="title" :fanhui="fanhui" :icon="icon"></TopBar>
+    <div>
+        <TopBar :title="title" :fanhui="fanhui" :icon="icon"></TopBar>
+        <Discount/>
+    </div>
 </template>
 
 <script>
+import Discount from "../../components/Discount"
+
 export default {
     data () {
         return {
@@ -16,6 +21,9 @@ export default {
         // console.log(this.$API.default.theater)
        const res =await this.$API.theater.getCardGroupList("6.1.1",2)
        console.log(res,2222)
+    },
+    components: {
+        Discount
     }
 }
 </script>

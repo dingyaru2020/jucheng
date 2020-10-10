@@ -1,6 +1,6 @@
 <template>
     <div class="theater" v-show="showtheater">
-        <TopBar :title="title" ></TopBar>
+        <TopBar :title="title" class="topBar" ></TopBar>
         <!-- <router-view><router-view> -->
         <div class="theater-body" ref="theater_body">
             <div class="wrapper">
@@ -99,15 +99,23 @@ export default {
     height: 100%;
     width: 100%;
 }
+.topBar{
+    position: relative;
+    z-index: 111;
+    background: white;
+}
     .theater-body {
         background: #fafafa;
         height: 100%;
+        
         .wrapper{
             padding: 26px 24px 0 24px;
             //  剧院信息 
             .content{
                 padding: 20px;
                 background: white;
+                width: 100%;
+                box-sizing: border-box;
                 // 剧院头部信息
                 .theaterTitle{
                     display: flex;

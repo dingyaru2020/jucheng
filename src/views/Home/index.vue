@@ -245,22 +245,22 @@ export default {
       if (id === 42) {
         this.$router.push({
           path: "/card",
-          query: { id }
+          // query: { id }
         });
       } else if (id === 43) {
         this.$router.push({
           path: "/plus",
-          query: { id }
+          // query: { id }
         });
       } else if (id === 44) {
         this.$router.push({
           path: "/witch",
-          query: { id }
+          // query: { id }
         });
       } else if (id === 45) {
         this.$router.push({
           path: "/vip",
-          query: { id }
+          // query: { id }
         });
         // } else if (id === 46) {
         //   this.$router.push({
