@@ -1,63 +1,80 @@
 <template>
-    <div class="detail">
-        <div class="detailHeder">
-            <div class="font">
-                <span class="iconfont icon-fanhui"></span>
-            </div>
-            <div class="detailTitle">
-                <div class="detilehead">
-                    <img :src="theatreList.theatre_pic" alt="">
-                    <div class="detailTheater">
-                        <p>{{theatreList.theatre_name}}</p>
-                        <span>{{theatreList.sch_num}}场在售演出</span>
-                    </div>
+    <div class="detail" ref="detail">
+        <div class="detailb">
+            <div class="detailHeder">
+                <div class="font">
+                    <span class="iconfont icon-fanhui"></span>
                 </div>
-                <p class="address">{{theatreList.city_name}} | {{theatreList.theatre_address}}</p>
+                <div class="detailTitle">
+                    <div class="detilehead">
+                        <img :src="theatreList.theatre_pic" alt="">
+                        <div class="detailTheater">
+                            <p>{{theatreList.theatre_name}}</p>
+                            <span>{{theatreList.sch_num}}场在售演出</span>
+                        </div>
+                    </div>
+                    <p class="address">{{theatreList.city_name}} | {{theatreList.theatre_address}}</p>
+                </div>
             </div>
-        </div>
-        <div class="detailBody">
-            <div class="title">热门演出</div>
-            <div class="detailContent">
-                <div v-for="item in showList.list" :key="item.show_id">
-                    <div class="detailSubject">
-                        <!-- {{item}} -->
-                        <img :src="item.pic" alt="">
-                        <div class="subject">
-                            <span class="time"> {{item.start_show_time}} - {{item.end_show_time}}</span>
-                            <p class="show">{{item.name}}</p>
-                            <p class="city">{{item.city_name}} | {{item.venue_name}}</p>
-                            <div class="discount">
-                                <span class="d" v-for="(desc,index) in item.support_desc" :key="index">{{desc}}</span>
+            <div class="detailBody">
+                <div class="title">热门演出</div>
+                <div class="detailContent">
+                    <div v-for="item in showList.list" :key="item.show_id">
+                        <div class="detailSubject" @click="go(item.schedular_id)">
+                            <!-- {{item}} -->
+                            <img :src="item.pic" alt="">
+                            <div class="subject">
+                                <span class="time"> {{item.start_show_time}} - {{item.end_show_time}}</span>
+                                <p class="show">{{item.name}}</p>
+                                <p class="city">{{item.city_name}} | {{item.venue_name}}</p>
+                                <div class="discount">
+                                    <span class="d" v-for="(desc,index) in item.support_desc" :key="index">{{desc}}</span>
+                                </div>
+                                <p class="price">{{"￥"+ item.max_price}}<span>起</span>
+                                </p>
                             </div>
-                            <p class="price">{{"￥"+ item.max_price}}<span>起</span>
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
     </div>
 </template>
 
 <script>
+import BetterScroll from 'better-scroll'
 export default {
     name:"Detail",
     data () {
         return {
-            theatre_id:2,
             version:"6.1.1",
             referer:2,
             theatreList:{},
-            showList:{}
+            showList:{},
+            sid:0,
+            venue_id:""
         }
     },
     async mounted () {
-        const res = await this.$API.default.theater.getTheatreInfo(this.theatre_id,this.version,this.referer)
-        const showList = await this.$API.default.theater.getShowList()
+        this.sid = this.$route.params.sid
+        // page=1&venue_id=1078,1079,1795&time=1602038108501&version=6.1.1&referer=2&sign=eea8d1c956abcf5a517ed73f47c0984f
+        const res = await this.$API.theater.getTheatreInfo(this.sid,this.version,this.referer)
+        const showList = await this.$API.theater.getShowList()
         this.theatreList = res.data
-        console.log(this.theatreList)
+        // console.log(this.theatreList)
         this.showList = showList.data
-        console.log(this.showList.list)
+        this.$nextTick(()=>{
+            new BetterScroll(this.$refs.detail,{
+                click:true
+            })
+        })
+    },
+    methods: {
+        go(schedular_id){
+            // console.log(schedular_id)
+            this.$router.push({path:"/showinfo",query:{schedular_id}})
+        } 
     }
 
 }
@@ -65,6 +82,7 @@ export default {
 
 <style lang="less" scoped>
 .detail{
+    height: 100%;
     .detailHeder{
         // position: relative;
         background: url("../../static/img/theater_detail_bg.png");

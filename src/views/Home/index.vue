@@ -15,7 +15,6 @@
       </div>
     </div>
     <!-- 内容区 -->
-
     <div class="home" ref="homeWrapper">
       <div class="homeSwiper">
         <!-- 头部轮播 -->
@@ -36,7 +35,7 @@
             class="navItem"
             v-for="item in list.classify_list"
             :key="item.id"
-            @click="toShowList(item.category_id)"
+            @click="toList(item.id, item.category_id)"
           >
             <img :src="item.pic" alt="" />
             <div>{{ item.name }}</div>
@@ -134,9 +133,7 @@
                   <span class="num">
                     {{ item.citys.length }}
                   </span>
-                  <span class="other">
-                    城巡演
-                  </span>
+                  <span class="other"> 城巡演 </span>
                   <span
                     class="country"
                     v-for="(city, index) in item.citys"
@@ -168,7 +165,7 @@ export default {
   name: "Home",
   data() {
     return {
-      recommendList: []
+      recommendList: [],
     };
   },
   computed: {
@@ -184,11 +181,8 @@ export default {
       },
       hotShowList(state) {
         return state.home.hotShowList;
-      }
-    })
-  },
-  created() {
-    // this.initWrapper();
+      },
+    }),
   },
   async mounted() {
     await this.getList();
@@ -196,35 +190,41 @@ export default {
     await this.getShowSwiperList();
     await this.getHotShowList();
     await this.getRecommendList();
-    this.initWrapper();
+    this.initScroll();
+    this.$nextTick(() => {
+      this.bs = new BScroll(this.$refs.homeWrapper, {
+        click: true,
+        pullUpLoad: {
+          threshold: -30,
+        },
+      });
+      this.bs.on("pullingUp", () => {
+        this.getRecommendList();
+        this.bs.finishPullUp();
+      });
+    });
   },
   methods: {
     ...mapActions([
       "getList",
       "getDiscountList",
       "getShowSwiperList",
-      "getHotShowList"
+      "getHotShowList",
     ]),
     initScroll() {
       this.$nextTick(() => {
-        const width = 6 * 218 - 36;
+        const width = this.hotShowList.length * 218 - 36;
         this.$refs.mycontent.style.width = width + "px";
-        if (!this.Scroller) {
-          this.Scroller = new BScroll(this.$refs.wrapper, {
+        if (!this.scroll) {
+          this.scroll = new BScroll(this.$refs.wrapper, {
             startX: 0,
             click: true,
             scrollX: true,
             eventPassthrough: "vertical",
-            scrollbar: true
           });
         } else {
           this.scroll.refresh();
         }
-      });
-    },
-    initWrapper() {
-      this.$nextTick(() => {
-        new BScroll(this.$refs.homeWrapper, { click: true });
       });
     },
     async getRecommendList() {
@@ -237,11 +237,33 @@ export default {
         recList.splice(4 * (index + 1) + index, 0, item);
       });
       this.recommendList = [...this.recommendList, ...recList];
+      this.bs && this.bs.refresh();
     },
-    toShowList(id) {
-      this.$router.push(`/showlist/:${id}`);
-    }
-  }
+    toList(id, category_id) {
+      if (id === 42) {
+        this.$router.push({
+          path: "/card",
+        });
+      } else if (id === 43) {
+        this.$router.push({
+          path: "/plus",
+        });
+      } else if (id === 44) {
+        this.$router.push({
+          path: "/witch",
+        });
+      } else if (id === 45) {
+        this.$router.push({
+          path: "/vip",
+        });
+      } else {
+        this.$router.push({
+          name: "/showlist",
+          path: { category_id },
+        });
+      }
+    },
+  },
 };
 </script>
 
@@ -258,7 +280,6 @@ export default {
     justify-content: space-around;
   }
 }
-
 .left img {
   width: 40px;
   height: 40px;
@@ -381,6 +402,7 @@ export default {
   font-size: 28px;
   height: 82px;
   margin-bottom: 24px;
+  line-height: 40px;
 }
 .discountNum {
   font-size: 32px;
@@ -399,6 +421,7 @@ export default {
   color: #ff7853;
   background-color: #fffcf5;
   border-radius: 50px;
+  margin-right: 10px;
 }
 .discountWrap {
   display: flex;
@@ -441,10 +464,11 @@ export default {
   // display: flex;
   // flex-wrap: wrap;
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
   // white-space:nowrap
 }
 .mycontent {
+  width: 100%;
   display: flex;
 }
 .showNav .navList {
@@ -465,6 +489,7 @@ export default {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  line-height: 40px;
 }
 .show {
   margin-bottom: 80px;
@@ -498,6 +523,7 @@ export default {
 .showDescWrap .showTitle {
   font-size: 28px;
   margin-top: 20px;
+  line-height: 40px;
 }
 .showDescWrap .showPrice {
   font-size: 24px;

@@ -118,6 +118,9 @@ export default {
   },
   methods: {
     toLogin() {
+      if(this.isLogin === 1){
+        ret
+      }
       this.$router.push({ path: "/login" });
     }
   },
@@ -224,6 +227,13 @@ export default {
   font-weight: bolder;
   margin-top: 100px;
   margin-bottom: 5px;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  box-sizing: border-box
+}
+.contentWrapper .top .vDesc.vipActive {
+  background: linear-gradient(-45deg, #f5dea9, #f8d583);
+  color: black
 }
 .contentWrapper .top .descNav {
   display: flex;
@@ -255,6 +265,9 @@ export default {
   color: #232323;
   text-align: center;
   margin-bottom: 15px;
+}
+.contentWrapper .top .descNav .navItem .num.active {
+  color: #ff6743;
 }
 .contentWrapper .top .descNav .navRight {
   font-size: 26px;
@@ -299,11 +312,6 @@ export default {
   width: 66px;
   height: 66px;
 }
-.vipActive {
-  background: linear-gradient(-45deg, #f5dea9, #f8d583);
-  color: black
-}
-.active {
-  color: #ff6743;
-}
+
+
 </style>
